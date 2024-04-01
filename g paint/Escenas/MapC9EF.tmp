@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://bwr8moydh4o4o"]
+
+[ext_resource type="Texture2D" uid="uid://bui31caroul5e" path="res://Images/ForestPathPublic-1024x1024.jpg" id="1_bgp30"]
+[ext_resource type="PackedScene" uid="uid://d2dc30o4dq37w" path="res://Actors/PJ.tscn" id="2_kgdfs"]
+[ext_resource type="Script" path="res://Escenas/Camera2D.gd" id="3_yeikb"]
+[ext_resource type="PackedScene" uid="uid://p3bg5mpqmdns" path="res://Actors/bound.tscn" id="4_f5j3p"]
+[ext_resource type="PackedScene" uid="uid://cn2pcxl2rilc6" path="res://Actors/PNJ.tscn" id="5_qn52n"]
+[ext_resource type="Texture2D" uid="uid://b2ral3avihfqb" path="res://arbusto.png" id="7_b7j1g"]
+
+[node name="Mapa" type="Node2D"]
+
+[node name="Fondo" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(1878, -436)
+scale = Vector2(4, 4)
+texture = ExtResource("1_bgp30")
+
+[node name="Pj" parent="." instance=ExtResource("2_kgdfs")]
+position = Vector2(129, 176)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("3_yeikb")
+
+[node name="Bound" parent="." instance=ExtResource("4_f5j3p")]
+position = Vector2(-141, 0)
+
+[node name="Bound2" parent="." instance=ExtResource("4_f5j3p")]
+position = Vector2(3960, -23)
+
+[node name="Bound3" parent="." instance=ExtResource("4_f5j3p")]
+position = Vector2(1869, 1602)
+rotation = -1.57079
+
+[node name="Bound4" parent="." instance=ExtResource("4_f5j3p")]
+position = Vector2(2010, -2484)
+rotation = -1.57079
+
+[node name="Pnj" parent="." instance=ExtResource("5_qn52n")]
+position = Vector2(562, -65)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(617, -61)
+scale = Vector2(0.081722, 0.095029)
+texture = ExtResource("7_b7j1g")

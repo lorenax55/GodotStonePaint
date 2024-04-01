@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://cn2pcxl2rilc6"]
+
+[ext_resource type="Texture2D" uid="uid://d2la7nsgni68x" path="res://Images/3408641.png" id="1_4ucrq"]
+[ext_resource type="Script" path="res://Actors/Area2D.gd" id="2_eh48k"]
+[ext_resource type="Texture2D" uid="uid://clu2g7nkhtddp" path="res://Images/858962.png" id="3_p4po5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q6f1q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4ucrq")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_el03o"]
+radius = 117.273
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ohg70"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_p4po5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Pnj" type="Node2D"]
+
+[node name="PnjAnim" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.992157, 0.466667, 0.592157, 1)
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_q6f1q")
+animation = &"Idle"
+offset = Vector2(0, -250)
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_eh48k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 23)
+shape = SubResource("CircleShape2D_el03o")
+
+[node name="InteractIcon" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(0, -150)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_ohg70")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

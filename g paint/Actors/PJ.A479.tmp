@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2dc30o4dq37w"]
+
+[ext_resource type="Script" path="res://Actors/PJ.gd" id="1_1eaod"]
+[ext_resource type="Texture2D" uid="uid://d2la7nsgni68x" path="res://Images/3408641.png" id="2_5dujw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f4u01"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5dujw")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="Pj" type="CharacterBody2D"]
+script = ExtResource("1_1eaod")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_f4u01")
+animation = &"Idle"
+offset = Vector2(0, -250)

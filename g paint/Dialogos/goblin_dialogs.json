@@ -1,0 +1,27 @@
+{
+	"ejemplo1": [
+	"Esta es la primera linea de ejemplo",
+	"Esta es la segunda"
+	],
+	"ejemplo2": [
+	"Esta es la primera linea de ejemplo",
+	"Esta es la segunda"
+	],
+	"ejemplo1_faces": [
+		"res://Images/Retratos/Primo.PNG",
+		"res://Images/Retratos/Primo.PNG"
+	],
+	"ejemplo2_faces": [
+		"res://Images/Retratos/Cowboy_0.PNG",
+		"res://Images/Retratos/Cowboy_0.PNG"
+	],
+	
+	"cowboy_inicio": [
+		"Hola (estoy muy solo)",
+		"yeeehaw"
+	],
+	"cowboy_inicio_faces": [
+		"res://Images/Retratos/Cowboy_0.PNG",
+		"res://Images/Retratos/Cowboy_0.PNG"
+	],
+}

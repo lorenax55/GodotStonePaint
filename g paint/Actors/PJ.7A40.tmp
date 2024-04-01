@@ -1,0 +1,83 @@
+[gd_scene load_steps=13 format=3 uid="uid://d2dc30o4dq37w"]
+
+[ext_resource type="Script" path="res://Actors/PJ.gd" id="1_1eaod"]
+[ext_resource type="Texture2D" uid="uid://bcpn2bhuunsqt" path="res://Images/PJ/Pj_Front_0.PNG" id="2_x0sqk"]
+[ext_resource type="Texture2D" uid="uid://bjwmbubxe55hj" path="res://Images/PJ/Pj_Idle_1.PNG" id="3_bygbv"]
+[ext_resource type="Texture2D" uid="uid://bsv25j6u86b2x" path="res://Images/PJ/Pj_Idle_2.png" id="4_ym88c"]
+[ext_resource type="Texture2D" uid="uid://bc3vmjdxodjv4" path="res://Images/PJ/Pj_Idle_3.PNG" id="5_gaec4"]
+[ext_resource type="Texture2D" uid="uid://dovyyy7bpdigb" path="res://Images/PJ/Pj_Back_0.PNG" id="6_6jjnf"]
+[ext_resource type="Texture2D" uid="uid://dv1y8wigwjmtu" path="res://Images/PJ/Pj_Back_1.PNG" id="7_1cmq3"]
+[ext_resource type="Texture2D" uid="uid://jnxqv6nmq1ps" path="res://Images/PJ/Pj_Back_2.png" id="8_vnyet"]
+[ext_resource type="Texture2D" uid="uid://00m1w52bba6r" path="res://Images/PJ/Pj_Front_1.PNG" id="9_wlsn6"]
+[ext_resource type="Texture2D" uid="uid://crkjrtv3aj7qq" path="res://Images/PJ/Pj_Front_2.PNG" id="10_3jexb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f4u01"]
+animations = [{
+"frames": [{
+"duration": 8.0,
+"texture": ExtResource("2_x0sqk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bygbv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ym88c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gaec4")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_6jjnf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1cmq3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6jjnf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vnyet")
+}],
+"loop": true,
+"name": &"Walk_Back",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_x0sqk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wlsn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_x0sqk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3jexb")
+}],
+"loop": true,
+"name": &"Walk_Front",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kk6fy"]
+size = Vector2(73, 47)
+
+[node name="Pj" type="CharacterBody2D"]
+y_sort_enabled = true
+script = ExtResource("1_1eaod")
+
+[node name="Sprite_pj" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_f4u01")
+animation = &"Walk_Back"
+autoplay = "Idle"
+offset = Vector2(0, -110)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.5, -17.5)
+shape = SubResource("RectangleShape2D_kk6fy")

@@ -1,0 +1,562 @@
+[gd_scene load_steps=24 format=3 uid="uid://bhjmyer4wlwy2"]
+
+[ext_resource type="Script" path="res://paint_control.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cx21i6r2eqcs2" path="res://Images/recortable.png" id="1_4huta"]
+[ext_resource type="Script" path="res://tools_panel.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://cdqq0m3rrlbva" path="res://paint_tools.png" id="3"]
+[ext_resource type="Script" path="res://Escenas/Button.gd" id="4_fc6ga"]
+[ext_resource type="FontFile" uid="uid://3be4yafc4dke" path="res://Tribal_Play.ttf" id="5_7gc42"]
+[ext_resource type="Texture2D" uid="uid://nhu5xr5gab57" path="res://Images/lapiz_negro.png" id="5_suupe"]
+[ext_resource type="Texture2D" uid="uid://dwkb7oxjfium1" path="res://Images/25694.png" id="5_x4a0w"]
+[ext_resource type="Texture2D" uid="uid://btuqiu4v1wqvq" path="res://Images/pluma.png" id="8_mr7n6"]
+[ext_resource type="Texture2D" uid="uid://b2ral3avihfqb" path="res://Images/arbusto.png" id="9_00gcq"]
+[ext_resource type="Script" path="res://Escenas/Pegatina1.gd" id="9_nb1gg"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ghdc0"]
+load_path = "res://.godot/imported/piedra.png-0d9a123d19393e0f53018807357ab9c3.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2tgq2"]
+texture = SubResource("CompressedTexture2D_ghdc0")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_npkcn"]
+bg_color = Color(0.2, 0.2, 0.2, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0gbg"]
+atlas = ExtResource("3")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7akv"]
+atlas = ExtResource("3")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63q87"]
+atlas = ExtResource("3")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t52fe"]
+atlas = ExtResource("3")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="Animation" id="Animation_k3u0d"]
+resource_name = "Pen_black"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ToolsPanel/CacaPen:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-50, 762), Vector2(0, 762)]
+}
+
+[sub_resource type="Animation" id="Animation_u0s1e"]
+resource_name = "Pen_caca_out"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ToolsPanel/BlackPen:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-50, 684), Vector2(0, 684)]
+}
+
+[sub_resource type="Animation" id="Animation_m0rvp"]
+resource_name = "Pen_ocre"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ToolsPanel/OcrePen:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-50, 834), Vector2(0, 834)]
+}
+
+[sub_resource type="Animation" id="Animation_7570p"]
+resource_name = "Pen_musgo"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ToolsPanel/MusgoPen:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-50, 609), Vector2(0, 609)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_op01x"]
+_data = {
+"Pen_black": SubResource("Animation_u0s1e"),
+"Pen_caca": SubResource("Animation_k3u0d"),
+"Pen_musgo": SubResource("Animation_7570p"),
+"Pen_ocre": SubResource("Animation_m0rvp")
+}
+
+[node name="PaintRoot" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DrawingAreaBG" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.342
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -316.64
+offset_right = -316.64
+theme_override_styles/panel = SubResource("StyleBoxTexture_2tgq2")
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = true
+
+[node name="FondoRoca" type="TextureRect" parent="DrawingAreaBG"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+texture = ExtResource("1_4huta")
+
+[node name="PaintControl" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = false
+
+[node name="ToolsPanel" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 350.0
+offset_bottom = 600.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_npkcn")
+script = ExtResource("2")
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = true
+
+[node name="LabelTools" type="Label" parent="ToolsPanel"]
+visible = false
+layout_mode = 0
+offset_left = 20.0
+offset_top = 6.0
+offset_right = 330.0
+offset_bottom = 32.0
+text = "Selected tool: Pencil"
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="ButtonToolPencil" type="Button" parent="ToolsPanel"]
+visible = false
+layout_mode = 0
+offset_left = 40.0
+offset_top = 30.0
+offset_right = 95.0
+offset_bottom = 85.0
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="TextureRect" type="TextureRect" parent="ToolsPanel/ButtonToolPencil"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_v0gbg")
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = false
+
+[node name="ButtonToolEraser" type="Button" parent="ToolsPanel"]
+visible = false
+layout_mode = 0
+offset_left = 110.0
+offset_top = 30.0
+offset_right = 165.0
+offset_bottom = 85.0
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="TextureRect2" type="TextureRect" parent="ToolsPanel/ButtonToolEraser"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_j7akv")
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = false
+
+[node name="ButtonToolRectangle" type="Button" parent="ToolsPanel"]
+visible = false
+layout_mode = 0
+offset_left = 180.0
+offset_top = 30.0
+offset_right = 235.0
+offset_bottom = 85.0
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="TextureRect" type="TextureRect" parent="ToolsPanel/ButtonToolRectangle"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_63q87")
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = false
+
+[node name="ButtonToolCircle" type="Button" parent="ToolsPanel"]
+visible = false
+layout_mode = 0
+offset_left = 250.0
+offset_top = 30.0
+offset_right = 305.0
+offset_bottom = 85.0
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="TextureRect" type="TextureRect" parent="ToolsPanel/ButtonToolCircle"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_t52fe")
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = false
+
+[node name="LabelBrushColor" type="Label" parent="ToolsPanel"]
+visible = false
+layout_mode = 0
+offset_left = 20.0
+offset_top = 91.0
+offset_right = 330.0
+offset_bottom = 117.0
+text = "Current color"
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="ColorPickerBrush" type="ColorPickerButton" parent="ToolsPanel"]
+visible = false
+layout_mode = 0
+offset_left = 20.0
+offset_top = 115.0
+offset_right = 330.0
+offset_bottom = 155.0
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="BrushSettings" type="Control" parent="ToolsPanel"]
+visible = false
+anchors_preset = 0
+offset_top = 200.0
+offset_right = 350.0
+offset_bottom = 375.0
+
+[node name="LabelBrushSize" type="Label" parent="ToolsPanel/BrushSettings"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -37.0
+offset_right = 330.0
+offset_bottom = -11.0
+text = "Brush size: 32px"
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="HScrollBarBrushSize" type="HScrollBar" parent="ToolsPanel/BrushSettings"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -8.0
+offset_right = 330.0
+offset_bottom = 17.0
+min_value = 2.0
+step = 1.0
+value = 32.0
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="LabelBrushShape" type="Label" parent="ToolsPanel/BrushSettings"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 29.0
+offset_right = 330.0
+offset_bottom = 55.0
+text = "Brush shape: Circle"
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="ButtonShapeBox" type="Button" parent="ToolsPanel/BrushSettings"]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 59.0
+offset_right = 155.0
+offset_bottom = 114.0
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="TextureRect" type="TextureRect" parent="ToolsPanel/BrushSettings/ButtonShapeBox"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_63q87")
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = false
+
+[node name="ButtonShapeCircle" type="Button" parent="ToolsPanel/BrushSettings"]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 59.0
+offset_right = 245.0
+offset_bottom = 114.0
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="TextureRect" type="TextureRect" parent="ToolsPanel/BrushSettings/ButtonShapeCircle"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_t52fe")
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = false
+
+[node name="LabelBackgroundColor" type="Label" parent="ToolsPanel"]
+visible = false
+layout_mode = 0
+offset_left = 20.0
+offset_top = 323.0
+offset_right = 330.0
+offset_bottom = 349.0
+text = "Background color"
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="ColorPickerBackground" type="ColorPickerButton" parent="ToolsPanel"]
+visible = false
+layout_mode = 0
+offset_left = 20.0
+offset_top = 351.0
+offset_right = 330.0
+offset_bottom = 391.0
+color = Color(1, 1, 1, 1)
+edit_alpha = false
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="LabelStats" type="Label" parent="ToolsPanel"]
+visible = false
+modulate = Color(0.414062, 0.414062, 0.414062, 1)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 463.0
+offset_right = 330.0
+offset_bottom = 489.0
+text = "Brush objects: 00000"
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="ButtonUndo" type="Button" parent="ToolsPanel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 415.0
+offset_right = 310.0
+offset_bottom = 495.0
+theme_override_fonts/font = ExtResource("5_7gc42")
+theme_override_font_sizes/font_size = 25
+text = "Undo last stroke"
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="ButtonSave" type="Button" parent="ToolsPanel"]
+visible = false
+layout_mode = 0
+offset_left = 10.0
+offset_top = 506.0
+offset_right = 340.0
+offset_bottom = 541.0
+text = "Save picture"
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="ButtonClear" type="Button" parent="ToolsPanel"]
+visible = false
+layout_mode = 0
+offset_left = 10.0
+offset_top = 550.0
+offset_right = 340.0
+offset_bottom = 585.0
+text = "Clear picture"
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false
+
+[node name="CacaPen" type="TextureButton" parent="ToolsPanel"]
+offset_left = -50.0
+offset_top = 762.0
+offset_right = 206.0
+offset_bottom = 818.0
+texture_normal = ExtResource("5_suupe")
+texture_pressed = ExtResource("5_suupe")
+texture_hover = ExtResource("5_suupe")
+stretch_mode = 0
+
+[node name="OcrePen" type="TextureButton" parent="ToolsPanel"]
+offset_left = -50.0
+offset_top = 834.0
+offset_right = 206.0
+offset_bottom = 890.0
+texture_normal = ExtResource("5_suupe")
+texture_pressed = ExtResource("5_suupe")
+texture_hover = ExtResource("5_suupe")
+stretch_mode = 0
+
+[node name="BlackPen" type="TextureButton" parent="ToolsPanel"]
+layout_mode = 0
+offset_top = 684.0
+offset_right = 256.0
+offset_bottom = 740.0
+texture_normal = ExtResource("5_suupe")
+texture_pressed = ExtResource("5_suupe")
+texture_hover = ExtResource("5_suupe")
+stretch_mode = 0
+
+[node name="MusgoPen" type="TextureButton" parent="ToolsPanel"]
+layout_mode = 0
+offset_left = -50.0
+offset_top = 609.0
+offset_right = 206.0
+offset_bottom = 665.0
+texture_normal = ExtResource("5_suupe")
+texture_pressed = ExtResource("5_suupe")
+texture_hover = ExtResource("5_suupe")
+stretch_mode = 0
+
+[node name="SaveFileDialog" type="FileDialog" parent="."]
+size = Vector2i(800, 300)
+min_size = Vector2i(800, 300)
+access = 2
+filters = PackedStringArray("*.png")
+show_hidden_files = true
+
+[node name="ExitButton" type="Button" parent="."]
+z_index = 1
+layout_mode = 0
+offset_left = 18.0
+offset_top = 971.0
+offset_right = 118.0
+offset_bottom = 1071.0
+script = ExtResource("4_fc6ga")
+
+[node name="TextureRect" type="TextureRect" parent="ExitButton"]
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 100.0
+texture = ExtResource("5_x4a0w")
+expand_mode = 1
+
+[node name="CajonPegatinas" type="Panel" parent="."]
+z_index = 2
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -300.0
+offset_bottom = 1080.0
+grow_horizontal = 0
+
+[node name="Pegatina1" type="TextureButton" parent="CajonPegatinas"]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1920.0
+scale = Vector2(0.06, 0.06)
+texture_normal = ExtResource("8_mr7n6")
+texture_pressed = ExtResource("8_mr7n6")
+texture_hover = ExtResource("8_mr7n6")
+stretch_mode = 0
+script = ExtResource("9_nb1gg")
+my_image = ExtResource("8_mr7n6")
+
+[node name="Pegatina2" type="TextureButton" parent="CajonPegatinas"]
+offset_top = 128.0
+offset_right = 1920.0
+offset_bottom = 2048.0
+scale = Vector2(0.06, 0.06)
+texture_normal = ExtResource("9_00gcq")
+texture_pressed = ExtResource("9_00gcq")
+texture_hover = ExtResource("9_00gcq")
+stretch_mode = 0
+script = ExtResource("9_nb1gg")
+my_image = ExtResource("9_00gcq")
+
+[node name="Pegatinas" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 1
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+
+[node name="AreaPiedra" type="Polygon2D" parent="."]
+color = Color(1, 1, 1, 0)
+polygon = PackedVector2Array(623, 423, 461, 495, 449, 725, 661, 780, 823, 844, 939, 854, 1432, 797, 1496, 487, 1456, 359, 1310, 269, 1242, 257, 1208, 228, 1123, 228, 949, 273, 849, 254, 694, 326)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_op01x")
+}
+
+[node name="AnimationPlayer_b" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_op01x")
+}
