@@ -1,3 +1,5 @@
+Label
+Button
 RichTextLabel
 AnimatedSprite2D
 TextureRect
@@ -11,5 +13,3 @@ TextureButton
 Polygon2D
 CollisionPolygon2D
 Area2D
-Sprite2D
-VScrollBar

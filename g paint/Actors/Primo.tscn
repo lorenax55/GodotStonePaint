@@ -111,6 +111,7 @@ sprite_frames = SubResource("SpriteFrames_ohg70")
 
 [node name="DialogBox" parent="." instance=ExtResource("5_ia6w8")]
 offset = Vector2(960, 800)
+scale = Vector2(0.4, 0.4)
 transform = Transform2D(0.4, 0, 0, 0.4, 960, 800)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

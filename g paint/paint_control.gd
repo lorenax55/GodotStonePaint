@@ -277,3 +277,12 @@ func save_picture(path):
 	# Save the image with the passed in path we got from the save dialog.
 	cropped_image.save_png(path)
 
+
+
+func _on_button_pressed():
+	pass # Replace with function body.
+
+
+func _on_share_pressed():
+	OS.shell_open("https://twitter.com/intent/tweet?screen_name=XDevelopers&ref_src=twsrc%5Etfw")
+
