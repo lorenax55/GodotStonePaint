@@ -1,6 +1,6 @@
 extends CanvasLayer
-
-@export var scene_text_file: String = "*json"
+@export var font : Font = null
+var scene_text_file: String = "res://Dialogos/goblin_dialogs.json"
 var rng = RandomNumberGenerator.new()
 var scene_text = {}
 var selected_text = []
@@ -11,10 +11,14 @@ var in_progress = false
 @onready var text_label = $TextLabel
 @onready var retrato = $Background/Retrato
 
+func set_dialog_route(route):
+	scene_text_file = route
+
 func _ready():
 	background.visible = false
 	scene_text = load_scene_text()
 	SignalBus.display_dialog.connect(on_display_dialog)
+	#text_label.push_font(font,20)
 	text_label.text = ""
 
 
@@ -26,10 +30,15 @@ func load_scene_text():
 	return json_as_dict
 		
 
+func set_text_with_font(text):
+	text_label.text = text
+	#text_label.push_font(font,20)
+
 func show_text():
-	text_label.text = selected_text.pop_front()
+	set_text_with_font(selected_text.pop_front())
 	var texture: Texture2D = load(selected_face.pop_front())
 	retrato.texture = texture
+	$AnimationPlayer.play("text")
 	
 
 func next_line():
@@ -58,6 +67,8 @@ func on_display_dialog(text_key):
 		selected_face = scene_text[img_key].duplicate()
 		show_text()
 		$AnimationPlayer.play("new_animation",-1,3)
+		$AnimateText.play("text")
+
 		
 
 

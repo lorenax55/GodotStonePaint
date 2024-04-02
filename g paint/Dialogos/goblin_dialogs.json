@@ -24,4 +24,13 @@
 		"res://Images/Retratos/Cowboy_0.PNG",
 		"res://Images/Retratos/Cowboy_0.PNG"
 	],
+	
+	"cala": [
+		"Este sería el dialogo en la cala ",
+		"Aqui te dicen cosas bonitas"
+	],
+	"cala_faces": [
+		"res://Images/Retratos/Cowboy_0.PNG",
+		"res://Images/Retratos/Cowboy_0.PNG"
+	],
 }

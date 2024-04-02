@@ -1,3 +1,9 @@
+RichTextLabel
+AnimatedSprite2D
+TextureRect
+CollisionShape2D
+StaticBody2D
+Node2D
 AnimationPlayer
 PanelContainer
 Panel
@@ -7,8 +13,3 @@ CollisionPolygon2D
 Area2D
 Sprite2D
 VScrollBar
-TextureRect
-PointLight2D
-LightOccluder2D
-Button
-CollisionShape2D

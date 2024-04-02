@@ -1,0 +1,62 @@
+[gd_scene load_steps=11 format=3 uid="uid://caut4dopdytu4"]
+
+[ext_resource type="Texture2D" uid="uid://diis0fbln55dw" path="res://Images/calaFondo.png" id="1_8cp5w"]
+[ext_resource type="Script" path="res://Escenas/Cala.gd" id="1_oxnyr"]
+[ext_resource type="Texture2D" uid="uid://bcpn2bhuunsqt" path="res://Images/PJ/Pj_Front_0.PNG" id="2_20dt4"]
+[ext_resource type="Texture2D" uid="uid://bjwmbubxe55hj" path="res://Images/PJ/Pj_Idle_1.PNG" id="3_81gpv"]
+[ext_resource type="Texture2D" uid="uid://bsv25j6u86b2x" path="res://Images/PJ/Pj_Idle_2.png" id="4_1xjd5"]
+[ext_resource type="Texture2D" uid="uid://bc3vmjdxodjv4" path="res://Images/PJ/Pj_Idle_3.PNG" id="5_ereec"]
+[ext_resource type="Texture2D" uid="uid://xb7yaaswlejl" path="res://Images/PNjs/Mago_Idle_0.PNG" id="6_g23h4"]
+[ext_resource type="PackedScene" uid="uid://b0miw64t310pt" path="res://Actors/DialogBox.tscn" id="7_sjbnb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_28j06"]
+animations = [{
+"frames": [{
+"duration": 12.0,
+"texture": ExtResource("2_20dt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_81gpv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1xjd5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ereec")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uhjqj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_g23h4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Cala" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_oxnyr")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_8cp5w")
+
+[node name="Prota" type="AnimatedSprite2D" parent="."]
+position = Vector2(861, 490)
+sprite_frames = SubResource("SpriteFrames_28j06")
+
+[node name="Love" type="AnimatedSprite2D" parent="."]
+position = Vector2(1032, 485)
+sprite_frames = SubResource("SpriteFrames_uhjqj")
+
+[node name="DialogBox" parent="." instance=ExtResource("7_sjbnb")]
+offset = Vector2(960, 800)
+transform = Transform2D(0.4, 0, 0, 0.4, 960, 800)

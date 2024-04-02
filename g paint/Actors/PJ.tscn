@@ -116,7 +116,7 @@ script = ExtResource("1_1eaod")
 
 [node name="Sprite_pj" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_f4u01")
-animation = &"Walk_Left"
+animation = &"Idle"
 autoplay = "Idle"
 offset = Vector2(0, -110)
 

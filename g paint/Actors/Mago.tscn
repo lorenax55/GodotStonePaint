@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://do4qolxd5almi"]
+[gd_scene load_steps=11 format=3 uid="uid://ctcsgb46p2jrr"]
 
 [ext_resource type="Texture2D" uid="uid://xb7yaaswlejl" path="res://Images/PNjs/Mago_Idle_0.PNG" id="1_5hoq7"]
 [ext_resource type="Script" path="res://Actors/Area2D.gd" id="3_rs27m"]
@@ -93,10 +93,10 @@ offset = Vector2(0, -120)
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("3_rs27m")
-dialog_key = "ejemplo1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, 23)
+scale = Vector2(1.8, 1.8)
 shape = SubResource("CircleShape2D_el03o")
 
 [node name="InteractIcon" type="AnimatedSprite2D" parent="."]
@@ -108,7 +108,6 @@ sprite_frames = SubResource("SpriteFrames_ohg70")
 [node name="DialogBox" parent="." instance=ExtResource("5_crxwn")]
 offset = Vector2(960, 800)
 transform = Transform2D(0.4, 0, 0, 0.4, 960, 800)
-scene_text_file = "res://Dialogos/goblin_dialogs.json"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

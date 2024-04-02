@@ -14,7 +14,7 @@ func _on_body_entered(body):
 	if body == player:
 		icon.visible = true
 		canInteract = true
-	
+
 func _on_body_exited(body):
 	if body == player:
 		icon.visible = false

@@ -1,9 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://comxuuy8tb3q1"]
+[gd_scene load_steps=14 format=3 uid="uid://comxuuy8tb3q1"]
 
 [ext_resource type="Texture2D" uid="uid://cq673q7a1nfsm" path="res://Images/PNjs/Pescadora_Idle_0.PNG" id="1_thuwj"]
+[ext_resource type="Script" path="res://Actors/PNJSetCosas.gd" id="1_xlufv"]
 [ext_resource type="Script" path="res://Actors/Area2D.gd" id="2_3b6ls"]
 [ext_resource type="Texture2D" uid="uid://b3s35gl14lefy" path="res://Images/PNjs/Pescadora_Idle_1.PNG" id="2_tqvpt"]
 [ext_resource type="PackedScene" uid="uid://b0miw64t310pt" path="res://Actors/DialogBox.tscn" id="4_5smr2"]
+[ext_resource type="Texture2D" uid="uid://bjbrjwr2piwig" path="res://Images/heartIcon.png" id="4_k7qmf"]
 [ext_resource type="Texture2D" uid="uid://cj8k0qj8bur7o" path="res://Images/IMG_0183.PNG" id="4_yt6rq"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q6f1q"]
@@ -27,29 +29,20 @@ radius = 117.273
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("4_k7qmf")
+}],
+"loop": true,
+"name": &"Heart",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("4_yt6rq")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
-
-[sub_resource type="Animation" id="Animation_eh3vu"]
-resource_name = "new_animation"
-length = 0.6
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("PnjAnim:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.05, 1.05), Vector2(1, 1)]
-}
 
 [sub_resource type="Animation" id="Animation_antck"]
 resource_name = "Interaction_anim"
@@ -79,6 +72,23 @@ tracks/1/keys = {
 "values": [false, true, true]
 }
 
+[sub_resource type="Animation" id="Animation_eh3vu"]
+resource_name = "new_animation"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PnjAnim:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.05, 1.05), Vector2(1, 1)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6pbtp"]
 _data = {
 "Interaction_anim": SubResource("Animation_antck"),
@@ -87,6 +97,7 @@ _data = {
 
 [node name="Pnj" type="Node2D"]
 process_mode = 3
+script = ExtResource("1_xlufv")
 
 [node name="PnjAnim" type="AnimatedSprite2D" parent="."]
 modulate = Color(0.992157, 1, 1, 1)
@@ -96,8 +107,8 @@ autoplay = "Idle"
 offset = Vector2(0, -120)
 
 [node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(1.8, 1.8)
 script = ExtResource("2_3b6ls")
-dialog_key = "ejemplo1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, 23)
@@ -108,11 +119,12 @@ visible = false
 position = Vector2(0, -280)
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_ohg70")
+animation = &"Heart"
+autoplay = "default"
 
 [node name="DialogBox" parent="." instance=ExtResource("4_5smr2")]
 offset = Vector2(960, 800)
 transform = Transform2D(0.4, 0, 0, 0.4, 960, 800)
-scene_text_file = "res://Dialogos/goblin_dialogs.json"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

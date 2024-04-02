@@ -1,5 +1,5 @@
 extends Area2D
-@export var dialog_key = ""
+var dialog_key = ""
 var player = null
 var anim_player = null
 
@@ -13,6 +13,9 @@ func _ready():
 
 	icon = get_node("../InteractIcon")
 	print("tengo al jugador ", player)
+
+func set_dialog_key(key):
+	dialog_key = key 
 
 func _on_body_entered(body):
 	# Verifica si el cuerpo que entra en el área es el personaje
