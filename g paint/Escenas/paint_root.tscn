@@ -1,9 +1,10 @@
-[gd_scene load_steps=34 format=3 uid="uid://bhjmyer4wlwy2"]
+[gd_scene load_steps=37 format=3 uid="uid://bhjmyer4wlwy2"]
 
 [ext_resource type="Script" path="res://paint_control.gd" id="1"]
 [ext_resource type="Script" path="res://tools_panel.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://cpot6t7lboubi" path="res://Images/fondoPiedra1.png" id="2_oxotw"]
 [ext_resource type="Texture2D" uid="uid://cdqq0m3rrlbva" path="res://paint_tools.png" id="3"]
+[ext_resource type="AudioStream" uid="uid://br02ohnogtgap" path="res://Sounds/splat sound effects (no copyright).wav" id="4_krxws"]
 [ext_resource type="Texture2D" uid="uid://dc7y72e3wki32" path="res://Images/IMG_0216.PNG" id="7_82bm5"]
 [ext_resource type="Texture2D" uid="uid://dx7oi4t7pop8o" path="res://Images/IMG_0219.PNG" id="8_heqko"]
 [ext_resource type="Script" path="res://Escenas/Pegatina1.gd" id="9_nb1gg"]
@@ -19,6 +20,8 @@
 [ext_resource type="Texture2D" uid="uid://cewet3ymdqymf" path="res://Images/piedra1.PNG" id="13_nh643"]
 [ext_resource type="Texture2D" uid="uid://bw0gr1upa5ta5" path="res://Images/DONE.png" id="13_y7tve"]
 [ext_resource type="Texture2D" uid="uid://b0rhnd554fkov" path="res://Images/IMG_0212.PNG" id="14_3fums"]
+[ext_resource type="AudioStream" uid="uid://rectnurs80j" path="res://Sounds/pop.wav" id="14_8h1ca"]
+[ext_resource type="AudioStream" uid="uid://csky7xiv0wgpm" path="res://Sounds/ole.wav" id="15_75f7d"]
 [ext_resource type="Texture2D" uid="uid://bu85k80s1g88o" path="res://Images/IMG_0213.PNG" id="15_ylwry"]
 [ext_resource type="Texture2D" uid="uid://48ij5p3tn7lx" path="res://Images/IMG_0214.PNG" id="16_oswr5"]
 [ext_resource type="Texture2D" uid="uid://b5iw4c1cb3tb7" path="res://Images/IMG_0215.PNG" id="17_qp268"]
@@ -163,6 +166,10 @@ grow_vertical = 2
 script = ExtResource("1")
 metadata/_edit_layout_mode = 1
 metadata/_edit_use_custom_anchors = false
+
+[node name="splat" type="AudioStreamPlayer" parent="PaintControl"]
+stream = ExtResource("4_krxws")
+volume_db = -5.0
 
 [node name="ToolsPanel" type="Panel" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -571,6 +578,15 @@ grow_vertical = 2
 texture = ExtResource("13_y7tve")
 expand_mode = 1
 
+[node name="lilpop" type="AudioStreamPlayer" parent="ToolsPanel"]
+stream = ExtResource("14_8h1ca")
+volume_db = -10.0
+pitch_scale = 0.8
+
+[node name="done_sound" type="AudioStreamPlayer" parent="ToolsPanel"]
+process_mode = 3
+stream = ExtResource("15_75f7d")
+
 [node name="SaveFileDialog" type="FileDialog" parent="."]
 size = Vector2i(800, 300)
 min_size = Vector2i(800, 300)
@@ -708,6 +724,11 @@ texture_hover = ExtResource("9_vo7kk")
 stretch_mode = 0
 script = ExtResource("9_nb1gg")
 my_image = ExtResource("9_vo7kk")
+
+[node name="lilpop" type="AudioStreamPlayer" parent="CajonPegatinas"]
+stream = ExtResource("14_8h1ca")
+volume_db = -10.0
+pitch_scale = 0.8
 
 [node name="Pegatinas" type="Panel" parent="."]
 self_modulate = Color(1, 1, 1, 0)

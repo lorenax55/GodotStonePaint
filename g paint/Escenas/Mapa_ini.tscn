@@ -1,50 +1,51 @@
-[gd_scene load_steps=47 format=3 uid="uid://bwr8moydh4o4o"]
+[gd_scene load_steps=48 format=3 uid="uid://bx0jyhvoh2wq8"]
 
-[ext_resource type="Texture2D" uid="uid://dvnxmfstaklty" path="res://Images/IMG_0187.PNG" id="1_2ggnk"]
-[ext_resource type="PackedScene" uid="uid://d2dc30o4dq37w" path="res://Actors/PJ.tscn" id="2_kgdfs"]
-[ext_resource type="Script" path="res://Escenas/Camera2D.gd" id="3_yeikb"]
-[ext_resource type="PackedScene" uid="uid://p3bg5mpqmdns" path="res://Actors/bound.tscn" id="4_f5j3p"]
-[ext_resource type="Texture2D" uid="uid://ca1vtxmhk4tra" path="res://Images/PNjs/Bob_Idle_0.PNG" id="7_6w7qa"]
-[ext_resource type="PackedScene" uid="uid://comxuuy8tb3q1" path="res://Actors/PNJTemplate.tscn" id="7_v81wv"]
-[ext_resource type="Texture2D" uid="uid://dobwt20s3aype" path="res://Images/PNjs/Bob_Idle_1.PNG" id="8_3ywjv"]
-[ext_resource type="PackedScene" uid="uid://cddb6hny8mmri" path="res://Actors/Tree1.tscn" id="8_llic6"]
-[ext_resource type="PackedScene" uid="uid://b4c5rvbl24svl" path="res://Actors/grass.tscn" id="11_clwb8"]
-[ext_resource type="Texture2D" uid="uid://xb7yaaswlejl" path="res://Images/PNjs/Mago_Idle_0.PNG" id="11_js2fq"]
-[ext_resource type="Texture2D" uid="uid://cq673q7a1nfsm" path="res://Images/PNjs/Pescadora_Idle_0.PNG" id="12_kn3t0"]
-[ext_resource type="Texture2D" uid="uid://cfic05ythxw3b" path="res://Images/Escenario/grass2_ (1).PNG" id="12_yc1gx"]
-[ext_resource type="Texture2D" uid="uid://b3s35gl14lefy" path="res://Images/PNjs/Pescadora_Idle_1.PNG" id="13_dausa"]
-[ext_resource type="Texture2D" uid="uid://dtv1ltc2gy24u" path="res://Images/Escenario/grass2_ (2).PNG" id="13_k63lb"]
-[ext_resource type="Texture2D" uid="uid://bnha3aby5ygm2" path="res://Images/Escenario/grass2_ (3).PNG" id="14_0g6by"]
-[ext_resource type="Texture2D" uid="uid://c2s5vcscda6lp" path="res://Images/PNjs/Primo_Idle_0.PNG" id="14_7b4td"]
-[ext_resource type="Texture2D" uid="uid://xp8xulh23nye" path="res://Images/Escenario/Tree2_ (1).PNG" id="15_eetw8"]
-[ext_resource type="Texture2D" uid="uid://tv87x8s4d8ea" path="res://Images/PNjs/Primo_Idle_1.PNG" id="15_o0uob"]
-[ext_resource type="Texture2D" uid="uid://ckul5wshj1yns" path="res://Images/Escenario/Tree2_ (2).PNG" id="16_65pcm"]
-[ext_resource type="Texture2D" uid="uid://xxhs5wn0rac7" path="res://Images/PNjs/Punk_Idle (1).PNG" id="16_mx2qw"]
-[ext_resource type="Texture2D" uid="uid://ber2lt2i1f4k4" path="res://Images/PNjs/Punk_Idle (2).PNG" id="17_13jit"]
-[ext_resource type="Texture2D" uid="uid://b8hggojin34m2" path="res://Images/PNjs/Punk_Idle (3).PNG" id="18_p7f0v"]
-[ext_resource type="Texture2D" uid="uid://c8hyaa03thkf2" path="res://Images/PNjs/Emo_Idle_ (1).PNG" id="19_j52pf"]
-[ext_resource type="Texture2D" uid="uid://dnrpwciqtn3q4" path="res://Images/PNjs/Emo_Idle_ (2).PNG" id="20_fkvid"]
-[ext_resource type="Texture2D" uid="uid://hn80srnncjx8" path="res://Images/PNjs/Cowboy_Idle_0.PNG" id="21_vs7um"]
-[ext_resource type="Texture2D" uid="uid://u2j5fampbs2r" path="res://Images/Escenario/Pez_ (1).PNG" id="28_w0aw7"]
-[ext_resource type="Texture2D" uid="uid://c6i5p2lnnk3po" path="res://Images/Escenario/Pez_ (2).PNG" id="29_dlmwg"]
-[ext_resource type="Texture2D" uid="uid://dlnplt2w33viw" path="res://Images/Escenario/Pez_ (3).PNG" id="30_u5c0h"]
-[ext_resource type="Texture2D" uid="uid://cliafluibwii7" path="res://Images/Escenario/IMG_0203.PNG" id="31_metfo"]
-[ext_resource type="Texture2D" uid="uid://bb5gan2mch4mp" path="res://Images/Escenario/IMG_0204.PNG" id="32_30ndl"]
-[ext_resource type="Texture2D" uid="uid://bflylsn0e0xx2" path="res://Images/sombra.png" id="32_f8u23"]
-[ext_resource type="Texture2D" uid="uid://c4fekd5s0klbo" path="res://Images/mesa.PNG" id="33_4wais"]
-[ext_resource type="AudioStream" uid="uid://jhf7pmsttkk6" path="res://Sounds/party at club bug__KHPTeWYGI58.mp3" id="34_0321i"]
+[ext_resource type="PackedScene" uid="uid://b4c5rvbl24svl" path="res://Actors/grass.tscn" id="1_0xfx8"]
+[ext_resource type="Texture2D" uid="uid://cfic05ythxw3b" path="res://Images/Escenario/grass2_ (1).PNG" id="2_naxly"]
+[ext_resource type="Texture2D" uid="uid://dtv1ltc2gy24u" path="res://Images/Escenario/grass2_ (2).PNG" id="3_10gq4"]
+[ext_resource type="Texture2D" uid="uid://bnha3aby5ygm2" path="res://Images/Escenario/grass2_ (3).PNG" id="4_8y3nk"]
+[ext_resource type="PackedScene" uid="uid://cddb6hny8mmri" path="res://Actors/Tree1.tscn" id="5_xbvro"]
+[ext_resource type="Texture2D" uid="uid://xp8xulh23nye" path="res://Images/Escenario/Tree2_ (1).PNG" id="6_04ep3"]
+[ext_resource type="Texture2D" uid="uid://ckul5wshj1yns" path="res://Images/Escenario/Tree2_ (2).PNG" id="7_wpw68"]
+[ext_resource type="PackedScene" uid="uid://comxuuy8tb3q1" path="res://Actors/PNJTemplate.tscn" id="8_e6ddd"]
+[ext_resource type="Texture2D" uid="uid://dobwt20s3aype" path="res://Images/PNjs/Bob_Idle_1.PNG" id="9_62sl3"]
+[ext_resource type="Texture2D" uid="uid://ca1vtxmhk4tra" path="res://Images/PNjs/Bob_Idle_0.PNG" id="10_0ig52"]
+[ext_resource type="Texture2D" uid="uid://xb7yaaswlejl" path="res://Images/PNjs/Mago_Idle_0.PNG" id="11_djlwq"]
+[ext_resource type="Texture2D" uid="uid://cq673q7a1nfsm" path="res://Images/PNjs/Pescadora_Idle_0.PNG" id="12_nn14r"]
+[ext_resource type="Texture2D" uid="uid://b3s35gl14lefy" path="res://Images/PNjs/Pescadora_Idle_1.PNG" id="13_he3pi"]
+[ext_resource type="Texture2D" uid="uid://c2s5vcscda6lp" path="res://Images/PNjs/Primo_Idle_0.PNG" id="14_v12k7"]
+[ext_resource type="Texture2D" uid="uid://tv87x8s4d8ea" path="res://Images/PNjs/Primo_Idle_1.PNG" id="15_23mhx"]
+[ext_resource type="Texture2D" uid="uid://xxhs5wn0rac7" path="res://Images/PNjs/Punk_Idle (1).PNG" id="16_6hv86"]
+[ext_resource type="Texture2D" uid="uid://ber2lt2i1f4k4" path="res://Images/PNjs/Punk_Idle (2).PNG" id="17_14ciq"]
+[ext_resource type="Texture2D" uid="uid://b8hggojin34m2" path="res://Images/PNjs/Punk_Idle (3).PNG" id="18_t1tfw"]
+[ext_resource type="Texture2D" uid="uid://c8hyaa03thkf2" path="res://Images/PNjs/Emo_Idle_ (1).PNG" id="19_bhilv"]
+[ext_resource type="Texture2D" uid="uid://dnrpwciqtn3q4" path="res://Images/PNjs/Emo_Idle_ (2).PNG" id="20_q8yx4"]
+[ext_resource type="Texture2D" uid="uid://hn80srnncjx8" path="res://Images/PNjs/Cowboy_Idle_0.PNG" id="21_ft00w"]
+[ext_resource type="Texture2D" uid="uid://dvnxmfstaklty" path="res://Images/IMG_0187.PNG" id="22_c1hu0"]
+[ext_resource type="PackedScene" uid="uid://d2dc30o4dq37w" path="res://Actors/PJ.tscn" id="23_6uduy"]
+[ext_resource type="Script" path="res://Escenas/Camera2D.gd" id="24_1vp5w"]
+[ext_resource type="PackedScene" uid="uid://p3bg5mpqmdns" path="res://Actors/bound.tscn" id="25_aqf6f"]
+[ext_resource type="PackedScene" uid="uid://de2njdhrkc44u" path="res://Actors/CraftingTable.tscn" id="26_mmx41"]
+[ext_resource type="PackedScene" uid="uid://bqwbj1vfwxyhs" path="res://Actors/TextIntro.tscn" id="27_dsxyx"]
+[ext_resource type="Texture2D" uid="uid://u2j5fampbs2r" path="res://Images/Escenario/Pez_ (1).PNG" id="28_am4o0"]
+[ext_resource type="Texture2D" uid="uid://c6i5p2lnnk3po" path="res://Images/Escenario/Pez_ (2).PNG" id="29_1ouhw"]
+[ext_resource type="Texture2D" uid="uid://dlnplt2w33viw" path="res://Images/Escenario/Pez_ (3).PNG" id="30_pmx4p"]
+[ext_resource type="Texture2D" uid="uid://cliafluibwii7" path="res://Images/Escenario/IMG_0203.PNG" id="31_re4ck"]
+[ext_resource type="Texture2D" uid="uid://bflylsn0e0xx2" path="res://Images/sombra.png" id="32_avgb7"]
+[ext_resource type="Texture2D" uid="uid://bb5gan2mch4mp" path="res://Images/Escenario/IMG_0204.PNG" id="33_fp853"]
+[ext_resource type="AudioStream" uid="uid://jhf7pmsttkk6" path="res://Sounds/party at club bug__KHPTeWYGI58.mp3" id="34_62ks6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_icpx8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("12_yc1gx")
+"texture": ExtResource("2_naxly")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_k63lb")
+"texture": ExtResource("3_10gq4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_0g6by")
+"texture": ExtResource("4_8y3nk")
 }],
 "loop": true,
 "name": &"default",
@@ -55,10 +56,10 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("15_eetw8")
+"texture": ExtResource("6_04ep3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_65pcm")
+"texture": ExtResource("7_wpw68")
 }],
 "loop": true,
 "name": &"default",
@@ -69,10 +70,10 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_3ywjv")
+"texture": ExtResource("9_62sl3")
 }, {
 "duration": 10.0,
-"texture": ExtResource("7_6w7qa")
+"texture": ExtResource("10_0ig52")
 }],
 "loop": true,
 "name": &"Idle",
@@ -83,7 +84,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("11_js2fq")
+"texture": ExtResource("11_djlwq")
 }],
 "loop": true,
 "name": &"Idle",
@@ -94,10 +95,10 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 10.0,
-"texture": ExtResource("12_kn3t0")
+"texture": ExtResource("12_nn14r")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_dausa")
+"texture": ExtResource("13_he3pi")
 }],
 "loop": true,
 "name": &"Idle",
@@ -108,13 +109,13 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 5.0,
-"texture": ExtResource("14_7b4td")
+"texture": ExtResource("14_v12k7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_o0uob")
+"texture": ExtResource("15_23mhx")
 }, {
 "duration": 2.0,
-"texture": ExtResource("14_7b4td")
+"texture": ExtResource("14_v12k7")
 }],
 "loop": true,
 "name": &"Idle",
@@ -125,13 +126,13 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("16_mx2qw")
+"texture": ExtResource("16_6hv86")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_13jit")
+"texture": ExtResource("17_14ciq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_p7f0v")
+"texture": ExtResource("18_t1tfw")
 }],
 "loop": true,
 "name": &"Idle",
@@ -142,10 +143,10 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 12.0,
-"texture": ExtResource("19_j52pf")
+"texture": ExtResource("19_bhilv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_fkvid")
+"texture": ExtResource("20_q8yx4")
 }],
 "loop": true,
 "name": &"Idle",
@@ -156,7 +157,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("21_vs7um")
+"texture": ExtResource("21_ft00w")
 }],
 "loop": true,
 "name": &"Idle",
@@ -169,13 +170,13 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("28_w0aw7")
+"texture": ExtResource("28_am4o0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("29_dlmwg")
+"texture": ExtResource("29_1ouhw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_u5c0h")
+"texture": ExtResource("30_pmx4p")
 }],
 "loop": true,
 "name": &"default",
@@ -193,42 +194,42 @@ y_sort_enabled = true
 [node name="vegetation" type="Node2D" parent="."]
 y_sort_enabled = true
 
-[node name="grass" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1656.03, 701.264)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass2" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass2" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1581, 669)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass3" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass3" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1701, 739)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass4" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass4" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1361, 775)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass30" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass30" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(515, 1470)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass5" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass5" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1433, 809)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass31" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass31" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3955, 1947)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass_b" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1656.03, 701.264)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -237,7 +238,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b28" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b28" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(997, 751)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -246,7 +247,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b29" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b29" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1047, 783)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -255,7 +256,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b30" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b30" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(951, 804)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -264,7 +265,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b31" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b31" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3747, 1699)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -273,7 +274,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b32" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b32" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(4243, 1885)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -282,120 +283,120 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="Tree1" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree1" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(1400, 763)
 
-[node name="Tree15" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree15" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(1005, 587)
 scale = Vector2(1.2, 1)
 
-[node name="Tree_b" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree_b" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(3189, 1203)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_f4585")
 frame_progress = 0.0
 
-[node name="Tree_b9" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree_b9" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(527, 1445)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_f4585")
 frame_progress = 0.0
 
-[node name="Tree3" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree3" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(690, 1964)
 scale = Vector2(1, 1.1)
 frame_progress = 0.591846
 
-[node name="Tree4" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree4" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(1448, 1932)
 scale = Vector2(1.1, 1.1)
 frame_progress = 0.591846
 
-[node name="Tree5" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree5" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(805, 219)
 frame_progress = 0.591846
 
-[node name="Tree6" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree6" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(1977, 2589)
 scale = Vector2(1.2, 1.2)
 frame_progress = 0.591846
 
-[node name="Tree16" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree16" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(3884, 1963)
 scale = Vector2(1.2, 1.2)
 frame_progress = 0.591846
 
-[node name="Tree17" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree17" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(3703, 1680)
 scale = Vector2(1.2, 1.2)
 frame_progress = 0.591846
 
-[node name="Tree7" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree7" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(2804, 2482)
 scale = Vector2(1.2, 1)
 frame_progress = 0.591846
 
-[node name="Tree8" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree8" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(2206, 1591)
 frame_progress = 0.591846
 
-[node name="Tree9" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree9" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(2516, 859)
 scale = Vector2(1.3, 1.3)
 frame_progress = 0.591846
 
-[node name="Tree_b2" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree_b2" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(1736, 907)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_f4585")
 frame_progress = 0.0
 
-[node name="Tree_b3" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree_b3" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(1124, 2362)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_f4585")
 frame_progress = 0.0
 
-[node name="Tree_b4" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree_b4" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(4096, 1023)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_f4585")
 frame_progress = 0.0
 
-[node name="Tree_b5" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree_b5" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(4760, 2370)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_f4585")
 frame_progress = 0.0
 
-[node name="Tree_b6" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree_b6" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(5227, 1302)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_f4585")
 frame_progress = 0.0
 
-[node name="Tree_b7" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree_b7" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(4689, 359)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_f4585")
 frame_progress = 0.0
 
-[node name="Tree2" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree2" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(3636, 862)
 
-[node name="Tree10" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree10" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(3052, 404)
 
-[node name="Tree11" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree11" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(3510, 1841)
 
-[node name="Tree12" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree12" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(4202, 1607)
 
-[node name="Tree13" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree13" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(4812, 1059)
 
-[node name="grass_b2" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b2" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1786, 924)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -404,7 +405,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b3" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b3" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1705, 915)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -413,7 +414,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b4" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b4" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(2579, 876)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -422,7 +423,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b5" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b5" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(2080, 712)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -431,7 +432,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b6" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b6" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(2561, 205)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -440,7 +441,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b7" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b7" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(761, 238)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -449,7 +450,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b8" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b8" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1066, 283)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -458,7 +459,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b9" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b9" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1618, 2042)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -467,7 +468,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b10" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b10" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(462, 2165)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -476,7 +477,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b11" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b11" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(749, 1977)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -485,77 +486,77 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass6" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass6" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(626, 1951)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass7" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass7" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1264, 1201)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass8" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass8" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1317, 1229)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass9" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass9" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1234, 1262)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass10" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass10" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1752, 1639)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass11" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass11" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(2246, 1612)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass12" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass12" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(2156, 1645)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass13" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass13" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3247, 1223)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass14" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass14" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3883, 732)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass15" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass15" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3378, 469)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass16" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass16" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(4467, 157)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass17" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass17" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3964, 1461)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass18" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass18" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(5321, 1317)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass19" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass19" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(2759, 2500)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass_b12" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b12" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1119, 2376)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -564,7 +565,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b13" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b13" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(2433, 1187)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -573,7 +574,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b14" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b14" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(2375, 1244)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -582,7 +583,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b15" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b15" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3460, 1864)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -591,7 +592,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b16" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b16" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1931, 2608)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -600,7 +601,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b17" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b17" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3625, 1183)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -609,7 +610,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b18" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b18" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3195, 1592)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -618,7 +619,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b19" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b19" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(4672, 380)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -627,7 +628,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b20" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b20" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(4341, 1904)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -636,7 +637,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b21" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b21" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(4301, 1947)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -645,7 +646,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b22" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b22" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(5097, 427)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -654,7 +655,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b23" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b23" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1424, 1949)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -663,7 +664,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b24" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b24" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(2037, 2633)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -672,7 +673,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b25" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b25" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3575, 1139)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -681,7 +682,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b26" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b26" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3663, 1121)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -690,7 +691,7 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass_b27" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass_b27" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3182, 1165)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
@@ -699,139 +700,138 @@ frame = 0
 frame_progress = 0.0
 offset = Vector2(0, -100)
 
-[node name="grass20" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass20" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3210, 2178)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass21" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass21" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3166, 2216)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass22" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass22" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(3156, 2141)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass23" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass23" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(4058, 1052)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass24" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass24" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(4160, 1034)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass25" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass25" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(5011, 474)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass26" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass26" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(5011, 923)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="Tree_b8" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree_b8" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(1550, 206)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_f4585")
 frame_progress = 0.0
 
-[node name="Tree14" parent="vegetation" instance=ExtResource("8_llic6")]
+[node name="Tree14" parent="vegetation" instance=ExtResource("5_xbvro")]
 position = Vector2(2040, 254)
 
-[node name="grass27" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass27" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1612, 238)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass28" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass28" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(1985, 283)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="grass29" parent="vegetation" instance=ExtResource("11_clwb8")]
+[node name="grass29" parent="vegetation" instance=ExtResource("1_0xfx8")]
 position = Vector2(2038, 316)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="Bob" parent="." instance=ExtResource("7_v81wv")]
+[node name="Bob" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(3771, 1223)
-loveable = true
 pnj_anim = SubResource("SpriteFrames_l1o1x")
 dialog_key = "ejemplo2"
 
-[node name="Mago" parent="." instance=ExtResource("7_v81wv")]
+[node name="Mago" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(4010, 962)
-loveable = true
 pnj_anim = SubResource("SpriteFrames_2glj8")
 dialog_key = "ejemplo2"
 
-[node name="Pescadora" parent="." instance=ExtResource("7_v81wv")]
+[node name="Pescadora" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(1597, 2012)
-loveable = true
 pnj_anim = SubResource("SpriteFrames_kk4ih")
 dialog_key = "ejemplo2"
 
-[node name="Primo" parent="." instance=ExtResource("7_v81wv")]
+[node name="Primo" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(2038, 1908)
-loveable = true
 pnj_anim = SubResource("SpriteFrames_11430")
 dialog_key = "ejemplo2"
 
-[node name="Punk" parent="." instance=ExtResource("7_v81wv")]
+[node name="Punk" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(919, 1883)
-loveable = true
 pnj_anim = SubResource("SpriteFrames_u1kqu")
 dialog_key = "punk"
 next_scene = "res://Escenas/Cala.tscn"
 
-[node name="Emo" parent="." instance=ExtResource("7_v81wv")]
+[node name="Emo" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(3683, 921)
-loveable = true
 pnj_anim = SubResource("SpriteFrames_dpkvt")
 dialog_key = "ejemplo2"
 
-[node name="Cowboy" parent="." instance=ExtResource("7_v81wv")]
+[node name="Cowboy" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(4642, 1332)
-loveable = true
 pnj_anim = SubResource("SpriteFrames_lcrjl")
 dialog_key = "ejemplo2"
 
 [node name="Fondo" type="Sprite2D" parent="."]
 z_index = -100
 position = Vector2(2880, 1350)
-texture = ExtResource("1_2ggnk")
+texture = ExtResource("22_c1hu0")
 
-[node name="Pj" parent="." instance=ExtResource("2_kgdfs")]
+[node name="Pj" parent="." instance=ExtResource("23_6uduy")]
 y_sort_enabled = false
-position = Vector2(5271, 2093)
+position = Vector2(536, 821)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 540)
-script = ExtResource("3_yeikb")
-active = true
+script = ExtResource("24_1vp5w")
 
-[node name="Bound" parent="." instance=ExtResource("4_f5j3p")]
+[node name="Bound" parent="." instance=ExtResource("25_aqf6f")]
 position = Vector2(-56, 2359)
 scale = Vector2(2.56, 1)
 
-[node name="Bound2" parent="." instance=ExtResource("4_f5j3p")]
+[node name="Bound2" parent="." instance=ExtResource("25_aqf6f")]
 position = Vector2(6123, 1884)
 scale = Vector2(4.44, 1)
 
-[node name="Bound4" parent="." instance=ExtResource("4_f5j3p")]
+[node name="Bound4" parent="." instance=ExtResource("25_aqf6f")]
 position = Vector2(2756, 3004)
 rotation = -1.57079
 scale = Vector2(3.09455, 1.27341)
 
-[node name="Bound5" parent="." instance=ExtResource("4_f5j3p")]
+[node name="CraftingTable" parent="." instance=ExtResource("26_mmx41")]
+position = Vector2(5113, 2169)
+
+[node name="Bound5" parent="." instance=ExtResource("25_aqf6f")]
 position = Vector2(2634, -280)
 rotation = -1.57079
 scale = Vector2(3.09455, 1.27341)
+
+[node name="TextIntro" parent="." instance=ExtResource("27_dsxyx")]
+visible = false
+z_index = 4
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 rotation = 0.785397
@@ -887,7 +887,7 @@ shape = SubResource("CircleShape2D_ji6ey")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(3910, 1133)
-texture = ExtResource("31_metfo")
+texture = ExtResource("31_re4ck")
 offset = Vector2(0, -80)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
@@ -901,11 +901,11 @@ shape = SubResource("RectangleShape2D_knfgb")
 z_index = -1
 position = Vector2(-2, -176)
 scale = Vector2(1, 1.96)
-texture = ExtResource("32_f8u23")
+texture = ExtResource("32_avgb7")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(4047, 914)
-texture = ExtResource("32_30ndl")
+texture = ExtResource("33_fp853")
 offset = Vector2(0, -80)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D2"]
@@ -919,11 +919,11 @@ shape = SubResource("RectangleShape2D_knfgb")
 [node name="Sprite2D" type="Sprite2D" parent="Sprite2D2"]
 z_index = -1
 position = Vector2(0, -86)
-texture = ExtResource("32_f8u23")
+texture = ExtResource("32_avgb7")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
 position = Vector2(2497, 1381)
-texture = ExtResource("32_30ndl")
+texture = ExtResource("33_fp853")
 offset = Vector2(0, -80)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D3"]
@@ -937,11 +937,11 @@ shape = SubResource("RectangleShape2D_knfgb")
 [node name="Sprite2D" type="Sprite2D" parent="Sprite2D3"]
 z_index = -1
 position = Vector2(0, -86)
-texture = ExtResource("32_f8u23")
+texture = ExtResource("32_avgb7")
 
 [node name="Sprite2D4" type="Sprite2D" parent="."]
 position = Vector2(1990, 1864)
-texture = ExtResource("32_30ndl")
+texture = ExtResource("33_fp853")
 offset = Vector2(0, -80)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D4"]
@@ -955,23 +955,10 @@ shape = SubResource("RectangleShape2D_knfgb")
 [node name="Sprite2D" type="Sprite2D" parent="Sprite2D4"]
 z_index = -1
 position = Vector2(0, -92)
-texture = ExtResource("32_f8u23")
+texture = ExtResource("32_avgb7")
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 process_mode = 3
-stream = ExtResource("34_0321i")
+stream = ExtResource("34_62ks6")
 volume_db = -20.0
 autoplay = true
-
-[node name="Sprite2D5" type="Sprite2D" parent="."]
-position = Vector2(5112, 2177)
-texture = ExtResource("33_4wais")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D5"]
-position = Vector2(0, 94)
-scale = Vector2(0.984236, 0.430532)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D5/StaticBody2D"]
-position = Vector2(0, -44.5)
-scale = Vector2(14.24, 4.96)
-shape = SubResource("RectangleShape2D_knfgb")

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://br02ohnogtgap"
+path="res://.godot/imported/splat sound effects (no copyright).wav-48a9ebfd7155a02c7b7875510e4c3532.sample"
+
+[deps]
+
+source_file="res://Sounds/splat sound effects (no copyright).wav"
+dest_files=["res://.godot/imported/splat sound effects (no copyright).wav-48a9ebfd7155a02c7b7875510e4c3532.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -2,7 +2,7 @@ extends Camera2D
 
 # La velocidad a la que la cámara sigue al personaje.
 var follow_speed = 5.0
-var active = false
+@export var active = false
 #const OFFSET = Vector2(0,0)
 
 # El nodo que sigue la cámara (en este caso, el personaje).

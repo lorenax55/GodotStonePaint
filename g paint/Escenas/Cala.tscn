@@ -78,20 +78,22 @@ animations = [{
 }]
 
 [node name="Cala" type="Node2D"]
-process_mode = 3
 script = ExtResource("1_oxnyr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+process_mode = 3
 sprite_frames = SubResource("SpriteFrames_s585j")
 autoplay = "default"
 frame_progress = 0.192402
 offset = Vector2(960, 540)
 
 [node name="Prota" type="AnimatedSprite2D" parent="."]
+process_mode = 3
 position = Vector2(861, 634)
 sprite_frames = SubResource("SpriteFrames_28j06")
 
 [node name="Love" type="AnimatedSprite2D" parent="."]
+process_mode = 3
 position = Vector2(1032, 629)
 sprite_frames = SubResource("SpriteFrames_uhjqj")
 
@@ -101,6 +103,7 @@ scale = Vector2(0.4, 0.4)
 transform = Transform2D(0.4, 0, 0, 0.4, 960, 220)
 
 [node name="pajaros" type="AnimatedSprite2D" parent="."]
+process_mode = 3
 position = Vector2(1797, 494)
 sprite_frames = SubResource("SpriteFrames_dvbg1")
 autoplay = "default"

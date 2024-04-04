@@ -12,6 +12,9 @@ var aux = false
 @onready var text_label = $TextLabel
 @onready var retrato = $Retrato
 
+var next_scene = null
+
+
 func set_dialog_route(route):
 	scene_text_file = route
 
@@ -50,13 +53,18 @@ func next_line():
 		show_text()
 	else:
 		finish()
+var finished = false
 
 func finish():
+	finished = true
 	text_label.text = ""
-	$AnimationPlayer.play("new_animation",-1,-3,true)
 	in_progress = false
 	get_tree().paused = false
-
+	$AnimationPlayer.play("byebye",-1,3)
+	
+func bye():
+	SignalBus.emit_signal("end_dialog")
+	#finished = false
 var haz_el_tween = false
 
 func on_display_dialog(text_key):
@@ -67,7 +75,7 @@ func on_display_dialog(text_key):
 		else:	
 			print("he saltado")
 			next_line()
-	else:
+	elif not finished:
 		get_tree().paused = true
 		background.visible = true
 		in_progress = true
@@ -77,6 +85,8 @@ func on_display_dialog(text_key):
 		show_text()
 		$AnimationPlayer.play("new_animation",-1,3)
 		$AnimateText.play("text")
+	else:
+		finished = false
 
 		
 

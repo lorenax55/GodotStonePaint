@@ -104,6 +104,8 @@ func _process(_delta):
 						brush_color	= og_brush_color					
 					
 			if brush_mode == BrushModes.STICKER and colocar:
+
+				$splat.play()
 				colocar = false
 				var instance = scene.instantiate()
 				instance.set_pegatinaT(mouse_pos, pegatina)

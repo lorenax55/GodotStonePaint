@@ -59,6 +59,7 @@ func restart_pressed():
 	get_tree().reload_current_scene()
 
 func save_exit():	
+	$done_sound.play()
 	paint_control.download_picture()
 	get_tree().change_scene_to_file("res://Escenas/Mapa.tscn")
 
@@ -93,23 +94,26 @@ func set_black_pen():
 	paint_control.brush_mode = paint_control.BrushModes.PENCIL
 	paint_control.brush_color = Color(0, 0, 0, 0.3)
 	paint_control.brush_size = 20
+	$lilpop.play()
 
 	
 func set_ocre():
 	paint_control.brush_mode = paint_control.BrushModes.PENCIL
 	paint_control.brush_color = Color(0.4902, 0.2471, 0.1961, 0.05)
 	paint_control.brush_size = 40
+	$lilpop.play()	
 	
 func set_caca():
 	paint_control.brush_mode = paint_control.BrushModes.PENCIL
 	paint_control.brush_color = Color(0.239, 0.141, 0.082, 0.3)
 	paint_control.brush_size = 100
+	$lilpop.play()
 	
 func set_musgo():
 	paint_control.brush_mode = paint_control.BrushModes.PENCIL
 	paint_control.brush_color = Color(0.2902, 0.3647, 0.1373, 0.2)
 	paint_control.brush_size = 100
-
+	$lilpop.play()
 	
 func _physics_process(_delta):
 	# Update the status label with the newest brush element count.
@@ -125,6 +129,7 @@ func button_pressed(button_name):
 		paint_control.brush_mode = paint_control.BrushModes.PENCIL
 		brush_settings.modulate = Color(1, 1, 1, 1)
 		tool_name = "Pencil"
+
 	elif button_name == "mode_eraser":
 		paint_control.brush_mode = paint_control.BrushModes.ERASER
 		brush_settings.modulate = Color(1, 1, 1, 1)
@@ -151,6 +156,7 @@ func button_pressed(button_name):
 		paint_control.brush_data_list = []
 		paint_control.queue_redraw()
 	elif button_name == "save_picture":
+		$done_sound.play()
 		save_dialog.popup_centered()
 	elif button_name == "undo_stroke":
 		paint_control.undo_stroke()

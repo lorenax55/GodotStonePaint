@@ -10,6 +10,10 @@ res://Actors/PegatinaT.tscn
 res://Actors/PJ.tscn
 res://Actors/CraftingTable.tscn
 res://Escenas/Cala.tscn
-res://Dialogos/goblin_dialogs.json
-res://Actors/PJ.gd
+res://paint_control.gd
+res://tools_panel.gd
 res://Actors/Area2D.gd
+res://singletons/SignalBus.gd
+res://Actors/DialogBox.gd
+res://Actors/PNJSetCosas.gd
+res://Escenas/Camera2D.gd

@@ -33,15 +33,19 @@ func _on_body_entered(body):
 func _on_body_exited(body):
 	# Verifica si el cuerpo que entra en el área es el personaje
 	if body == player:
-		anim_player.play_backwards("Interaction_anim")
 		canTalk = false
+		if icon.is_visible_in_tree():
+			anim_player.play_backwards("Interaction_anim")
+
 		$woosh.play()
 
 func _input(event):
 	if canTalk and event.is_action_pressed("ui_accept"):
-		print("siguiente cosa")
+		if icon.is_visible_in_tree():
+			anim_player.play_backwards("Interaction_anim")
 		SignalBus.emit_signal("display_dialog", dialog_key)
-		#if icon.is_visible_in_tree() && loveable:
+		if icon.is_visible_in_tree() and loveable:
+			get_tree().change_scene_to_file("res://Escenas/Cala.tscn")
 			
 			
 		
