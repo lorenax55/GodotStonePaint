@@ -1,14 +1,14 @@
 {
 	"ejemplo1": [
-	"Esta es la primera linea de ejemplo",
-	"Esta es la segunda"
+		"Esta es la primera linea de ejemplo",
+		"Esta es la segunda"
 
 	],
 	"ejemplo2": [
-	"Esta es la primera linea de ejemplo",
-	"Esta es la segunda",
-	"ASDOHFYOLKADSJFLADSHJFLKJDASFLIAFOKADSUJFGPO9IJTWEU43OP'R9FIKAE'POFIKTJMEOPRÑADFJ´MPAFSDKAÑOLSDHNJFLKADSJFLASDK
-	ASDFJHLAÑDKSJFUÑLKOADSJFLASDJFASDKLFJ"
+		"Esta es la primera linea de ejemplo",
+		"Esta es la segunda",
+		"ASDOHFYOLKADSJFLADSHJFLKJDASFLIAFOKADSUJFGPO9IJTWEU43OP'R9FIKAE'POFIKTJMEOPRÑADFJ´MPAFSDKAÑOLSDHNJFLKADSJFLASDK,
+		ASDFJHLAÑDKSJFUÑLKOADSJFLASDJFASDKLFJ\""
 	],
 	"ejemplo1_faces": [
 		"res://Images/Retratos/Primo.PNG",
@@ -19,7 +19,7 @@
 		"res://Images/Retratos/Cowboy_0.PNG",
 		"res://Images/Retratos/Mago_0.PNG"
 	],
-	
+
 	"cowboy_inicio": [
 		"Hola (estoy muy solo)",
 		"yeeehaw"
@@ -28,7 +28,7 @@
 		"res://Images/Retratos/Cowboy_0.PNG",
 		"res://Images/Retratos/Cowboy_0.PNG"
 	],
-	
+
 	"cala": [
 		"Este sería el dialogo en la cala ",
 		"Aqui te dicen cosas bonitas"
@@ -38,32 +38,59 @@
 		"res://Images/Retratos/Cowboy_0.PNG"
 	],
 
-	"punk":[
+	"punk": [
 		"Ah, the great outdoors! No rules, no bosses—just us, the trees, and maybe a few mischievous woodland creatures. Let's make some memories, huh?",
 		"...",
 		"Anyway, have fun man, I'll be here chilling for a bit. Let me know if you want to hang later."
 	],
-	"punk_faces":[
+	"punk_faces": [
 		"res://Images/Retratos/Punk_0.PNG",
 		"res://Images/Retratos/Punk_0.PNG",
-		"res://Images/Retratos/Punk_0.PNG",
+		"res://Images/Retratos/Punk_0.PNG"
 	],
-	"punk_love":[
+	"punk_love": [
 		"This is rad dude!",
 		"You have good taste, let's go somewhere else to cause a bit more chaos, eh? This forest is too calm for our punk souls."
 	],
-	"punk_love_faces":[
+	"punk_love_faces": [
 		"res://Images/Retratos/Punk_0.PNG",
-		"res://Images/Retratos/Punk_0.PNG",
+		"res://Images/Retratos/Punk_0.PNG"
 	],
-	"punk_cala":[
+	"punk_cala": [
 		"Who needs flowers and candlelit dinners when we can smash stuff and paint the town red together, right?",
 		"This light is pretty neat tho.",
 		"It makes me want write pretty things that make me feel warm inside, but not fire-that-I've-caused-warm, bees and flowers warm."
 	],
-	"punk_cala_faces":[
+	"punk_cala_faces": [
 		"res://Images/Retratos/Punk_0.PNG",
 		"res://Images/Retratos/Punk_0.PNG",
-		"res://Images/Retratos/Punk_0.PNG",
+		"res://Images/Retratos/Punk_0.PNG"
+	],
+	"emo": [
+		"[fade start=5 length=10]........hey.....[/fade]",
+		"[fade start=50 length=13]...In a world of sunshine, I find solace in the shadows........[/fade]",
+		"[fade start=70 length=13]...I walk a solitary path. Your company disrupts the harmony of my solitude........[/fade]"
+	],
+	"emo_faces": [
+		"res://Images/Retratos/Emo_0.PNG",
+		"res://Images/Retratos/Emo_0.PNG",
+		"res://Images/Retratos/Emo_0.PNG"
+	],
+	"emo_love": [
+		"[fade start=126 length=5]...This little trinket will tangle our souls for eternity and ensure a either a lifetime of suffering or an abrupt burst of pain...[/fade]",
+		"[fade start=8 length=7]...I like that...[/fade]"
+	],
+	"emo_love_faces": [
+		"res://Images/Retratos/Emo_0.PNG",
+		"res://Images/Retratos/Emo_0.PNG",
+	],
+	"emo_cala": [
+		"[fade start=110 length=6]...This has been a wild ride, you almost make me froget about the deep sorrow and pain of this realm of existence...[/fade]",
+		"[fade start=116 length=6]...We should hold our hands tight and jump of this very cliff, ending this lifetime of suffering with our inmortal love...[/fade]"
+	],
+	"emo_cala_faces": [
+		"res://Images/Retratos/Emo_0.PNG",
+		"res://Images/Retratos/Emo_0.PNG",
 	]
+
 }

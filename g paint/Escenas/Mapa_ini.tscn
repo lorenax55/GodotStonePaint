@@ -788,7 +788,7 @@ next_scene = "res://Escenas/Cala.tscn"
 [node name="Emo" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(3683, 921)
 pnj_anim = SubResource("SpriteFrames_dpkvt")
-dialog_key = "ejemplo2"
+dialog_key = "emo"
 
 [node name="Cowboy" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(4642, 1332)

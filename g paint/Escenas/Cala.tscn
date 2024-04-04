@@ -78,6 +78,7 @@ animations = [{
 }]
 
 [node name="Cala" type="Node2D"]
+process_mode = 3
 script = ExtResource("1_oxnyr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
