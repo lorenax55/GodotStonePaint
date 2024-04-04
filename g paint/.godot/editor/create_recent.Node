@@ -1,10 +1,10 @@
+AudioStreamPlayer
 AnimationPlayer
 RichTextLabel
 Node2D
 Control
 ColorRect
 TextureRect
-AudioStreamPlayer
 AudioStreamPlayer2D
 Sprite2D
 AnimatedSprite2D

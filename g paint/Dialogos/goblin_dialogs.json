@@ -1,34 +1,4 @@
 {
-	"ejemplo1": [
-		"Esta es la primera linea de ejemplo",
-		"Esta es la segunda"
-
-	],
-	"ejemplo2": [
-		"Esta es la primera linea de ejemplo",
-		"Esta es la segunda",
-		"ASDOHFYOLKADSJFLADSHJFLKJDASFLIAFOKADSUJFGPO9IJTWEU43OP'R9FIKAE'POFIKTJMEOPRÑADFJ´MPAFSDKAÑOLSDHNJFLKADSJFLASDK,
-		ASDFJHLAÑDKSJFUÑLKOADSJFLASDJFASDKLFJ\""
-	],
-	"ejemplo1_faces": [
-		"res://Images/Retratos/Primo.PNG",
-		"res://Images/Retratos/Primo.PNG"
-	],
-	"ejemplo2_faces": [
-		"res://Images/Retratos/Cowboy_0.PNG",
-		"res://Images/Retratos/Cowboy_0.PNG",
-		"res://Images/Retratos/Mago_0.PNG"
-	],
-
-	"cowboy_inicio": [
-		"Hola (estoy muy solo)",
-		"yeeehaw"
-	],
-	"cowboy_inicio_faces": [
-		"res://Images/Retratos/Cowboy_0.PNG",
-		"res://Images/Retratos/Cowboy_0.PNG"
-	],
-
 	"cala": [
 		"Este sería el dialogo en la cala ",
 		"Aqui te dicen cosas bonitas"
@@ -44,9 +14,9 @@
 		"Anyway, have fun man, I'll be here chilling for a bit. Let me know if you want to hang later."
 	],
 	"punk_faces": [
+		"res://Images/Retratos/Punk_1.PNG",
 		"res://Images/Retratos/Punk_0.PNG",
-		"res://Images/Retratos/Punk_0.PNG",
-		"res://Images/Retratos/Punk_0.PNG"
+		"res://Images/Retratos/Punk_1.PNG"
 	],
 	"punk_love": [
 		"This is rad dude!",
@@ -54,7 +24,7 @@
 	],
 	"punk_love_faces": [
 		"res://Images/Retratos/Punk_0.PNG",
-		"res://Images/Retratos/Punk_0.PNG"
+		"res://Images/Retratos/Punk_1.PNG"
 	],
 	"punk_cala": [
 		"Who needs flowers and candlelit dinners when we can smash stuff and paint the town red together, right?",
@@ -62,9 +32,9 @@
 		"It makes me want write pretty things that make me feel warm inside, but not fire-that-I've-caused-warm, bees and flowers warm."
 	],
 	"punk_cala_faces": [
+		"res://Images/Retratos/Punk_1.PNG",
 		"res://Images/Retratos/Punk_0.PNG",
-		"res://Images/Retratos/Punk_0.PNG",
-		"res://Images/Retratos/Punk_0.PNG"
+		"res://Images/Retratos/Punk_2.PNG"
 	],
 	"emo": [
 		"[fade start=5 length=10]........hey.....[/fade]",
@@ -74,7 +44,7 @@
 	"emo_faces": [
 		"res://Images/Retratos/Emo_0.PNG",
 		"res://Images/Retratos/Emo_0.PNG",
-		"res://Images/Retratos/Emo_0.PNG"
+		"res://Images/Retratos/Emo_1.PNG"
 	],
 	"emo_love": [
 		"[fade start=126 length=5]...This little trinket will tangle our souls for eternity and ensure a either a lifetime of suffering or an abrupt burst of pain...[/fade]",
@@ -82,15 +52,144 @@
 	],
 	"emo_love_faces": [
 		"res://Images/Retratos/Emo_0.PNG",
-		"res://Images/Retratos/Emo_0.PNG",
+		"res://Images/Retratos/Emo_1.PNG",
 	],
 	"emo_cala": [
 		"[fade start=110 length=6]...This has been a wild ride, you almost make me froget about the deep sorrow and pain of this realm of existence...[/fade]",
 		"[fade start=116 length=6]...We should hold our hands tight and jump of this very cliff, ending this lifetime of suffering with our inmortal love...[/fade]"
 	],
 	"emo_cala_faces": [
+		"res://Images/Retratos/Emo_1.PNG",
 		"res://Images/Retratos/Emo_0.PNG",
-		"res://Images/Retratos/Emo_0.PNG",
-	]
+	],
+	"bob":[
+		"Haha, hello goblin friend. How are you doing?",
+		"I'm here, enjoying all the usual stuff goblins enjoy. What do you like about this picnic? Please provide details.",
+		"If you want to [pulse]talk[/pulse] more, I'm all pointy ears."
+	],
+	"bob_faces":[
+		"res://Images/Retratos/Bob_0.PNG",
+		"res://Images/Retratos/Bob_1.PNG",
+		"res://Images/Retratos/Bob_0.PNG",
+	],
+	"bob_love":[
+		"Fascinating. Is this a cultural thing? What does it mean? Please do not skip details."
+	],
+	"bob_love_faces":[
+		"res://Images/Retratos/Bob_0.PNG",
+	],
+	"bob_cala":[
+		"This is truly outstanding. Imagine all the conversations we can have in a relaxed and intimate scenario like this one.",
+		"Please, come closer, ignore the light and the beep. I do not bite... do you bite?",
+	],
+	"bob_cala_faces":[
+		"res://Images/Retratos/Bob_0.PNG",
+		"res://Images/Retratos/Bob_1.PNG",
+	],
+	"pescadora":[
+		"Hey you! Nice to meet you!",
+		"",
+		""
+	],
+	"pescadora_faces":[
+		"",
+		"",
+		""
+	],
+	"pescadora_love":[
+		""
+	],
+	"pescadora_love_faces":[
+		""
+	],
+	"pescadora_cala":[
+		"",
+		""
+	],
+	"pescadora_cala_faces":[
+		"",
+		""
+	],
 
+	"cowboy":[
+		"",
+		"",
+		""
+	],
+	"cowboy_faces":[
+		"",
+		"",
+		""
+	],
+	"cowboy_love":[
+		""
+	],
+	"cowboy_love_faces":[
+		""
+	],
+	"cowboy_cala":[
+		"",
+		""
+	],
+	"cowboy_cala_faces":[
+		"",
+		""
+	],
+
+	"mago":[
+		"[img]res://Images/hola.png[/img] [img]res://Images/wisdom.png[/img] ?",
+		"[img]res://Images/mosca.png[/img] [img]res://Images/madruga.png[/img]",
+	],
+	"mago_faces":[
+		"res://Images/Retratos/Mago_0.PNG",
+		"res://Images/Retratos/Mago_1.PNG",
+	],
+	"mago_love":[
+		""
+	],
+	"mago_love_faces":[
+		"res://Images/Retratos/Mago_0.PNG",
+		"res://Images/Retratos/Mago_1.PNG",
+	],
+	"mago_cala":[
+		"",
+		""
+	],
+	"mago_cala_faces":[
+		"res://Images/Retratos/Mago_0.PNG",
+		"res://Images/Retratos/Mago_1.PNG",
+	],
+
+	"primo":[
+		"[shake rate=20.0 level=5 connected=1]Psst... hi. Good to finally see you! How have you been[/shake]",
+		"[shake rate=20.0 level=5 connected=1]You won't believe the truth I have arrived at. HUMANS! AMONG US! unbelievable.[/shake]",
+		"[shake rate=20.0 level=5 connected=1]It's true, I have read in on the web[/shake]",
+		"[shake rate=20.0 level=5 connected=1]There are signs of if all around us, you only have to keep aaaaaaaaall eyes open aaaaal of the time!!!![/shake]",
+		"[shake rate=20.0 level=5 connected=1]Anyway, dont't tell anyone, but I don't like the looks blondie is giving us. All the way up there, with that perfect hair, not very goblin like, don't you think? I think he hides somehting.[/shake]"
+	],
+	"primo_faces":[
+		"res://Images/Retratos/Primo_0.PNG",
+		"res://Images/Retratos/Primo_1.PNG",
+		"res://Images/Retratos/Primo_0.PNG",
+		"res://Images/Retratos/Primo_1.PNG",
+		"res://Images/Retratos/Primo_1.PNG"
+	],
+	"primo_love":[
+		"[shake rate=20.0 level=5 connected=1]I wasn't expeting this from you, but thanks![/shake]",
+		"[shake rate=20.0 level=5 connected=1]Let's go somewhere more private, they could be listening.[/shake]"
+	],
+	"primo_love_faces":[
+		"res://Images/Retratos/Primo_0.PNG",
+		"res://Images/Retratos/Primo_0.PNG",
+	],
+	"primo_cala":[
+		"[shake rate=20.0 level=5 connected=1]...So, like I was saying, they basically control everything but we can escape it. We can be smarter.[/shake]",
+		"[shake rate=20.0 level=5 connected=1]And we just need to buy the burrow I was telling you about and they won't find us. We'll be free.[/shake]",
+		"[shake rate=20.0 level=5 connected=1]I knew I could trust you. You are the best cousing I could have ever wished for.[/shake]"
+	],
+	"primo_cala_faces":[
+		"res://Images/Retratos/Primo_1.PNG",
+		"res://Images/Retratos/Primo_1.PNG",
+		"res://Images/Retratos/Primo_0.PNG"
+	]
 }

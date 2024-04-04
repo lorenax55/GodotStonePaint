@@ -762,38 +762,37 @@ skew = 0.257615
 [node name="Bob" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(3771, 1223)
 pnj_anim = SubResource("SpriteFrames_l1o1x")
-dialog_key = "ejemplo2"
+dialog_key = "bob"
 
 [node name="Mago" parent="." instance=ExtResource("8_e6ddd")]
-position = Vector2(4010, 962)
+position = Vector2(4194, 1127)
 pnj_anim = SubResource("SpriteFrames_2glj8")
-dialog_key = "ejemplo2"
+dialog_key = "mago"
 
 [node name="Pescadora" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(1597, 2012)
 pnj_anim = SubResource("SpriteFrames_kk4ih")
-dialog_key = "ejemplo2"
+dialog_key = "pescadora"
 
 [node name="Primo" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(2038, 1908)
 pnj_anim = SubResource("SpriteFrames_11430")
-dialog_key = "ejemplo2"
+dialog_key = "primo"
 
 [node name="Punk" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(919, 1883)
 pnj_anim = SubResource("SpriteFrames_u1kqu")
 dialog_key = "punk"
-next_scene = "res://Escenas/Cala.tscn"
 
 [node name="Emo" parent="." instance=ExtResource("8_e6ddd")]
-position = Vector2(3683, 921)
+position = Vector2(3781, 817)
 pnj_anim = SubResource("SpriteFrames_dpkvt")
 dialog_key = "emo"
 
 [node name="Cowboy" parent="." instance=ExtResource("8_e6ddd")]
 position = Vector2(4642, 1332)
 pnj_anim = SubResource("SpriteFrames_lcrjl")
-dialog_key = "ejemplo2"
+dialog_key = "cowboy"
 
 [node name="Fondo" type="Sprite2D" parent="."]
 z_index = -100

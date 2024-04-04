@@ -1,193 +1,210 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712267542
-a.png::CompressedTexture2D::1902482026838107613::1712267543::1712267561::1::::<><>::
-For u.png::CompressedTexture2D::5056799341197259325::1712246689::1712246689::1::::<><>::
-Goblins.otf::FontFile::6709327785292400217::1712246689::1712246689::1::::<><>::
-GreatVibes-Regular.otf::FontFile::5350634538924949955::1712246689::1712246689::1::::<><>::
-icon.webp::CompressedTexture2D::3626017087650301524::1712246690::1712246690::1::::<><>::
-new_rich_text_effect.tres::RichTextEffect::974209268950171617::1712246690::0::1::::<><>::
-paint_control.gd::GDScript::-1::1712249101::0::1::::<>Control<>::
-paint_tools.png::CompressedTexture2D::5017454733427421014::1712246690::1712246690::1::::<><>::
-README.md::TextFile::-1::1712246690::0::1::::<><>::
-Romantyc Goblins.otf::FontFile::8830866377238145623::1712246690::1712246690::1::::<><>::
-tools_panel.gd::GDScript::-1::1712248604::0::1::::<>Panel<>::
-tools_panel_old.gd::GDScript::-1::1712246690::0::1::::<>Panel<>::
-Tribal_Play.ttf::FontFile::1967647916404671244::1712246690::1712246690::1::::<><>::
-VTCGoblinHand.ttf::FontFile::7195987770524150237::1712246690::1712246690::1::::<><>::
-::res://Actors/::1712267507
-Area2D.gd::GDScript::-1::1712266863::0::1::::<>Area2D<>::
-bound.tscn::PackedScene::1110708258381900952::1712246689::0::1::::<><>::
-CraftingTable.gd::GDScript::-1::1712246689::0::1::::<>Area2D<>::
-CraftingTable.tscn::PackedScene::7496561187211714802::1712267507::0::1::::<><>::res://Actors/CraftingTable.gd<>uid://c4fekd5s0klbo::::res://Images/mesa.PNG<>uid://cj8k0qj8bur7o::::res://Images/IMG_0183.PNG<>uid://bflylsn0e0xx2::::res://Images/sombra.png
-DialogBox.gd::GDScript::-1::1712267505::0::1::::<>CanvasLayer<>::
-DialogBox.tscn::PackedScene::4166441005025591717::1712267507::0::1::::<><>::res://Actors/DialogBox.gd<>uid://bvji02eia3bl3::::res://Images/Retratos/Primo.PNG<>uid://cih5f0rbjq2v4::::res://GreatVibes-Regular.otf<>uid://3be4yafc4dke::::res://Tribal_Play.ttf<>uid://bj5gio7ibanbp::::res://Images/dialogo.png<>uid://cvpjlcfayeang::::res://Sounds/woosh.wav
-grass.gd::GDScript::-1::1712246689::0::1::::<>AnimatedSprite2D<>::
-grass.tscn::PackedScene::4427878878055726421::1712267507::0::1::::<><>::uid://qvegi570mjsg::::res://Images/Escenario/grass_ (1).PNG<>uid://cjid7n1t2tf30::::res://Images/Escenario/grass_ (2).PNG<>uid://7ehopmj6l2um::::res://Images/Escenario/grass_ (3).PNG<>res://Actors/grass.gd
-Intro.tscn::PackedScene::9153120119993266627::1712246689::0::1::::<><>::uid://3be4yafc4dke::::res://Tribal_Play.ttf
-Mago.tscn::PackedScene::6111661871402456287::1712246689::0::1::::<><>::uid://xb7yaaswlejl::::res://Images/PNjs/Mago_Idle_0.PNG<>res://Actors/Area2D.gd<>uid://cj8k0qj8bur7o::::res://Images/IMG_0183.PNG<>uid://b0miw64t310pt::::res://Actors/DialogBox.tscn
-PegatinaT.gd::GDScript::-1::1712246689::0::1::::<>Sprite2D<>::
-PegatinaT.tscn::PackedScene::1804303902725807625::1712267507::0::1::::<><>::res://Actors/PegatinaT.gd
-PJ.gd::GDScript::-1::1712246689::0::1::::<>CharacterBody2D<>::
-PJ.tscn::PackedScene::9060726734816540950::1712267507::0::1::::<><>::res://Actors/PJ.gd<>uid://bcpn2bhuunsqt::::res://Images/PJ/Pj_Front_0.PNG<>uid://bjwmbubxe55hj::::res://Images/PJ/Pj_Idle_1.PNG<>uid://bsv25j6u86b2x::::res://Images/PJ/Pj_Idle_2.png<>uid://bc3vmjdxodjv4::::res://Images/PJ/Pj_Idle_3.PNG<>uid://dovyyy7bpdigb::::res://Images/PJ/Pj_Back_0.PNG<>uid://dv1y8wigwjmtu::::res://Images/PJ/Pj_Back_1.PNG<>uid://jnxqv6nmq1ps::::res://Images/PJ/Pj_Back_2.png<>uid://00m1w52bba6r::::res://Images/PJ/Pj_Front_1.PNG<>uid://crkjrtv3aj7qq::::res://Images/PJ/Pj_Front_2.PNG<>uid://kathpl6puh4k::::res://Images/PJ/Pj_Left_0.PNG<>uid://0g3tajo8i5of::::res://Images/PJ/Pj_Left_1.PNG<>uid://dxkkpcbt3kbcw::::res://Images/PJ/Pj_Left_2.png<>uid://r0ct0cetsj62::::res://Images/PNjs/sombra_pnj.png<>uid://djl06cv83klvb::::res://Sounds/foot3.wav
-PNJSetCosas.gd::GDScript::-1::1712267203::0::1::::<>Node2D<>::
-PNJTemplate.tscn::PackedScene::5781691007146239874::1712267507::0::1::::<><>::uid://cq673q7a1nfsm::::res://Images/PNjs/Pescadora_Idle_0.PNG<>res://Actors/PNJSetCosas.gd<>res://Actors/Area2D.gd<>uid://b3s35gl14lefy::::res://Images/PNjs/Pescadora_Idle_1.PNG<>uid://b0miw64t310pt::::res://Actors/DialogBox.tscn<>uid://bjbrjwr2piwig::::res://Images/heartIcon.png<>uid://cj8k0qj8bur7o::::res://Images/IMG_0183.PNG<>uid://cvpjlcfayeang::::res://Sounds/woosh.wav<>uid://r0ct0cetsj62::::res://Images/PNjs/sombra_pnj.png<>uid://rectnurs80j::::res://Sounds/pop.wav
-Primo.tscn::PackedScene::397566266604625188::1712246689::0::1::::<><>::uid://c2s5vcscda6lp::::res://Images/PNjs/Primo_Idle_0.PNG<>uid://tv87x8s4d8ea::::res://Images/PNjs/Primo_Idle_1.PNG<>res://Actors/Area2D.gd<>uid://cj8k0qj8bur7o::::res://Images/IMG_0183.PNG<>uid://b0miw64t310pt::::res://Actors/DialogBox.tscn
-TextIntro.gd::GDScript::-1::1712246689::0::1::::<>Node2D<>::
-TextIntro.tscn::PackedScene::3554936679934349784::1712267506::0::1::::<><>::res://Actors/TextIntro.gd<>uid://3be4yafc4dke::::res://Tribal_Play.ttf
-Tree1.tscn::PackedScene::4989717497047240618::1712267507::0::1::::<><>::uid://b1y00vnrkvcws::::res://Images/Escenario/Tree_ (1).PNG<>uid://3gdrpwlttv0u::::res://Images/Escenario/Tree_ (2).PNG<>uid://f4axf6j6psha::::res://Images/Escenario/tree_shadow.png
-::res://Dialogos/::1712256850
-goblin_dialogs.json::JSON::-1::1712256850::0::1::::<><>::
-::res://Escenas/::1712267508
-Button.gd::GDScript::-1::1712246689::0::1::::<>Button<>::
-Cala.gd::GDScript::-1::1712266863::0::1::::<>Node2D<>::
-Cala.tscn::PackedScene::4815334513237021025::1712267508::0::1::::<><>::res://Escenas/Cala.gd<>uid://k1iqqckc8ly7::::res://Images/Escenario/cala_ (2).PNG<>uid://djjb0qa1purfd::::res://Images/Escenario/cala_ (1).PNG<>uid://dbyitr2wvgcjt::::res://Images/Escenario/cala_ (3).PNG<>uid://dpay73vgdv7j0::::res://Images/PNjs/cala_sprites/cala_idle_ (1).PNG<>uid://d15r86028i327::::res://Images/PNjs/cala_sprites/cala_idle_ (18).PNG<>uid://bpx058i84kpst::::res://Images/PNjs/cala_sprites/cala_idle_ (17).PNG<>uid://b0miw64t310pt::::res://Actors/DialogBox.tscn<>uid://cg4w3a281a3ke::::res://Images/Escenario/pajaros_ (1).PNG<>uid://cbv5nwqj0x2kl::::res://Images/Escenario/pajaros_ (2).PNG<>uid://b022nlrmxhu45::::res://Images/Escenario/pajaros_ (3).PNG<>uid://bc5yb8wfugt82::::res://Sounds/musicaCala.mp3<>uid://3be4yafc4dke::::res://Tribal_Play.ttf
-Camera2D.gd::GDScript::-1::1712252099::0::1::::<>Camera2D<>::
-Mapa.gd::GDScript::-1::1712246689::0::1::::<>RefCounted<>::
-Mapa.tscn::PackedScene::3967695528386007384::1712267506::0::1::::<><>::uid://dvnxmfstaklty::::res://Images/IMG_0187.PNG<>uid://d2dc30o4dq37w::::res://Actors/PJ.tscn<>res://Escenas/Camera2D.gd<>uid://p3bg5mpqmdns::::res://Actors/bound.tscn<>uid://ca1vtxmhk4tra::::res://Images/PNjs/Bob_Idle_0.PNG<>uid://comxuuy8tb3q1::::res://Actors/PNJTemplate.tscn<>uid://dobwt20s3aype::::res://Images/PNjs/Bob_Idle_1.PNG<>uid://cddb6hny8mmri::::res://Actors/Tree1.tscn<>uid://b4c5rvbl24svl::::res://Actors/grass.tscn<>uid://xb7yaaswlejl::::res://Images/PNjs/Mago_Idle_0.PNG<>uid://cq673q7a1nfsm::::res://Images/PNjs/Pescadora_Idle_0.PNG<>uid://cfic05ythxw3b::::res://Images/Escenario/grass2_ (1).PNG<>uid://b3s35gl14lefy::::res://Images/PNjs/Pescadora_Idle_1.PNG<>uid://dtv1ltc2gy24u::::res://Images/Escenario/grass2_ (2).PNG<>uid://bnha3aby5ygm2::::res://Images/Escenario/grass2_ (3).PNG<>uid://c2s5vcscda6lp::::res://Images/PNjs/Primo_Idle_0.PNG<>uid://xp8xulh23nye::::res://Images/Escenario/Tree2_ (1).PNG<>uid://tv87x8s4d8ea::::res://Images/PNjs/Primo_Idle_1.PNG<>uid://ckul5wshj1yns::::res://Images/Escenario/Tree2_ (2).PNG<>uid://xxhs5wn0rac7::::res://Images/PNjs/Punk_Idle (1).PNG<>uid://ber2lt2i1f4k4::::res://Images/PNjs/Punk_Idle (2).PNG<>uid://b8hggojin34m2::::res://Images/PNjs/Punk_Idle (3).PNG<>uid://c8hyaa03thkf2::::res://Images/PNjs/Emo_Idle_ (1).PNG<>uid://dnrpwciqtn3q4::::res://Images/PNjs/Emo_Idle_ (2).PNG<>uid://hn80srnncjx8::::res://Images/PNjs/Cowboy_Idle_0.PNG<>uid://u2j5fampbs2r::::res://Images/Escenario/Pez_ (1).PNG<>uid://c6i5p2lnnk3po::::res://Images/Escenario/Pez_ (2).PNG<>uid://dlnplt2w33viw::::res://Images/Escenario/Pez_ (3).PNG<>uid://cliafluibwii7::::res://Images/Escenario/IMG_0203.PNG<>uid://bb5gan2mch4mp::::res://Images/Escenario/IMG_0204.PNG<>uid://bflylsn0e0xx2::::res://Images/sombra.png<>uid://r1fsxkbxk5dl::::res://Sounds/bugs.mp3<>uid://c4fekd5s0klbo::::res://Images/mesa.PNG
-Mapa_ini.tscn::PackedScene::4052963243958837217::1712267508::0::1::::<><>::uid://b4c5rvbl24svl::::res://Actors/grass.tscn<>uid://cfic05ythxw3b::::res://Images/Escenario/grass2_ (1).PNG<>uid://dtv1ltc2gy24u::::res://Images/Escenario/grass2_ (2).PNG<>uid://bnha3aby5ygm2::::res://Images/Escenario/grass2_ (3).PNG<>uid://cddb6hny8mmri::::res://Actors/Tree1.tscn<>uid://xp8xulh23nye::::res://Images/Escenario/Tree2_ (1).PNG<>uid://ckul5wshj1yns::::res://Images/Escenario/Tree2_ (2).PNG<>uid://comxuuy8tb3q1::::res://Actors/PNJTemplate.tscn<>uid://dobwt20s3aype::::res://Images/PNjs/Bob_Idle_1.PNG<>uid://ca1vtxmhk4tra::::res://Images/PNjs/Bob_Idle_0.PNG<>uid://xb7yaaswlejl::::res://Images/PNjs/Mago_Idle_0.PNG<>uid://cq673q7a1nfsm::::res://Images/PNjs/Pescadora_Idle_0.PNG<>uid://b3s35gl14lefy::::res://Images/PNjs/Pescadora_Idle_1.PNG<>uid://c2s5vcscda6lp::::res://Images/PNjs/Primo_Idle_0.PNG<>uid://tv87x8s4d8ea::::res://Images/PNjs/Primo_Idle_1.PNG<>uid://xxhs5wn0rac7::::res://Images/PNjs/Punk_Idle (1).PNG<>uid://ber2lt2i1f4k4::::res://Images/PNjs/Punk_Idle (2).PNG<>uid://b8hggojin34m2::::res://Images/PNjs/Punk_Idle (3).PNG<>uid://c8hyaa03thkf2::::res://Images/PNjs/Emo_Idle_ (1).PNG<>uid://dnrpwciqtn3q4::::res://Images/PNjs/Emo_Idle_ (2).PNG<>uid://hn80srnncjx8::::res://Images/PNjs/Cowboy_Idle_0.PNG<>uid://dvnxmfstaklty::::res://Images/IMG_0187.PNG<>uid://d2dc30o4dq37w::::res://Actors/PJ.tscn<>res://Escenas/Camera2D.gd<>uid://p3bg5mpqmdns::::res://Actors/bound.tscn<>uid://de2njdhrkc44u::::res://Actors/CraftingTable.tscn<>uid://bqwbj1vfwxyhs::::res://Actors/TextIntro.tscn<>uid://u2j5fampbs2r::::res://Images/Escenario/Pez_ (1).PNG<>uid://c6i5p2lnnk3po::::res://Images/Escenario/Pez_ (2).PNG<>uid://dlnplt2w33viw::::res://Images/Escenario/Pez_ (3).PNG<>uid://cliafluibwii7::::res://Images/Escenario/IMG_0203.PNG<>uid://bflylsn0e0xx2::::res://Images/sombra.png<>uid://bb5gan2mch4mp::::res://Images/Escenario/IMG_0204.PNG<>uid://jhf7pmsttkk6::::res://Sounds/party at club bug__KHPTeWYGI58.mp3
-paint_root.tscn::PackedScene::2897093689615341755::1712267507::0::1::::<><>::res://paint_control.gd<>res://tools_panel.gd<>uid://cpot6t7lboubi::::res://Images/fondoPiedra1.png<>uid://cdqq0m3rrlbva::::res://paint_tools.png<>uid://br02ohnogtgap::::res://Sounds/splat sound effects (no copyright).wav<>uid://dc7y72e3wki32::::res://Images/IMG_0216.PNG<>uid://dx7oi4t7pop8o::::res://Images/IMG_0219.PNG<>res://Escenas/Pegatina1.gd<>uid://bedr3cwnj0uk7::::res://Images/IMG_0217.PNG<>uid://cto8wjrc6y706::::res://Images/IMG_0208.PNG<>uid://jorrvk2r1cp5::::res://Images/undo_b.png<>uid://6fudg5r3ogti::::res://Images/IMG_0220.PNG<>uid://dfe76yj00hyvu::::res://Images/restart_b.png<>uid://dx36b115uafkk::::res://Images/IMG_0209.PNG<>res://Escenas/Share.gd<>uid://ckdbmidag4wli::::res://Images/IMG_0211.PNG<>uid://mlrdceght85o::::res://Images/stikcers.png<>uid://cewet3ymdqymf::::res://Images/piedra1.PNG<>uid://bw0gr1upa5ta5::::res://Images/DONE.png<>uid://b0rhnd554fkov::::res://Images/IMG_0212.PNG<>uid://rectnurs80j::::res://Sounds/pop.wav<>uid://csky7xiv0wgpm::::res://Sounds/ole.wav<>uid://bu85k80s1g88o::::res://Images/IMG_0213.PNG<>uid://48ij5p3tn7lx::::res://Images/IMG_0214.PNG<>uid://b5iw4c1cb3tb7::::res://Images/IMG_0215.PNG<>uid://c8q086ej1u3wx::::res://Images/IMG_0210.PNG
-paint_root_s.tscn::PackedScene::5929848820577194040::1712246689::0::1::::<><>::uid://cx21i6r2eqcs2::::res://Images/recortable.png<>res://paint_control.gd<>res://tools_panel.gd<>uid://cdqq0m3rrlbva::::res://paint_tools.png<>res://Escenas/Button.gd<>uid://dwkb7oxjfium1::::res://Images/25694.png
-Pegatina1.gd::GDScript::-1::1712266922::0::1::::<>TextureButton<>::
-PegatinasGestor.gd::GDScript::-1::1712246689::0::1::::<>VScrollBar<>::
-Pen.gd::GDScript::-1::1712246689::0::1::::<>TextureButton<>::
-Share.gd::GDScript::-1::1712246689::0::1::::<>Button<>::
-::res://Images/::1712246690
-25694.png::CompressedTexture2D::8724179022327678578::1712246689::1712246689::1::::<><>::
-858962.png::CompressedTexture2D::5587857977347998729::1712246689::1712246689::1::::<><>::
-boton_general.png::CompressedTexture2D::3213275821061193813::1712246690::1712246690::1::::<><>::
-calaFondo.png::CompressedTexture2D::7738425637613390292::1712246690::1712246690::1::::<><>::
-Captura.PNG::CompressedTexture2D::3615396746095455654::1712246689::1712246689::1::::<><>::
-cowboy.png::CompressedTexture2D::3388820141871106560::1712246690::1712246690::1::::<><>::
-Crafting-Table-icon.png::CompressedTexture2D::5721198385730951275::1712246689::1712246689::1::::<><>::
-dialogo.png::CompressedTexture2D::3080430982490501877::1712246690::1712246690::1::::<><>::
-DONE.png::CompressedTexture2D::3982580745220214458::1712246689::1712246689::1::::<><>::
-Floor2.png::CompressedTexture2D::5620246242535349229::1712246689::1712246689::1::::<><>::
-fondoPiedra1.png::CompressedTexture2D::5855785340866232794::1712246690::1712246690::1::::<><>::
-ForestPathPublic-1024x1024.jpg::CompressedTexture2D::3808459190763826252::1712246689::1712246689::1::::<><>::
-heartIcon.png::CompressedTexture2D::3021234098234146110::1712246690::1712246690::1::::<><>::
-IMG_0183.PNG::CompressedTexture2D::5473318096566107426::1712246689::1712246689::1::::<><>::
-IMG_0187.PNG::CompressedTexture2D::8661482889928157434::1712246689::1712246689::1::::<><>::
-IMG_0208.PNG::CompressedTexture2D::6137374132397960097::1712246689::1712246689::1::::<><>::
-IMG_0209.PNG::CompressedTexture2D::8833293451599201138::1712246689::1712246689::1::::<><>::
-IMG_0210.PNG::CompressedTexture2D::7123681742371805267::1712246689::1712246689::1::::<><>::
-IMG_0211.PNG::CompressedTexture2D::5481005508378728542::1712246689::1712246689::1::::<><>::
-IMG_0212.PNG::CompressedTexture2D::4176684636049263697::1712246689::1712246689::1::::<><>::
-IMG_0213.PNG::CompressedTexture2D::3860163162803286852::1712246689::1712246689::1::::<><>::
-IMG_0214.PNG::CompressedTexture2D::2104104339644888677::1712246689::1712246689::1::::<><>::
-IMG_0215.PNG::CompressedTexture2D::4509988722035599806::1712246689::1712246689::1::::<><>::
-IMG_0216.PNG::CompressedTexture2D::7367215605328298659::1712246689::1712246689::1::::<><>::
-IMG_0217.PNG::CompressedTexture2D::2674451522249867964::1712246689::1712246689::1::::<><>::
-IMG_0219.PNG::CompressedTexture2D::8840531421136915916::1712246689::1712246689::1::::<><>::
-IMG_0220.PNG::CompressedTexture2D::2187396101080957558::1712246689::1712246689::1::::<><>::
-lapiz_negro.png::CompressedTexture2D::928174760915126912::1712246690::1712246690::1::::<><>::
-mesa.PNG::CompressedTexture2D::6818900652335389692::1712246690::1712246690::1::::<><>::
-piedra1.PNG::CompressedTexture2D::5099291358861906733::1712246690::1712246690::1::::<><>::
-piedra.png::CompressedTexture2D::4301452674792347967::1712246690::1712246690::1::::<><>::
-piedramia.png::CompressedTexture2D::4916542189852098908::1712246690::1712246690::1::::<><>::
-pluma.png::CompressedTexture2D::3762283122388517962::1712246690::1712246690::1::::<><>::
-recortable.png::CompressedTexture2D::6444517554301991271::1712246690::1712246690::1::::<><>::
-restart_b.png::CompressedTexture2D::7520463359298523622::1712246690::1712246690::1::::<><>::
-sombra.png::CompressedTexture2D::2761550875382270445::1712246690::1712246690::1::::<><>::
-stikcers.png::CompressedTexture2D::866011936718461526::1712246690::1712246690::1::::<><>::
-tree.png::CompressedTexture2D::7645258679782554613::1712246690::1712246690::1::::<><>::
-undo_b.png::CompressedTexture2D::661664548361437540::1712246690::1712246690::1::::<><>::
-::res://Images/Escenario/::1712246689
-cala_ (1).PNG::CompressedTexture2D::7809647247024295745::1712246689::1712246689::1::::<><>::
-cala_ (2).PNG::CompressedTexture2D::756077410552036708::1712246689::1712246689::1::::<><>::
-cala_ (3).PNG::CompressedTexture2D::7279516562475647437::1712246689::1712246689::1::::<><>::
-grass2_ (1).PNG::CompressedTexture2D::5140468300091365657::1712246689::1712246689::1::::<><>::
-grass2_ (2).PNG::CompressedTexture2D::8537801300851067226::1712246689::1712246689::1::::<><>::
-grass2_ (3).PNG::CompressedTexture2D::3313376300171572907::1712246689::1712246689::1::::<><>::
-grass_ (1).PNG::CompressedTexture2D::1166627481797026942::1712246689::1712246689::1::::<><>::
-grass_ (2).PNG::CompressedTexture2D::5421296002412802189::1712246689::1712246689::1::::<><>::
-grass_ (3).PNG::CompressedTexture2D::2254751334336023816::1712246689::1712246689::1::::<><>::
-IMG_0203.PNG::CompressedTexture2D::5561443207425194896::1712246689::1712246689::1::::<><>::
-IMG_0204.PNG::CompressedTexture2D::2518905886971003443::1712246689::1712246689::1::::<><>::
-pajaros_ (1).PNG::CompressedTexture2D::5255227203396194888::1712246689::1712246689::1::::<><>::
-pajaros_ (2).PNG::CompressedTexture2D::4888228049637083955::1712246689::1712246689::1::::<><>::
-pajaros_ (3).PNG::CompressedTexture2D::4198543152723769520::1712246689::1712246689::1::::<><>::
-Pez_ (1).PNG::CompressedTexture2D::1460115362054388583::1712246689::1712246689::1::::<><>::
-Pez_ (2).PNG::CompressedTexture2D::6967060274621012860::1712246689::1712246689::1::::<><>::
-Pez_ (3).PNG::CompressedTexture2D::7959107681216381082::1712246689::1712246689::1::::<><>::
-Tree2_ (1).PNG::CompressedTexture2D::1647354871821844248::1712246689::1712246689::1::::<><>::
-Tree2_ (2).PNG::CompressedTexture2D::5516740003236607212::1712246689::1712246689::1::::<><>::
-Tree_ (1).PNG::CompressedTexture2D::4262439377905566126::1712246689::1712246689::1::::<><>::
-Tree_ (2).PNG::CompressedTexture2D::1977887220225849314::1712246689::1712246689::1::::<><>::
-Tree_ (3).PNG::CompressedTexture2D::5857124108130822924::1712246689::1712246689::1::::<><>::
-tree_shadow.png::CompressedTexture2D::410852557274351486::1712246689::1712246689::1::::<><>::
-::res://Images/PJ/::1712246689
-Pj_Back_0.PNG::CompressedTexture2D::8186759171786877077::1712246689::1712246689::1::::<><>::
-Pj_Back_1.PNG::CompressedTexture2D::8688418896283312818::1712246689::1712246689::1::::<><>::
-Pj_Back_2.png::CompressedTexture2D::659962718567821464::1712246689::1712246689::1::::<><>::
-Pj_Front_0.PNG::CompressedTexture2D::2558601638894407267::1712246689::1712246689::1::::<><>::
-Pj_Front_1.PNG::CompressedTexture2D::1807106772442997671::1712246689::1712246689::1::::<><>::
-Pj_Front_2.PNG::CompressedTexture2D::5987273329861760440::1712246689::1712246689::1::::<><>::
-Pj_Idle_1.PNG::CompressedTexture2D::3064268029795191487::1712246689::1712246689::1::::<><>::
-Pj_Idle_2.png::CompressedTexture2D::3694865256187896953::1712246689::1712246689::1::::<><>::
-Pj_Idle_3.PNG::CompressedTexture2D::2585897912866211107::1712246689::1712246689::1::::<><>::
-Pj_Left_0.PNG::CompressedTexture2D::703055366072660016::1712246689::1712246689::1::::<><>::
-Pj_Left_1.PNG::CompressedTexture2D::1768841377940606633::1712246689::1712246689::1::::<><>::
-Pj_Left_2.png::CompressedTexture2D::8794883296623473294::1712246689::1712246689::1::::<><>::
-::res://Images/PNjs/::1712246690
-Bob_0.PNG::CompressedTexture2D::8640166131930543288::1712246689::1712246689::1::::<><>::
-Bob_Idle_0.PNG::CompressedTexture2D::4827825402831325046::1712246689::1712246689::1::::<><>::
-Bob_Idle_1.PNG::CompressedTexture2D::8145341401296719138::1712246689::1712246689::1::::<><>::
-Cowboy_Idle_0.PNG::CompressedTexture2D::520208094168019859::1712246689::1712246689::1::::<><>::
-Emo_0.PNG::CompressedTexture2D::4393510324736456924::1712246689::1712246689::1::::<><>::
-Emo_Idle_ (1).PNG::CompressedTexture2D::7104981099464063893::1712246689::1712246689::1::::<><>::
-Emo_Idle_ (2).PNG::CompressedTexture2D::8107761600708181701::1712246689::1712246689::1::::<><>::
-Mago_0.PNG::CompressedTexture2D::3720197503236440438::1712246689::1712246689::1::::<><>::
-Mago_Idle_0.PNG::CompressedTexture2D::1618393585098723269::1712246689::1712246689::1::::<><>::
-Pescadora_0.PNG::CompressedTexture2D::7049079007614127874::1712246690::1712246690::1::::<><>::
-Pescadora_Idle_0.PNG::CompressedTexture2D::5961852411811042956::1712246690::1712246690::1::::<><>::
-Pescadora_Idle_1.PNG::CompressedTexture2D::4390621088099153018::1712246690::1712246690::1::::<><>::
-Primo_0.PNG::CompressedTexture2D::3350293570829421632::1712246690::1712246690::1::::<><>::
-Primo_Idle_0.PNG::CompressedTexture2D::6706958089589245041::1712246690::1712246690::1::::<><>::
-Primo_Idle_1.PNG::CompressedTexture2D::1379002027996467188::1712246690::1712246690::1::::<><>::
-Punk_0.PNG::CompressedTexture2D::7652725646674851827::1712246690::1712246690::1::::<><>::
-Punk_Idle (1).PNG::CompressedTexture2D::1662282865568711708::1712246690::1712246690::1::::<><>::
-Punk_Idle (2).PNG::CompressedTexture2D::2703930522653725677::1712246690::1712246690::1::::<><>::
-Punk_Idle (3).PNG::CompressedTexture2D::4717478934358748311::1712246690::1712246690::1::::<><>::
-sombra_pnj.png::CompressedTexture2D::1244976466148984349::1712246690::1712246690::1::::<><>::
-::res://Images/PNjs/cala_sprites/::1712246690
-cala_idle_ (1).PNG::CompressedTexture2D::8213610562253321763::1712246690::1712246690::1::::<><>::
-cala_idle_ (2).PNG::CompressedTexture2D::891249699097259767::1712246690::1712246690::1::::<><>::
-cala_idle_ (3).PNG::CompressedTexture2D::3220487195223269234::1712246690::1712246690::1::::<><>::
-cala_idle_ (4).PNG::CompressedTexture2D::106070034227628710::1712246690::1712246690::1::::<><>::
-cala_idle_ (5).PNG::CompressedTexture2D::4493495041766281021::1712246690::1712246690::1::::<><>::
-cala_idle_ (6).PNG::CompressedTexture2D::7056959692274256992::1712246690::1712246690::1::::<><>::
-cala_idle_ (7).PNG::CompressedTexture2D::5979834127691462557::1712246690::1712246690::1::::<><>::
-cala_idle_ (8).PNG::CompressedTexture2D::1338062537773660690::1712246690::1712246690::1::::<><>::
-cala_idle_ (9).PNG::CompressedTexture2D::7814846585924069725::1712246690::1712246690::1::::<><>::
-cala_idle_ (10).PNG::CompressedTexture2D::4526842989840650111::1712246690::1712246690::1::::<><>::
-cala_idle_ (11).PNG::CompressedTexture2D::2587243538980880193::1712246690::1712246690::1::::<><>::
-cala_idle_ (12).PNG::CompressedTexture2D::5258900567612633077::1712246690::1712246690::1::::<><>::
-cala_idle_ (13).PNG::CompressedTexture2D::7929973015804676208::1712246690::1712246690::1::::<><>::
-cala_idle_ (14).PNG::CompressedTexture2D::2799240686219359715::1712246690::1712246690::1::::<><>::
-cala_idle_ (15).PNG::CompressedTexture2D::4516262046973929831::1712246690::1712246690::1::::<><>::
-cala_idle_ (16).PNG::CompressedTexture2D::5487939635478303531::1712246690::1712246690::1::::<><>::
-cala_idle_ (17).PNG::CompressedTexture2D::3488307272410793971::1712246690::1712246690::1::::<><>::
-cala_idle_ (18).PNG::CompressedTexture2D::9047196106480998038::1712246690::1712246690::1::::<><>::
-::res://Images/Retratos/::1712246690
-Bob_0.PNG::CompressedTexture2D::7426639758135341843::1712246690::1712246690::1::::<><>::
-Cowboy_0.PNG::CompressedTexture2D::6186878604885745636::1712246690::1712246690::1::::<><>::
-Emo_0.PNG::CompressedTexture2D::1717670813717281711::1712246690::1712246690::1::::<><>::
-Mago_0.PNG::CompressedTexture2D::8519344426259116143::1712246690::1712246690::1::::<><>::
-Pescadora_0.PNG::CompressedTexture2D::6818472951620097906::1712246690::1712246690::1::::<><>::
-Primo.PNG::CompressedTexture2D::3879497605342330230::1712246690::1712246690::1::::<><>::
-Primo_0.PNG::CompressedTexture2D::2789693505608975649::1712246690::1712246690::1::::<><>::
-Punk_0.PNG::CompressedTexture2D::7380032612846626374::1712246690::1712246690::1::::<><>::
-::res://singletons/::1712249393
-SignalBus.gd::GDScript::-1::1712249393::0::1::::<>Node<>::
-::res://Sounds/::1712266863
-bugs.mp3::AudioStreamMP3::1247221116267921609::1712266863::1712266863::1::::<><>::
-foot1.wav::AudioStreamWAV::7438071825366570889::1712246690::1712246690::1::::<><>::
-foot3.wav::AudioStreamWAV::7815243222571251431::1712246690::1712246690::1::::<><>::
-Footsteps on Grass - Sound Effect  COPYRIGHT FREE.mp3::AudioStreamMP3::8393759025680484461::1712246690::1712246690::1::::<><>::
-musicaCala.mp3::AudioStreamMP3::2590190464721673817::1712266863::1712266863::1::::<><>::
-ole.wav::AudioStreamWAV::6058399905026647682::1712248327::1712248328::1::::<><>::
-party at club bug__KHPTeWYGI58.mp3::AudioStreamMP3::646511774621390755::1712246690::1712246690::1::::<><>::
-pasodoble.wav::AudioStreamWAV::6516575462025507544::1712246690::1712246690::1::::<><>::
-pop.wav::AudioStreamWAV::35341880336174655::1712246690::1712246690::1::::<><>::
-splat sound effects (no copyright).wav::AudioStreamWAV::3632905217701285151::1712247408::1712247408::1::::<><>::
-woosh.wav::AudioStreamWAV::6278338959566582944::1712246690::1712246690::1::::<><>::
+::res://::1712272919
+For u.png::CompressedTexture2D::5056799341197259325::1712231319::1712231381::1::::<><>::
+Goblins.otf::FontFile::6709327785292400217::1711898149::1711898150::1::::<><>::
+GreatVibes-Regular.otf::FontFile::5350634538924949955::1712060109::1712060109::1::::<><>::
+icon.webp::CompressedTexture2D::3626017087650301524::1711797823::1711797832::1::::<><>::
+new_rich_text_effect.tres::RichTextEffect::974209268950171617::1712060109::0::1::::<><>::
+paint_control.gd::GDScript::-1::1712261505::0::1::::<>Control<>::
+paint_tools.png::CompressedTexture2D::5017454733427421014::1711797823::1711797832::1::::<><>::
+README.md::TextFile::-1::1711797823::0::1::::<><>::
+Romantyc Goblins.otf::FontFile::8830866377238145623::1711898093::1711898094::1::::<><>::
+tools_panel.gd::GDScript::-1::1712261505::0::1::::<>Panel<>::
+tools_panel_old.gd::GDScript::-1::1711893845::0::1::::<>Panel<>::
+Tribal_Play.ttf::FontFile::1967647916404671244::1711898263::1711898263::1::::<><>::
+VTCGoblinHand.ttf::FontFile::7195987770524150237::1711898212::1711898212::1::::<><>::
+::res://Actors/::1712273326
+Area2D.gd::GDScript::-1::1712271079::0::1::::<>Area2D<>::
+bound.tscn::PackedScene::1110708258381900952::1711802034::0::1::::<><>::
+CraftingTable.gd::GDScript::-1::1712216855::0::1::::<>Area2D<>::
+CraftingTable.tscn::PackedScene::7496561187211714802::1712273326::0::1::::<><>::res://Actors/CraftingTable.gd<>uid://c4fekd5s0klbo::::res://Images/mesa.PNG<>uid://cj8k0qj8bur7o::::res://Images/IMG_0183.PNG<>uid://bflylsn0e0xx2::::res://Images/sombra.png
+DialogBox.gd::GDScript::-1::1712270972::0::1::::<>CanvasLayer<>::
+DialogBox.tscn::PackedScene::4166441005025591717::1712273326::0::1::::<><>::res://Actors/DialogBox.gd<>uid://bvji02eia3bl3::::res://Images/Retratos/Primo.PNG<>uid://cih5f0rbjq2v4::::res://GreatVibes-Regular.otf<>uid://3be4yafc4dke::::res://Tribal_Play.ttf<>uid://bj5gio7ibanbp::::res://Images/dialogo.png<>uid://cvpjlcfayeang::::res://Sounds/woosh.wav
+grass.gd::GDScript::-1::1712143086::0::1::::<>AnimatedSprite2D<>::
+grass.tscn::PackedScene::4427878878055726421::1712273326::0::1::::<><>::uid://qvegi570mjsg::::res://Images/Escenario/grass_ (1).PNG<>uid://cjid7n1t2tf30::::res://Images/Escenario/grass_ (2).PNG<>uid://7ehopmj6l2um::::res://Images/Escenario/grass_ (3).PNG<>res://Actors/grass.gd
+Intro.tscn::PackedScene::9153120119993266627::1712141556::0::1::::<><>::uid://3be4yafc4dke::::res://Tribal_Play.ttf
+PegatinaT.gd::GDScript::-1::1712187202::0::1::::<>Sprite2D<>::
+PegatinaT.tscn::PackedScene::1804303902725807625::1712273326::0::1::::<><>::res://Actors/PegatinaT.gd
+PJ.gd::GDScript::-1::1712233303::0::1::::<>CharacterBody2D<>::
+PJ.tscn::PackedScene::9060726734816540950::1712273326::0::1::::<><>::res://Actors/PJ.gd<>uid://bcpn2bhuunsqt::::res://Images/PJ/Pj_Front_0.PNG<>uid://bjwmbubxe55hj::::res://Images/PJ/Pj_Idle_1.PNG<>uid://bsv25j6u86b2x::::res://Images/PJ/Pj_Idle_2.png<>uid://bc3vmjdxodjv4::::res://Images/PJ/Pj_Idle_3.PNG<>uid://dovyyy7bpdigb::::res://Images/PJ/Pj_Back_0.PNG<>uid://dv1y8wigwjmtu::::res://Images/PJ/Pj_Back_1.PNG<>uid://jnxqv6nmq1ps::::res://Images/PJ/Pj_Back_2.png<>uid://00m1w52bba6r::::res://Images/PJ/Pj_Front_1.PNG<>uid://crkjrtv3aj7qq::::res://Images/PJ/Pj_Front_2.PNG<>uid://kathpl6puh4k::::res://Images/PJ/Pj_Left_0.PNG<>uid://0g3tajo8i5of::::res://Images/PJ/Pj_Left_1.PNG<>uid://dxkkpcbt3kbcw::::res://Images/PJ/Pj_Left_2.png<>uid://r0ct0cetsj62::::res://Images/PNjs/sombra_pnj.png<>uid://djl06cv83klvb::::res://Sounds/foot3.wav
+PNJSetCosas.gd::GDScript::-1::1712270709::0::1::::<>Node2D<>::
+PNJTemplate.tscn::PackedScene::5781691007146239874::1712273326::0::1::::<><>::uid://cq673q7a1nfsm::::res://Images/PNjs/Pescadora_Idle_0.PNG<>res://Actors/PNJSetCosas.gd<>res://Actors/Area2D.gd<>uid://b3s35gl14lefy::::res://Images/PNjs/Pescadora_Idle_1.PNG<>uid://b0miw64t310pt::::res://Actors/DialogBox.tscn<>uid://bjbrjwr2piwig::::res://Images/heartIcon.png<>uid://cj8k0qj8bur7o::::res://Images/IMG_0183.PNG<>uid://cvpjlcfayeang::::res://Sounds/woosh.wav<>uid://r0ct0cetsj62::::res://Images/PNjs/sombra_pnj.png<>uid://rectnurs80j::::res://Sounds/pop.wav
+TextIntro.gd::GDScript::-1::1712161606::0::1::::<>Node2D<>::
+TextIntro.tscn::PackedScene::3554936679934349784::1712273326::0::1::::<><>::res://Actors/TextIntro.gd<>uid://3be4yafc4dke::::res://Tribal_Play.ttf
+Tree1.tscn::PackedScene::4989717497047240618::1712273326::0::1::::<><>::uid://b1y00vnrkvcws::::res://Images/Escenario/Tree_ (1).PNG<>uid://3gdrpwlttv0u::::res://Images/Escenario/Tree_ (2).PNG<>uid://f4axf6j6psha::::res://Images/Escenario/tree_shadow.png
+::res://Dialogos/::1712273324
+goblin_dialogs.json::JSON::-1::1712273324::0::1::::<><>::
+::res://Escenas/::1712273327
+Button.gd::GDScript::-1::1712221115::0::1::::<>Button<>::
+Cala.gd::GDScript::-1::1712272289::0::1::::<>Node2D<>::
+Cala.tscn::PackedScene::4815334513237021025::1712273326::0::1::::<><>::res://Escenas/Cala.gd<>uid://k1iqqckc8ly7::::res://Images/Escenario/cala_ (2).PNG<>uid://djjb0qa1purfd::::res://Images/Escenario/cala_ (1).PNG<>uid://dbyitr2wvgcjt::::res://Images/Escenario/cala_ (3).PNG<>uid://dpay73vgdv7j0::::res://Images/PNjs/cala_sprites/cala_idle_ (1).PNG<>uid://d15r86028i327::::res://Images/PNjs/cala_sprites/cala_idle_ (18).PNG<>uid://bpx058i84kpst::::res://Images/PNjs/cala_sprites/cala_idle_ (17).PNG<>uid://b0miw64t310pt::::res://Actors/DialogBox.tscn<>uid://cg4w3a281a3ke::::res://Images/Escenario/pajaros_ (1).PNG<>uid://cbv5nwqj0x2kl::::res://Images/Escenario/pajaros_ (2).PNG<>uid://b022nlrmxhu45::::res://Images/Escenario/pajaros_ (3).PNG<>uid://bc5yb8wfugt82::::res://Sounds/musicaCala.mp3<>uid://3be4yafc4dke::::res://Tribal_Play.ttf
+Cala_bob.tscn::PackedScene::4889140775470115515::1712273327::0::1::::<><>::res://Escenas/Cala.gd<>uid://k1iqqckc8ly7::::res://Images/Escenario/cala_ (2).PNG<>uid://djjb0qa1purfd::::res://Images/Escenario/cala_ (1).PNG<>uid://dbyitr2wvgcjt::::res://Images/Escenario/cala_ (3).PNG<>uid://dpay73vgdv7j0::::res://Images/PNjs/cala_sprites/cala_idle_ (1).PNG<>uid://d15r86028i327::::res://Images/PNjs/cala_sprites/cala_idle_ (18).PNG<>uid://cg6platba54yb::::res://Images/PNjs/cala_sprites/cala_idle_ (12).PNG<>uid://dk8lq5rtjrq45::::res://Images/PNjs/cala_sprites/cala_idle_ (13).PNG<>uid://b0miw64t310pt::::res://Actors/DialogBox.tscn<>uid://b022nlrmxhu45::::res://Images/Escenario/pajaros_ (3).PNG<>uid://cg4w3a281a3ke::::res://Images/Escenario/pajaros_ (1).PNG<>uid://cbv5nwqj0x2kl::::res://Images/Escenario/pajaros_ (2).PNG<>uid://bc5yb8wfugt82::::res://Sounds/musicaCala.mp3<>uid://3be4yafc4dke::::res://Tribal_Play.ttf
+Cala_cowboy.tscn::PackedScene::3426757132852338371::1712273327::0::1::::<><>::res://Escenas/Cala.gd<>uid://k1iqqckc8ly7::::res://Images/Escenario/cala_ (2).PNG<>uid://djjb0qa1purfd::::res://Images/Escenario/cala_ (1).PNG<>uid://dbyitr2wvgcjt::::res://Images/Escenario/cala_ (3).PNG<>uid://dpay73vgdv7j0::::res://Images/PNjs/cala_sprites/cala_idle_ (1).PNG<>uid://d15r86028i327::::res://Images/PNjs/cala_sprites/cala_idle_ (18).PNG<>uid://mxy0txu5nm68::::res://Images/PNjs/cala_sprites/cala_idle_ (2).PNG<>uid://b0miw64t310pt::::res://Actors/DialogBox.tscn<>uid://b022nlrmxhu45::::res://Images/Escenario/pajaros_ (3).PNG<>uid://cg4w3a281a3ke::::res://Images/Escenario/pajaros_ (1).PNG<>uid://cbv5nwqj0x2kl::::res://Images/Escenario/pajaros_ (2).PNG<>uid://bc5yb8wfugt82::::res://Sounds/musicaCala.mp3<>uid://3be4yafc4dke::::res://Tribal_Play.ttf
+Cala_emo.tscn::PackedScene::1040186556840698070::1712273327::0::1::::<><>::res://Escenas/Cala.gd<>uid://k1iqqckc8ly7::::res://Images/Escenario/cala_ (2).PNG<>uid://djjb0qa1purfd::::res://Images/Escenario/cala_ (1).PNG<>uid://dbyitr2wvgcjt::::res://Images/Escenario/cala_ (3).PNG<>uid://dpay73vgdv7j0::::res://Images/PNjs/cala_sprites/cala_idle_ (1).PNG<>uid://d15r86028i327::::res://Images/PNjs/cala_sprites/cala_idle_ (18).PNG<>uid://c8hyaa03thkf2::::res://Images/PNjs/Emo_Idle_ (1).PNG<>uid://dnrpwciqtn3q4::::res://Images/PNjs/Emo_Idle_ (2).PNG<>uid://b0miw64t310pt::::res://Actors/DialogBox.tscn<>uid://b022nlrmxhu45::::res://Images/Escenario/pajaros_ (3).PNG<>uid://cg4w3a281a3ke::::res://Images/Escenario/pajaros_ (1).PNG<>uid://cbv5nwqj0x2kl::::res://Images/Escenario/pajaros_ (2).PNG<>uid://bc5yb8wfugt82::::res://Sounds/musicaCala.mp3<>uid://3be4yafc4dke::::res://Tribal_Play.ttf
+Cala_mago.tscn::PackedScene::600411196353134193::1712273327::0::1::::<><>::res://Escenas/Cala.gd<>uid://k1iqqckc8ly7::::res://Images/Escenario/cala_ (2).PNG<>uid://djjb0qa1purfd::::res://Images/Escenario/cala_ (1).PNG<>uid://dbyitr2wvgcjt::::res://Images/Escenario/cala_ (3).PNG<>uid://dpay73vgdv7j0::::res://Images/PNjs/cala_sprites/cala_idle_ (1).PNG<>uid://d15r86028i327::::res://Images/PNjs/cala_sprites/cala_idle_ (18).PNG<>uid://mxy0txu5nm68::::res://Images/PNjs/cala_sprites/cala_idle_ (2).PNG<>uid://b0miw64t310pt::::res://Actors/DialogBox.tscn<>uid://b022nlrmxhu45::::res://Images/Escenario/pajaros_ (3).PNG<>uid://cg4w3a281a3ke::::res://Images/Escenario/pajaros_ (1).PNG<>uid://cbv5nwqj0x2kl::::res://Images/Escenario/pajaros_ (2).PNG<>uid://bc5yb8wfugt82::::res://Sounds/musicaCala.mp3<>uid://3be4yafc4dke::::res://Tribal_Play.ttf
+Cala_pescadora.tscn::PackedScene::519770201875551470::1712273327::0::1::::<><>::res://Escenas/Cala.gd<>uid://k1iqqckc8ly7::::res://Images/Escenario/cala_ (2).PNG<>uid://djjb0qa1purfd::::res://Images/Escenario/cala_ (1).PNG<>uid://dbyitr2wvgcjt::::res://Images/Escenario/cala_ (3).PNG<>uid://dpay73vgdv7j0::::res://Images/PNjs/cala_sprites/cala_idle_ (1).PNG<>uid://d15r86028i327::::res://Images/PNjs/cala_sprites/cala_idle_ (18).PNG<>uid://b5lyf8svnstet::::res://Images/PNjs/cala_sprites/cala_idle_ (15).PNG<>uid://ckgntf8nipvlj::::res://Images/PNjs/cala_sprites/cala_idle_ (16).PNG<>uid://b0miw64t310pt::::res://Actors/DialogBox.tscn<>uid://b022nlrmxhu45::::res://Images/Escenario/pajaros_ (3).PNG<>uid://cg4w3a281a3ke::::res://Images/Escenario/pajaros_ (1).PNG<>uid://cbv5nwqj0x2kl::::res://Images/Escenario/pajaros_ (2).PNG<>uid://bc5yb8wfugt82::::res://Sounds/musicaCala.mp3<>uid://3be4yafc4dke::::res://Tribal_Play.ttf
+Cala_primo.tscn::PackedScene::2285514432265181349::1712273327::0::1::::<><>::res://Escenas/Cala.gd<>uid://k1iqqckc8ly7::::res://Images/Escenario/cala_ (2).PNG<>uid://djjb0qa1purfd::::res://Images/Escenario/cala_ (1).PNG<>uid://dbyitr2wvgcjt::::res://Images/Escenario/cala_ (3).PNG<>uid://dpay73vgdv7j0::::res://Images/PNjs/cala_sprites/cala_idle_ (1).PNG<>uid://d15r86028i327::::res://Images/PNjs/cala_sprites/cala_idle_ (18).PNG<>uid://djltm8a0i7giv::::res://Images/PNjs/cala_sprites/cala_idle_ (9).PNG<>uid://b5q3pbyoavh80::::res://Images/PNjs/cala_sprites/cala_idle_ (10).PNG<>uid://b0miw64t310pt::::res://Actors/DialogBox.tscn<>uid://b022nlrmxhu45::::res://Images/Escenario/pajaros_ (3).PNG<>uid://cg4w3a281a3ke::::res://Images/Escenario/pajaros_ (1).PNG<>uid://cbv5nwqj0x2kl::::res://Images/Escenario/pajaros_ (2).PNG<>uid://bc5yb8wfugt82::::res://Sounds/musicaCala.mp3<>uid://3be4yafc4dke::::res://Tribal_Play.ttf
+Cala_punk.tscn::PackedScene::9003155598548637494::1712273327::0::1::::<><>::res://Escenas/Cala.gd<>uid://k1iqqckc8ly7::::res://Images/Escenario/cala_ (2).PNG<>uid://djjb0qa1purfd::::res://Images/Escenario/cala_ (1).PNG<>uid://dbyitr2wvgcjt::::res://Images/Escenario/cala_ (3).PNG<>uid://dpay73vgdv7j0::::res://Images/PNjs/cala_sprites/cala_idle_ (1).PNG<>uid://d15r86028i327::::res://Images/PNjs/cala_sprites/cala_idle_ (18).PNG<>uid://b5axhbdio726t::::res://Images/PNjs/cala_sprites/cala_idle_ (5).PNG<>uid://c7spdh6xupkoe::::res://Images/PNjs/cala_sprites/cala_idle_ (6).PNG<>uid://b0miw64t310pt::::res://Actors/DialogBox.tscn<>uid://crgw82svcwld2::::res://Images/PNjs/cala_sprites/cala_idle_ (7).PNG<>uid://b022nlrmxhu45::::res://Images/Escenario/pajaros_ (3).PNG<>uid://cg4w3a281a3ke::::res://Images/Escenario/pajaros_ (1).PNG<>uid://cbv5nwqj0x2kl::::res://Images/Escenario/pajaros_ (2).PNG<>uid://bc5yb8wfugt82::::res://Sounds/musicaCala.mp3<>uid://3be4yafc4dke::::res://Tribal_Play.ttf
+Camera2D.gd::GDScript::-1::1712261504::0::1::::<>Camera2D<>::
+Mapa.gd::GDScript::-1::1711813983::0::1::::<>RefCounted<>::
+Mapa.tscn::PackedScene::3967695528386007384::1712273326::0::1::::<><>::uid://dvnxmfstaklty::::res://Images/IMG_0187.PNG<>uid://d2dc30o4dq37w::::res://Actors/PJ.tscn<>res://Escenas/Camera2D.gd<>uid://p3bg5mpqmdns::::res://Actors/bound.tscn<>uid://ca1vtxmhk4tra::::res://Images/PNjs/Bob_Idle_0.PNG<>uid://comxuuy8tb3q1::::res://Actors/PNJTemplate.tscn<>uid://dobwt20s3aype::::res://Images/PNjs/Bob_Idle_1.PNG<>uid://cddb6hny8mmri::::res://Actors/Tree1.tscn<>uid://b4c5rvbl24svl::::res://Actors/grass.tscn<>uid://xb7yaaswlejl::::res://Images/PNjs/Mago_Idle_0.PNG<>uid://cq673q7a1nfsm::::res://Images/PNjs/Pescadora_Idle_0.PNG<>uid://cfic05ythxw3b::::res://Images/Escenario/grass2_ (1).PNG<>uid://b3s35gl14lefy::::res://Images/PNjs/Pescadora_Idle_1.PNG<>uid://dtv1ltc2gy24u::::res://Images/Escenario/grass2_ (2).PNG<>uid://bnha3aby5ygm2::::res://Images/Escenario/grass2_ (3).PNG<>uid://c2s5vcscda6lp::::res://Images/PNjs/Primo_Idle_0.PNG<>uid://xp8xulh23nye::::res://Images/Escenario/Tree2_ (1).PNG<>uid://tv87x8s4d8ea::::res://Images/PNjs/Primo_Idle_1.PNG<>uid://ckul5wshj1yns::::res://Images/Escenario/Tree2_ (2).PNG<>uid://xxhs5wn0rac7::::res://Images/PNjs/Punk_Idle (1).PNG<>uid://ber2lt2i1f4k4::::res://Images/PNjs/Punk_Idle (2).PNG<>uid://b8hggojin34m2::::res://Images/PNjs/Punk_Idle (3).PNG<>uid://c8hyaa03thkf2::::res://Images/PNjs/Emo_Idle_ (1).PNG<>uid://dnrpwciqtn3q4::::res://Images/PNjs/Emo_Idle_ (2).PNG<>uid://hn80srnncjx8::::res://Images/PNjs/Cowboy_Idle_0.PNG<>uid://u2j5fampbs2r::::res://Images/Escenario/Pez_ (1).PNG<>uid://c6i5p2lnnk3po::::res://Images/Escenario/Pez_ (2).PNG<>uid://dlnplt2w33viw::::res://Images/Escenario/Pez_ (3).PNG<>uid://cliafluibwii7::::res://Images/Escenario/IMG_0203.PNG<>uid://bb5gan2mch4mp::::res://Images/Escenario/IMG_0204.PNG<>uid://bflylsn0e0xx2::::res://Images/sombra.png<>uid://r1fsxkbxk5dl::::res://Sounds/bugs.mp3<>uid://c4fekd5s0klbo::::res://Images/mesa.PNG
+Mapa_ini.tscn::PackedScene::4052963243958837217::1712273327::0::1::::<><>::uid://b4c5rvbl24svl::::res://Actors/grass.tscn<>uid://cfic05ythxw3b::::res://Images/Escenario/grass2_ (1).PNG<>uid://dtv1ltc2gy24u::::res://Images/Escenario/grass2_ (2).PNG<>uid://bnha3aby5ygm2::::res://Images/Escenario/grass2_ (3).PNG<>uid://cddb6hny8mmri::::res://Actors/Tree1.tscn<>uid://xp8xulh23nye::::res://Images/Escenario/Tree2_ (1).PNG<>uid://ckul5wshj1yns::::res://Images/Escenario/Tree2_ (2).PNG<>uid://comxuuy8tb3q1::::res://Actors/PNJTemplate.tscn<>uid://dobwt20s3aype::::res://Images/PNjs/Bob_Idle_1.PNG<>uid://ca1vtxmhk4tra::::res://Images/PNjs/Bob_Idle_0.PNG<>uid://xb7yaaswlejl::::res://Images/PNjs/Mago_Idle_0.PNG<>uid://cq673q7a1nfsm::::res://Images/PNjs/Pescadora_Idle_0.PNG<>uid://b3s35gl14lefy::::res://Images/PNjs/Pescadora_Idle_1.PNG<>uid://c2s5vcscda6lp::::res://Images/PNjs/Primo_Idle_0.PNG<>uid://tv87x8s4d8ea::::res://Images/PNjs/Primo_Idle_1.PNG<>uid://xxhs5wn0rac7::::res://Images/PNjs/Punk_Idle (1).PNG<>uid://ber2lt2i1f4k4::::res://Images/PNjs/Punk_Idle (2).PNG<>uid://b8hggojin34m2::::res://Images/PNjs/Punk_Idle (3).PNG<>uid://c8hyaa03thkf2::::res://Images/PNjs/Emo_Idle_ (1).PNG<>uid://dnrpwciqtn3q4::::res://Images/PNjs/Emo_Idle_ (2).PNG<>uid://hn80srnncjx8::::res://Images/PNjs/Cowboy_Idle_0.PNG<>uid://dvnxmfstaklty::::res://Images/IMG_0187.PNG<>uid://d2dc30o4dq37w::::res://Actors/PJ.tscn<>res://Escenas/Camera2D.gd<>uid://p3bg5mpqmdns::::res://Actors/bound.tscn<>uid://de2njdhrkc44u::::res://Actors/CraftingTable.tscn<>uid://bqwbj1vfwxyhs::::res://Actors/TextIntro.tscn<>uid://u2j5fampbs2r::::res://Images/Escenario/Pez_ (1).PNG<>uid://c6i5p2lnnk3po::::res://Images/Escenario/Pez_ (2).PNG<>uid://dlnplt2w33viw::::res://Images/Escenario/Pez_ (3).PNG<>uid://cliafluibwii7::::res://Images/Escenario/IMG_0203.PNG<>uid://bflylsn0e0xx2::::res://Images/sombra.png<>uid://bb5gan2mch4mp::::res://Images/Escenario/IMG_0204.PNG<>uid://jhf7pmsttkk6::::res://Sounds/party at club bug__KHPTeWYGI58.mp3
+paint_root.tscn::PackedScene::2897093689615341755::1712273326::0::1::::<><>::res://paint_control.gd<>res://tools_panel.gd<>uid://cpot6t7lboubi::::res://Images/fondoPiedra1.png<>uid://cdqq0m3rrlbva::::res://paint_tools.png<>uid://br02ohnogtgap::::res://Sounds/splat sound effects (no copyright).wav<>uid://dc7y72e3wki32::::res://Images/IMG_0216.PNG<>uid://dx7oi4t7pop8o::::res://Images/IMG_0219.PNG<>res://Escenas/Pegatina1.gd<>uid://bedr3cwnj0uk7::::res://Images/IMG_0217.PNG<>uid://cto8wjrc6y706::::res://Images/IMG_0208.PNG<>uid://jorrvk2r1cp5::::res://Images/undo_b.png<>uid://6fudg5r3ogti::::res://Images/IMG_0220.PNG<>uid://dfe76yj00hyvu::::res://Images/restart_b.png<>uid://dx36b115uafkk::::res://Images/IMG_0209.PNG<>res://Escenas/Share.gd<>uid://ckdbmidag4wli::::res://Images/IMG_0211.PNG<>uid://mlrdceght85o::::res://Images/stikcers.png<>uid://cewet3ymdqymf::::res://Images/piedra1.PNG<>uid://bw0gr1upa5ta5::::res://Images/DONE.png<>uid://b0rhnd554fkov::::res://Images/IMG_0212.PNG<>uid://rectnurs80j::::res://Sounds/pop.wav<>uid://csky7xiv0wgpm::::res://Sounds/ole.wav<>uid://bu85k80s1g88o::::res://Images/IMG_0213.PNG<>uid://48ij5p3tn7lx::::res://Images/IMG_0214.PNG<>uid://b5iw4c1cb3tb7::::res://Images/IMG_0215.PNG<>uid://c8q086ej1u3wx::::res://Images/IMG_0210.PNG<>uid://jhf7pmsttkk6::::res://Sounds/party at club bug__KHPTeWYGI58.mp3
+paint_root_s.tscn::PackedScene::5929848820577194040::1711868161::0::1::::<><>::uid://cx21i6r2eqcs2::::res://Images/recortable.png<>res://paint_control.gd<>res://tools_panel.gd<>uid://cdqq0m3rrlbva::::res://paint_tools.png<>res://Escenas/Button.gd<>uid://dwkb7oxjfium1::::res://Images/25694.png
+Pegatina1.gd::GDScript::-1::1712268270::0::1::::<>TextureButton<>::
+PegatinasGestor.gd::GDScript::-1::1711876956::0::1::::<>VScrollBar<>::
+Pen.gd::GDScript::-1::1711924276::0::1::::<>TextureButton<>::
+Share.gd::GDScript::-1::1712062133::0::1::::<>Button<>::
+::res://Images/::1712273619
+25694.png::CompressedTexture2D::8724179022327678578::1711832364::1711832364::1::::<><>::
+858962.png::CompressedTexture2D::5587857977347998729::1711802986::1711802986::1::::<><>::
+boton_general.png::CompressedTexture2D::3213275821061193813::1712216152::1712216152::1::::<><>::
+calaFondo.png::CompressedTexture2D::7738425637613390292::1712060109::1712060109::1::::<><>::
+Captura.PNG::CompressedTexture2D::3615396746095455654::1711824238::1711824248::1::::<><>::
+cowboy.png::CompressedTexture2D::3388820141871106560::1711911585::1711911586::1::::<><>::
+Crafting-Table-icon.png::CompressedTexture2D::5721198385730951275::1711829813::1711829813::1::::<><>::
+dialogo.png::CompressedTexture2D::3080430982490501877::1712185730::1712185795::1::::<><>::
+DONE.png::CompressedTexture2D::3982580745220214458::1712218210::1712218210::1::::<><>::
+Floor2.png::CompressedTexture2D::5620246242535349229::1712137281::1712137282::1::::<><>::
+fondoPiedra1.png::CompressedTexture2D::5855785340866232794::1712220103::1712220273::1::::<><>::
+ForestPathPublic-1024x1024.jpg::CompressedTexture2D::3808459190763826252::1711801064::1711801065::1::::<><>::
+heartIcon.png::CompressedTexture2D::3021234098234146110::1712220945::1712220956::1::::<><>::
+hola.png::CompressedTexture2D::7937662079073174843::1712273300::1712273300::1::::<><>::
+IMG_0183.PNG::CompressedTexture2D::5473318096566107426::1711928924::1711928925::1::::<><>::
+IMG_0187.PNG::CompressedTexture2D::8661482889928157434::1712141513::1712141519::1::::<><>::
+IMG_0208.PNG::CompressedTexture2D::6137374132397960097::1712186846::1712186923::1::::<><>::
+IMG_0209.PNG::CompressedTexture2D::8833293451599201138::1712186885::1712186923::1::::<><>::
+IMG_0210.PNG::CompressedTexture2D::7123681742371805267::1712186849::1712186923::1::::<><>::
+IMG_0211.PNG::CompressedTexture2D::5481005508378728542::1712186850::1712186923::1::::<><>::
+IMG_0212.PNG::CompressedTexture2D::4176684636049263697::1712186902::1712186923::1::::<><>::
+IMG_0213.PNG::CompressedTexture2D::3860163162803286852::1712186853::1712186923::1::::<><>::
+IMG_0214.PNG::CompressedTexture2D::2104104339644888677::1712186855::1712186923::1::::<><>::
+IMG_0215.PNG::CompressedTexture2D::4509988722035599806::1712186888::1712186923::1::::<><>::
+IMG_0216.PNG::CompressedTexture2D::7367215605328298659::1712189138::1712189138::1::::<><>::
+IMG_0217.PNG::CompressedTexture2D::2674451522249867964::1712189258::1712189258::1::::<><>::
+IMG_0219.PNG::CompressedTexture2D::8840531421136915916::1712189138::1712189138::1::::<><>::
+IMG_0220.PNG::CompressedTexture2D::2187396101080957558::1712189258::1712189258::1::::<><>::
+lapiz_negro.png::CompressedTexture2D::928174760915126912::1711924104::1711924106::1::::<><>::
+madruga.png::CompressedTexture2D::3033608994650599758::1712273619::1712273620::1::::<><>::
+mesa.PNG::CompressedTexture2D::6818900652335389692::1712216483::1712216484::1::::<><>::
+mosca.png::CompressedTexture2D::7811791186374704082::1712273619::1712273620::1::::<><>::
+piedra1.PNG::CompressedTexture2D::5099291358861906733::1712187489::1712187490::1::::<><>::
+piedra.png::CompressedTexture2D::4301452674792347967::1712181979::1712187297::1::::<><>::
+piedramia.png::CompressedTexture2D::4916542189852098908::1711912150::1711912161::1::::<><>::
+pluma.png::CompressedTexture2D::3762283122388517962::1711876660::1711876662::1::::<><>::
+recortable.png::CompressedTexture2D::6444517554301991271::1711839387::1711839395::1::::<><>::
+restart_b.png::CompressedTexture2D::7520463359298523622::1712217719::1712217719::1::::<><>::
+sombra.png::CompressedTexture2D::2761550875382270445::1712183114::1712183114::1::::<><>::
+stikcers.png::CompressedTexture2D::866011936718461526::1712214726::1712214727::1::::<><>::
+tree.png::CompressedTexture2D::7645258679782554613::1712060109::1712060109::1::::<><>::
+undo_b.png::CompressedTexture2D::661664548361437540::1712217719::1712217719::1::::<><>::
+wisdom.png::CompressedTexture2D::3238117274206926696::1712273300::1712273300::1::::<><>::
+wizardposting.png::CompressedTexture2D::5683364790837910704::1712272617::1712272618::1::::<><>::
+::res://Images/Escenario/::1712220478
+cala_ (1).PNG::CompressedTexture2D::7809647247024295745::1712218373::1712218374::1::::<><>::
+cala_ (2).PNG::CompressedTexture2D::756077410552036708::1712218373::1712218374::1::::<><>::
+cala_ (3).PNG::CompressedTexture2D::7279516562475647437::1712218373::1712218374::1::::<><>::
+grass2_ (1).PNG::CompressedTexture2D::5140468300091365657::1712143155::1712143177::1::::<><>::
+grass2_ (2).PNG::CompressedTexture2D::8537801300851067226::1712143143::1712143177::1::::<><>::
+grass2_ (3).PNG::CompressedTexture2D::3313376300171572907::1712143147::1712143177::1::::<><>::
+grass_ (1).PNG::CompressedTexture2D::1166627481797026942::1712142520::1712142542::1::::<><>::
+grass_ (2).PNG::CompressedTexture2D::5421296002412802189::1712142497::1712142542::1::::<><>::
+grass_ (3).PNG::CompressedTexture2D::2254751334336023816::1712142507::1712142542::1::::<><>::
+IMG_0203.PNG::CompressedTexture2D::5561443207425194896::1712181334::1712181334::1::::<><>::
+IMG_0204.PNG::CompressedTexture2D::2518905886971003443::1712181812::1712181812::1::::<><>::
+pajaros_ (1).PNG::CompressedTexture2D::5255227203396194888::1712220477::1712220478::1::::<><>::
+pajaros_ (2).PNG::CompressedTexture2D::4888228049637083955::1712220477::1712220478::1::::<><>::
+pajaros_ (3).PNG::CompressedTexture2D::4198543152723769520::1712220477::1712220478::1::::<><>::
+Pez_ (1).PNG::CompressedTexture2D::1460115362054388583::1712176006::1712176024::1::::<><>::
+Pez_ (2).PNG::CompressedTexture2D::6967060274621012860::1712176006::1712176024::1::::<><>::
+Pez_ (3).PNG::CompressedTexture2D::7959107681216381082::1712176006::1712176024::1::::<><>::
+Tree2_ (1).PNG::CompressedTexture2D::1647354871821844248::1712161247::1712161247::1::::<><>::
+Tree2_ (2).PNG::CompressedTexture2D::5516740003236607212::1712161247::1712161247::1::::<><>::
+Tree_ (1).PNG::CompressedTexture2D::4262439377905566126::1712144065::1712144076::1::::<><>::
+Tree_ (2).PNG::CompressedTexture2D::1977887220225849314::1712144065::1712144076::1::::<><>::
+Tree_ (3).PNG::CompressedTexture2D::5857124108130822924::1712144065::1712144076::1::::<><>::
+tree_shadow.png::CompressedTexture2D::410852557274351486::1712182417::1712182417::1::::<><>::
+::res://Images/PJ/::1711842346
+Pj_Back_0.PNG::CompressedTexture2D::8186759171786877077::1711826493::1711826647::1::::<><>::
+Pj_Back_1.PNG::CompressedTexture2D::8688418896283312818::1711826497::1711826647::1::::<><>::
+Pj_Back_2.png::CompressedTexture2D::659962718567821464::1711840230::1711840288::1::::<><>::
+Pj_Front_0.PNG::CompressedTexture2D::2558601638894407267::1711824826::1711824865::1::::<><>::
+Pj_Front_1.PNG::CompressedTexture2D::1807106772442997671::1711826489::1711826647::1::::<><>::
+Pj_Front_2.PNG::CompressedTexture2D::5987273329861760440::1711826490::1711826647::1::::<><>::
+Pj_Idle_1.PNG::CompressedTexture2D::3064268029795191487::1711826487::1711826647::1::::<><>::
+Pj_Idle_2.png::CompressedTexture2D::3694865256187896953::1711840214::1711840288::1::::<><>::
+Pj_Idle_3.PNG::CompressedTexture2D::2585897912866211107::1711826484::1711826647::1::::<><>::
+Pj_Left_0.PNG::CompressedTexture2D::703055366072660016::1711842246::1711842290::1::::<><>::
+Pj_Left_1.PNG::CompressedTexture2D::1768841377940606633::1711842248::1711842290::1::::<><>::
+Pj_Left_2.png::CompressedTexture2D::8794883296623473294::1711842338::1711842346::1::::<><>::
+::res://Images/PNjs/::1712220229
+Bob_0.PNG::CompressedTexture2D::8640166131930543288::1712176763::1712176763::1::::<><>::
+Bob_Idle_0.PNG::CompressedTexture2D::4827825402831325046::1711927500::1711927582::1::::<><>::
+Bob_Idle_1.PNG::CompressedTexture2D::8145341401296719138::1711927497::1711927582::1::::<><>::
+Cowboy_Idle_0.PNG::CompressedTexture2D::520208094168019859::1712171878::1712171970::1::::<><>::
+Emo_0.PNG::CompressedTexture2D::4393510324736456924::1712176763::1712176763::1::::<><>::
+Emo_Idle_ (1).PNG::CompressedTexture2D::7104981099464063893::1712171890::1712171970::1::::<><>::
+Emo_Idle_ (2).PNG::CompressedTexture2D::8107761600708181701::1712171883::1712171970::1::::<><>::
+Mago_0.PNG::CompressedTexture2D::3720197503236440438::1712176763::1712176763::1::::<><>::
+Mago_Idle_0.PNG::CompressedTexture2D::1618393585098723269::1711914317::1711914542::1::::<><>::
+Pescadora_0.PNG::CompressedTexture2D::7049079007614127874::1712176763::1712176763::1::::<><>::
+Pescadora_Idle_0.PNG::CompressedTexture2D::5961852411811042956::1711927496::1711927582::1::::<><>::
+Pescadora_Idle_1.PNG::CompressedTexture2D::4390621088099153018::1711927498::1711927582::1::::<><>::
+Primo_0.PNG::CompressedTexture2D::3350293570829421632::1712176763::1712176764::1::::<><>::
+Primo_Idle_0.PNG::CompressedTexture2D::6706958089589245041::1711927492::1711927582::1::::<><>::
+Primo_Idle_1.PNG::CompressedTexture2D::1379002027996467188::1711927494::1711927582::1::::<><>::
+Punk_0.PNG::CompressedTexture2D::7652725646674851827::1712176763::1712176764::1::::<><>::
+Punk_Idle (1).PNG::CompressedTexture2D::1662282865568711708::1712171906::1712171970::1::::<><>::
+Punk_Idle (2).PNG::CompressedTexture2D::2703930522653725677::1712171895::1712171970::1::::<><>::
+Punk_Idle (3).PNG::CompressedTexture2D::4717478934358748311::1712171902::1712171970::1::::<><>::
+sombra_pnj.png::CompressedTexture2D::1244976466148984349::1712182611::1712182612::1::::<><>::
+::res://Images/PNjs/cala_sprites/::1712220234
+cala_idle_ (1).PNG::CompressedTexture2D::8213610562253321763::1712220187::1712220234::1::::<><>::
+cala_idle_ (2).PNG::CompressedTexture2D::891249699097259767::1712220123::1712220234::1::::<><>::
+cala_idle_ (3).PNG::CompressedTexture2D::3220487195223269234::1712220128::1712220234::1::::<><>::
+cala_idle_ (4).PNG::CompressedTexture2D::106070034227628710::1712220131::1712220234::1::::<><>::
+cala_idle_ (5).PNG::CompressedTexture2D::4493495041766281021::1712220133::1712220234::1::::<><>::
+cala_idle_ (6).PNG::CompressedTexture2D::7056959692274256992::1712220138::1712220234::1::::<><>::
+cala_idle_ (7).PNG::CompressedTexture2D::5979834127691462557::1712220142::1712220234::1::::<><>::
+cala_idle_ (8).PNG::CompressedTexture2D::1338062537773660690::1712220145::1712220234::1::::<><>::
+cala_idle_ (9).PNG::CompressedTexture2D::7814846585924069725::1712220148::1712220234::1::::<><>::
+cala_idle_ (10).PNG::CompressedTexture2D::4526842989840650111::1712220152::1712220234::1::::<><>::
+cala_idle_ (11).PNG::CompressedTexture2D::2587243538980880193::1712220156::1712220234::1::::<><>::
+cala_idle_ (12).PNG::CompressedTexture2D::5258900567612633077::1712220160::1712220234::1::::<><>::
+cala_idle_ (13).PNG::CompressedTexture2D::7929973015804676208::1712220163::1712220234::1::::<><>::
+cala_idle_ (14).PNG::CompressedTexture2D::2799240686219359715::1712220167::1712220234::1::::<><>::
+cala_idle_ (15).PNG::CompressedTexture2D::4516262046973929831::1712220172::1712220234::1::::<><>::
+cala_idle_ (16).PNG::CompressedTexture2D::5487939635478303531::1712220175::1712220234::1::::<><>::
+cala_idle_ (17).PNG::CompressedTexture2D::3488307272410793971::1712220180::1712220234::1::::<><>::
+cala_idle_ (18).PNG::CompressedTexture2D::9047196106480998038::1712220183::1712220234::1::::<><>::
+::res://Images/Retratos/::1712271724
+Bob_0.PNG::CompressedTexture2D::7426639758135341843::1711914326::1711914542::1::::<><>::
+Bob_1.PNG::CompressedTexture2D::8080117916088188843::1712262031::1712268067::1::::<><>::
+Cowboy_0.PNG::CompressedTexture2D::6186878604885745636::1711905142::1711905173::1::::<><>::
+Cowboy_1.PNG::CompressedTexture2D::5414307169394605640::1712262026::1712268067::1::::<><>::
+Emo_0.PNG::CompressedTexture2D::1717670813717281711::1711914336::1711914542::1::::<><>::
+Emo_1.PNG::CompressedTexture2D::2198614017847329990::1712262000::1712268067::1::::<><>::
+Mago_0.PNG::CompressedTexture2D::8519344426259116143::1711914346::1711914542::1::::<><>::
+Mago_1.PNG::CompressedTexture2D::3426144950994429500::1712262035::1712268067::1::::<><>::
+Pescadora_0.PNG::CompressedTexture2D::6818472951620097906::1711914360::1711914542::1::::<><>::
+Pescadora_1.PNG::CompressedTexture2D::5243759795962659324::1712262012::1712268067::1::::<><>::
+Primo.PNG::CompressedTexture2D::3879497605342330230::1711833574::1711833574::1::::<><>::
+Primo_0.PNG::CompressedTexture2D::2789693505608975649::1711914329::1711914542::1::::<><>::
+Primo_1.PNG::CompressedTexture2D::1660611281483647668::1712262022::1712268067::1::::<><>::
+Punk_0.PNG::CompressedTexture2D::7380032612846626374::1711914365::1711914542::1::::<><>::
+Punk_1.PNG::CompressedTexture2D::4094892662801394909::1712262017::1712268067::1::::<><>::
+Punk_2.PNG::CompressedTexture2D::5571709644091976287::1712261969::1712268067::1::::<><>::
+::res://singletons/::1712261505
+SignalBus.gd::GDScript::-1::1712261505::0::1::::<>Node<>::
+::res://Sounds/::1712263451
+bugs.mp3::AudioStreamMP3::1247221116267921609::1712263446::1712263446::1::::<><>::
+foot1.wav::AudioStreamWAV::7438071825366570889::1712233091::1712233092::1::::<><>::
+foot3.wav::AudioStreamWAV::7815243222571251431::1712233204::1712233205::1::::<><>::
+Footsteps on Grass - Sound Effect  COPYRIGHT FREE.mp3::AudioStreamMP3::8393759025680484461::1712213847::1712213847::1::::<><>::
+musicaCala.mp3::AudioStreamMP3::2590190464721673817::1712262232::1712262233::1::::<><>::
+ole.wav::AudioStreamWAV::6058399905026647682::1712261505::1712261505::1::::<><>::
+party at club bug__KHPTeWYGI58.mp3::AudioStreamMP3::646511774621390755::1712230090::1712230392::1::::<><>::
+pasodoble.wav::AudioStreamWAV::6516575462025507544::1712232900::1712232900::1::::<><>::
+pop.wav::AudioStreamWAV::35341880336174655::1712233404::1712233405::1::::<><>::
+splat sound effects (no copyright).wav::AudioStreamWAV::3632905217701285151::1712261505::1712261505::1::::<><>::
+woosh.wav::AudioStreamWAV::6278338959566582944::1690657848::1712231517::1::::<><>::

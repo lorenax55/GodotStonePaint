@@ -65,20 +65,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_l1o1x"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("8_3ywjv")
-}, {
-"duration": 10.0,
-"texture": ExtResource("7_6w7qa")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 5.0
-}]
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_2glj8"]
 animations = [{
 "frames": [{
@@ -157,6 +143,20 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("21_vs7um")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l1o1x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_3ywjv")
+}, {
+"duration": 10.0,
+"texture": ExtResource("7_6w7qa")
 }],
 "loop": true,
 "name": &"Idle",
@@ -758,48 +758,53 @@ position = Vector2(2038, 316)
 scale = Vector2(1, 1.02237)
 skew = 0.257615
 
-[node name="Bob" parent="." instance=ExtResource("7_v81wv")]
-position = Vector2(3771, 1223)
-loveable = true
-pnj_anim = SubResource("SpriteFrames_l1o1x")
-dialog_key = "ejemplo2"
-
 [node name="Mago" parent="." instance=ExtResource("7_v81wv")]
-position = Vector2(4010, 962)
+position = Vector2(4194, 1127)
 loveable = true
 pnj_anim = SubResource("SpriteFrames_2glj8")
-dialog_key = "ejemplo2"
+dialog_key = "mago_love"
+next_scene = "res://Escenas/Cala_mago.tscn"
 
 [node name="Pescadora" parent="." instance=ExtResource("7_v81wv")]
 position = Vector2(1597, 2012)
 loveable = true
 pnj_anim = SubResource("SpriteFrames_kk4ih")
-dialog_key = "ejemplo2"
+dialog_key = "pescadora_love"
+next_scene = "res://Escenas/Cala_pescadora.tscn"
 
 [node name="Primo" parent="." instance=ExtResource("7_v81wv")]
 position = Vector2(2038, 1908)
 loveable = true
 pnj_anim = SubResource("SpriteFrames_11430")
-dialog_key = "ejemplo2"
+dialog_key = "primo_love"
+next_scene = "res://Escenas/Cala_primo.tscn"
 
 [node name="Punk" parent="." instance=ExtResource("7_v81wv")]
 position = Vector2(919, 1883)
 pnj_anim = SubResource("SpriteFrames_u1kqu")
-dialog_key = "punk"
-next_scene = "res://Escenas/Cala.tscn"
+dialog_key = "punk_love"
+next_scene = "res://Escenas/Cala_punk.tscn"
 
 [node name="Emo" parent="." instance=ExtResource("7_v81wv")]
-position = Vector2(3683, 921)
+position = Vector2(3781, 817)
 loveable = true
 pnj_anim = SubResource("SpriteFrames_dpkvt")
-dialog_key = "ejemplo2"
+dialog_key = "emo_love"
+next_scene = "res://Escenas/Cala_emo.tscn"
 
 [node name="Cowboy" parent="." instance=ExtResource("7_v81wv")]
 position = Vector2(4642, 1332)
 loveable = true
 pnj_anim = SubResource("SpriteFrames_lcrjl")
-dialog_key = "ejemplo2"
-next_scene = "res://Escenas/Cala.tscn"
+dialog_key = "cowboy_love"
+next_scene = "res://Escenas/Cala_cowboy.tscn"
+
+[node name="Bob" parent="." instance=ExtResource("7_v81wv")]
+position = Vector2(3771, 1223)
+loveable = true
+pnj_anim = SubResource("SpriteFrames_l1o1x")
+dialog_key = "bob_love"
+next_scene = "res://Escenas/Cala_bob.tscn"
 
 [node name="Fondo" type="Sprite2D" parent="."]
 z_index = -100

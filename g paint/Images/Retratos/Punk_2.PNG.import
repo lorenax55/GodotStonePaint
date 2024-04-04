@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2dtuo1ytsyq4"
-path="res://.godot/imported/a.png-bb8a5c4a3aefa9bd4dda7c06f9f81f63.ctex"
+uid="uid://clm8ij3mmf51l"
+path="res://.godot/imported/Punk_2.PNG-0b3378548f3299acd681ec801ee3fd8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://a.png"
-dest_files=["res://.godot/imported/a.png-bb8a5c4a3aefa9bd4dda7c06f9f81f63.ctex"]
+source_file="res://Images/Retratos/Punk_2.PNG"
+dest_files=["res://.godot/imported/Punk_2.PNG-0b3378548f3299acd681ec801ee3fd8d.ctex"]
 
 [params]
 

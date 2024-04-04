@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://bhjmyer4wlwy2"]
+[gd_scene load_steps=38 format=3 uid="uid://bhjmyer4wlwy2"]
 
 [ext_resource type="Script" path="res://paint_control.gd" id="1"]
 [ext_resource type="Script" path="res://tools_panel.gd" id="2"]
@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://48ij5p3tn7lx" path="res://Images/IMG_0214.PNG" id="16_oswr5"]
 [ext_resource type="Texture2D" uid="uid://b5iw4c1cb3tb7" path="res://Images/IMG_0215.PNG" id="17_qp268"]
 [ext_resource type="Texture2D" uid="uid://c8q086ej1u3wx" path="res://Images/IMG_0210.PNG" id="18_8n7m1"]
+[ext_resource type="AudioStream" uid="uid://jhf7pmsttkk6" path="res://Sounds/party at club bug__KHPTeWYGI58.mp3" id="27_uymfq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_npkcn"]
 bg_color = Color(0.2, 0.2, 0.2, 1)
@@ -766,5 +767,9 @@ text = "SHARE"
 [node name="AreaPiedra" type="Polygon2D" parent="."]
 color = Color(1, 1, 1, 0)
 polygon = PackedVector2Array(581, 291, 537, 444, 592, 724, 647, 812, 758, 875, 845, 852, 992, 837, 1119, 812, 1232, 820, 1368, 769, 1376, 593, 1332, 556, 1277, 467, 1213, 439, 1158, 342, 1006, 290, 924, 169, 781, 174, 683, 137, 600, 186)
+
+[node name="musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("27_uymfq")
+autoplay = true
 
 [connection signal="pressed" from="Share" to="PaintControl" method="_on_share_pressed"]

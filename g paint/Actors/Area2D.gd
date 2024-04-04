@@ -7,7 +7,7 @@ var loveable = false
 var icon = null
 var canTalk = false
 var salido = false
-
+var dialog = null
 
 # Importa el nodo del personaje para comparar el cuerpo que entra en el área
 func set_loveable(val):
@@ -15,9 +15,8 @@ func set_loveable(val):
 
 func _ready():
 	player = get_node("../../Pj")
+	dialog = get_node("../DialogBox")
 	anim_player = get_node("../AnimationPlayer")
-
-
 	icon = get_node("../InteractIcon")
 	print("tengo al jugador ", player)
 
@@ -37,7 +36,6 @@ func _on_body_exited(body):
 		canTalk = false
 		if icon.is_visible_in_tree():
 			anim_player.play_backwards("Interaction_anim")
-
 		$woosh.play()
 
 func _input(event):
@@ -45,6 +43,7 @@ func _input(event):
 		if icon.is_visible_in_tree():
 			anim_player.play_backwards("Interaction_anim")
 		SignalBus.emit_signal("display_dialog", dialog_key)
+		dialog.set_my_active(true)
 
 
 			

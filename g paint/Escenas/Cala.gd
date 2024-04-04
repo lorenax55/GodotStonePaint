@@ -1,16 +1,18 @@
 extends Node2D
 
-var dialog_key = "cala"
+@export var dialog_key = "cala"
 var acabado = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	SignalBus.end_dialog.connect(on_end_dialog)
 	SignalBus.emit_signal("display_dialog", dialog_key)
+	$DialogBox.set_my_active(true)
 
 func set_acabado():
 	acabado = true
 func on_end_dialog():
 	$AnimationPlayer.play("new_animation")
+	$DialogBox.set_my_active(false)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass

@@ -13,6 +13,10 @@ var aux = false
 @onready var retrato = $Retrato
 @export var need_pause: bool = false 
 var next_scene = ""
+var active = false
+
+func set_my_active(val):
+	active = val
 
 func set_next_scene(val):
 	next_scene = val
@@ -67,9 +71,11 @@ func finish():
 	$AnimationPlayer.play("byebye",-1,3)
 	
 func bye():
-	if(next_scene != ""):
-		get_tree().change_scene_to_file.bind(next_scene).call_deferred()
-	SignalBus.emit_signal("end_dialog")
+	if active:
+		print(next_scene)
+		if(next_scene != ""):
+			get_tree().change_scene_to_file.bind(next_scene).call_deferred()
+		SignalBus.emit_signal("end_dialog")
 
 
 
