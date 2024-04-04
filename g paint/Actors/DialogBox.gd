@@ -12,7 +12,7 @@ var aux = false
 @onready var text_label = $TextLabel
 @onready var retrato = $Retrato
 @export var need_pause: bool = false 
-var next_scene = null
+var next_scene = ""
 
 func set_next_scene(val):
 	next_scene = val
@@ -55,6 +55,7 @@ func next_line():
 	else:
 		finish()
 var finished = false
+var haz_el_tween = false
 
 func finish():
 	finished = true
@@ -66,11 +67,11 @@ func finish():
 	$AnimationPlayer.play("byebye",-1,3)
 	
 func bye():
-	get_tree().change_scene_to_file.bind(next_scene).call_deferred()
+	if(next_scene != ""):
+		get_tree().change_scene_to_file.bind(next_scene).call_deferred()
+	SignalBus.emit_signal("end_dialog")
 
-	#SignalBus.emit_signal("end_dialog")
-	#finished = false
-var haz_el_tween = false
+
 
 func on_display_dialog(text_key):
 	if in_progress:
@@ -86,6 +87,7 @@ func on_display_dialog(text_key):
 
 		background.visible = true
 		in_progress = true
+		
 		selected_text = scene_text[text_key].duplicate()
 		var img_key = text_key+"_faces"
 		selected_face = scene_text[img_key].duplicate()

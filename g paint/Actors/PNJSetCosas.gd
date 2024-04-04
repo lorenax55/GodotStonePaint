@@ -16,7 +16,8 @@ func _ready():
 		$PnjAnim.sprite_frames = pnj_anim
 		$PnjAnim.play("Idle")
 	$Area2D.set_dialog_key(dialog_key)
-	$DialogBox.set_next_scene(next_scene)
+	if(loveable):
+		$DialogBox.set_next_scene(next_scene)
 
 func on_end_dialog():
 	print("ended dialog")

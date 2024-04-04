@@ -784,7 +784,6 @@ dialog_key = "ejemplo2"
 
 [node name="Punk" parent="." instance=ExtResource("7_v81wv")]
 position = Vector2(919, 1883)
-loveable = true
 pnj_anim = SubResource("SpriteFrames_u1kqu")
 dialog_key = "punk"
 next_scene = "res://Escenas/Cala.tscn"

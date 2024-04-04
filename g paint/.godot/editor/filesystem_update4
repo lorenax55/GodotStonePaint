@@ -13,4 +13,3 @@ res://Escenas/Cala.tscn
 res://Escenas/Mapa_ini.tscn
 res://Actors/DialogBox.gd
 res://Actors/PNJSetCosas.gd
-res://Actors/Area2D.gd
