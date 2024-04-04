@@ -11,9 +11,11 @@ var aux = false
 @onready var background = $Background
 @onready var text_label = $TextLabel
 @onready var retrato = $Retrato
-
+@export var need_pause: bool = false 
 var next_scene = null
 
+func set_next_scene(val):
+	next_scene = val
 
 func set_dialog_route(route):
 	scene_text_file = route
@@ -32,7 +34,6 @@ func load_scene_text():
 	#var file = FileAccess.open(scene_text_file, FileAccess.READ)
 	var json_as_text = FileAccess.get_file_as_string(scene_text_file)
 	var json_as_dict = JSON.parse_string(json_as_text)
-	print(json_as_dict)
 	return json_as_dict
 		
 
@@ -59,11 +60,15 @@ func finish():
 	finished = true
 	text_label.text = ""
 	in_progress = false
-	get_tree().paused = false
+	if need_pause:
+		get_tree().paused = false
+
 	$AnimationPlayer.play("byebye",-1,3)
 	
 func bye():
-	SignalBus.emit_signal("end_dialog")
+	get_tree().change_scene_to_file.bind(next_scene).call_deferred()
+
+	#SignalBus.emit_signal("end_dialog")
 	#finished = false
 var haz_el_tween = false
 
@@ -71,12 +76,14 @@ func on_display_dialog(text_key):
 	if in_progress:
 		if($AnimateText.is_playing()):
 			$AnimateText.seek(0.9,true,true)
-			print("he ido pal final")
 		else:	
-			print("he saltado")
 			next_line()
 	elif not finished:
-		get_tree().paused = true
+		if need_pause:
+			if Engine.has_singleton("SceneTree") and Engine.get_singleton("SceneTree").get_current_scene():
+				if not get_tree().paused:
+					get_tree().paused = true
+
 		background.visible = true
 		in_progress = true
 		selected_text = scene_text[text_key].duplicate()

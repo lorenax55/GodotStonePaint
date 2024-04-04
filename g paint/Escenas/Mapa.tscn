@@ -31,8 +31,8 @@
 [ext_resource type="Texture2D" uid="uid://cliafluibwii7" path="res://Images/Escenario/IMG_0203.PNG" id="31_metfo"]
 [ext_resource type="Texture2D" uid="uid://bb5gan2mch4mp" path="res://Images/Escenario/IMG_0204.PNG" id="32_30ndl"]
 [ext_resource type="Texture2D" uid="uid://bflylsn0e0xx2" path="res://Images/sombra.png" id="32_f8u23"]
+[ext_resource type="AudioStream" uid="uid://r1fsxkbxk5dl" path="res://Sounds/bugs.mp3" id="32_fwhbi"]
 [ext_resource type="Texture2D" uid="uid://c4fekd5s0klbo" path="res://Images/mesa.PNG" id="33_4wais"]
-[ext_resource type="AudioStream" uid="uid://jhf7pmsttkk6" path="res://Sounds/party at club bug__KHPTeWYGI58.mp3" id="34_0321i"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_icpx8"]
 animations = [{
@@ -800,6 +800,7 @@ position = Vector2(4642, 1332)
 loveable = true
 pnj_anim = SubResource("SpriteFrames_lcrjl")
 dialog_key = "ejemplo2"
+next_scene = "res://Escenas/Cala.tscn"
 
 [node name="Fondo" type="Sprite2D" parent="."]
 z_index = -100
@@ -959,7 +960,7 @@ texture = ExtResource("32_f8u23")
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 process_mode = 3
-stream = ExtResource("34_0321i")
+stream = ExtResource("32_fwhbi")
 volume_db = -20.0
 autoplay = true
 

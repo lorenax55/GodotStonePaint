@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://caut4dopdytu4"]
+[gd_scene load_steps=20 format=3 uid="uid://caut4dopdytu4"]
 
 [ext_resource type="Script" path="res://Escenas/Cala.gd" id="1_oxnyr"]
 [ext_resource type="Texture2D" uid="uid://k1iqqckc8ly7" path="res://Images/Escenario/cala_ (2).PNG" id="2_s58r0"]
@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://cg4w3a281a3ke" path="res://Images/Escenario/pajaros_ (1).PNG" id="9_k77iv"]
 [ext_resource type="Texture2D" uid="uid://cbv5nwqj0x2kl" path="res://Images/Escenario/pajaros_ (2).PNG" id="10_04leo"]
 [ext_resource type="Texture2D" uid="uid://b022nlrmxhu45" path="res://Images/Escenario/pajaros_ (3).PNG" id="11_pwbk2"]
+[ext_resource type="AudioStream" uid="uid://bc5yb8wfugt82" path="res://Sounds/musicaCala.mp3" id="12_17e57"]
+[ext_resource type="FontFile" uid="uid://3be4yafc4dke" path="res://Tribal_Play.ttf" id="13_hp4mi"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_s585j"]
 animations = [{
@@ -77,6 +79,53 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_oji1i"]
+resource_name = "new_animation"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.8, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/RichTextLabel2:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.2, 3.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(4),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"set_acabado"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_noliv"]
+_data = {
+"new_animation": SubResource("Animation_oji1i")
+}
+
 [node name="Cala" type="Node2D"]
 process_mode = 3
 script = ExtResource("1_oxnyr")
@@ -110,3 +159,49 @@ sprite_frames = SubResource("SpriteFrames_dvbg1")
 autoplay = "default"
 frame = 2
 frame_progress = 0.912833
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("12_17e57")
+volume_db = -20.0
+autoplay = true
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Node2D"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 0)
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Node2D"]
+custom_minimum_size = Vector2(1000, 400)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 460.0
+offset_top = 240.0
+offset_right = 1460.0
+offset_bottom = 840.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(500, 0)
+theme_override_fonts/normal_font = ExtResource("13_hp4mi")
+theme_override_fonts/bold_font = ExtResource("13_hp4mi")
+theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/bold_font_size = 40
+bbcode_enabled = true
+text = "[center][wave]An that was the start of a very cute and silly love story[/wave]
+
+[wave] Thakns for playing! [/wave]
+
+[wave] Press any key to play again ;) [/wave]
+"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_noliv")
+}

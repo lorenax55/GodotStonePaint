@@ -6,6 +6,7 @@ var loveable = false
 
 var icon = null
 var canTalk = false
+var salido = false
 
 
 # Importa el nodo del personaje para comparar el cuerpo que entra en el área
@@ -44,8 +45,9 @@ func _input(event):
 		if icon.is_visible_in_tree():
 			anim_player.play_backwards("Interaction_anim")
 		SignalBus.emit_signal("display_dialog", dialog_key)
-		if icon.is_visible_in_tree() and loveable:
-			get_tree().change_scene_to_file("res://Escenas/Cala.tscn")
+
+
+			
 			
 			
 		

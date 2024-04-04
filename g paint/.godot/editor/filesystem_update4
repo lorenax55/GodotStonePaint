@@ -1,9 +1,5 @@
-res://Escenas/Mapa_ini.tscn
-res://Escenas/Pegatina1.gd
-res://Dialogos/goblin_dialogs.json
-res://Escenas/Cala.tscn
-res://Escenas/Cala.gd
 res://Escenas/Mapa.tscn
+res://Escenas/Pegatina1.gd
 res://Actors/TextIntro.tscn
 res://Actors/PNJTemplate.tscn
 res://Actors/grass.tscn
@@ -13,3 +9,8 @@ res://Escenas/paint_root.tscn
 res://Actors/PegatinaT.tscn
 res://Actors/PJ.tscn
 res://Actors/CraftingTable.tscn
+res://Escenas/Cala.tscn
+res://Escenas/Mapa_ini.tscn
+res://Actors/DialogBox.gd
+res://Actors/PNJSetCosas.gd
+res://Actors/Area2D.gd
