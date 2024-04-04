@@ -1,0 +1,97 @@
+[gd_scene load_steps=10 format=3 uid="uid://b0miw64t310pt"]
+
+[ext_resource type="Script" path="res://Actors/DialogBox.gd" id="1_wrk0q"]
+[ext_resource type="Texture2D" uid="uid://bvji02eia3bl3" path="res://Images/Retratos/Primo.PNG" id="2_gnq7l"]
+[ext_resource type="FontFile" uid="uid://cih5f0rbjq2v4" path="res://GreatVibes-Regular.otf" id="2_k8t8m"]
+[ext_resource type="FontFile" uid="uid://3be4yafc4dke" path="res://Tribal_Play.ttf" id="3_hn5qy"]
+
+[sub_resource type="Gradient" id="Gradient_spn0k"]
+offsets = PackedFloat32Array(0, 0.532374, 1)
+colors = PackedColorArray(0.521141, 0.521141, 0.521141, 1, 1, 1, 1, 1, 0.529067, 0.529067, 0.529067, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_2gtam"]
+gradient = SubResource("Gradient_spn0k")
+width = 800
+
+[sub_resource type="Animation" id="Animation_p8yw7"]
+resource_name = "new_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(-2, -2, -2, -2),
+"update": 0,
+"values": [Vector2(0.6, 0.6), Vector2(1.3, 1.3), Vector2(0.8, 0.8), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_2eh72"]
+resource_name = "text"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pnipr"]
+_data = {
+"new_animation": SubResource("Animation_p8yw7"),
+"text": SubResource("Animation_2eh72")
+}
+
+[node name="DialogBox" type="CanvasLayer"]
+scale = Vector2(0.8, 0.8)
+transform = Transform2D(0.8, 0, 0, 0.8, 0, 0)
+script = ExtResource("1_wrk0q")
+font = ExtResource("2_k8t8m")
+
+[node name="Background" type="PanelContainer" parent="."]
+offset_left = -830.0
+offset_top = -192.5
+offset_right = 706.0
+offset_bottom = 179.5
+
+[node name="Bg" type="TextureRect" parent="Background"]
+modulate = Color(0.572549, 0.266667, 0.188235, 1)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_2gtam")
+expand_mode = 1
+
+[node name="Retrato" type="TextureRect" parent="Background"]
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("2_gnq7l")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_pnipr")
+}
+
+[node name="TextLabel" type="RichTextLabel" parent="."]
+offset_left = -397.5
+offset_top = -157.5
+offset_right = 602.5
+offset_bottom = 142.5
+theme_override_fonts/normal_font = ExtResource("3_hn5qy")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "
+
+[font={res://Tribal_Play.ttf}]{\"+[b]bold[i]bold italic[/i][/b][i]italic[/i]+\"}[/font]"
+visible_characters = 24
+visible_ratio = 0.8
+
+[node name="AnimateText" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_pnipr")
+}

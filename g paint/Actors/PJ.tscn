@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://d2dc30o4dq37w"]
+[gd_scene load_steps=20 format=3 uid="uid://d2dc30o4dq37w"]
 
 [ext_resource type="Script" path="res://Actors/PJ.gd" id="1_1eaod"]
 [ext_resource type="Texture2D" uid="uid://bcpn2bhuunsqt" path="res://Images/PJ/Pj_Front_0.PNG" id="2_x0sqk"]
@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://kathpl6puh4k" path="res://Images/PJ/Pj_Left_0.PNG" id="11_i46vm"]
 [ext_resource type="Texture2D" uid="uid://0g3tajo8i5of" path="res://Images/PJ/Pj_Left_1.PNG" id="12_lrp4e"]
 [ext_resource type="Texture2D" uid="uid://dxkkpcbt3kbcw" path="res://Images/PJ/Pj_Left_2.png" id="13_7rv0o"]
+[ext_resource type="Texture2D" uid="uid://r0ct0cetsj62" path="res://Images/PNjs/sombra_pnj.png" id="14_cy02t"]
+[ext_resource type="AudioStream" uid="uid://djl06cv83klvb" path="res://Sounds/foot3.wav" id="15_remre"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_f4u01"]
 animations = [{
@@ -85,9 +87,6 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kk6fy"]
-size = Vector2(73, 47)
-
 [sub_resource type="Animation" id="Animation_lda8f"]
 resource_name = "Idle"
 length = 0.6
@@ -110,22 +109,34 @@ _data = {
 "Idle": SubResource("Animation_lda8f")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kk6fy"]
+size = Vector2(73, 47)
+
 [node name="Pj" type="CharacterBody2D"]
 y_sort_enabled = true
 script = ExtResource("1_1eaod")
 
 [node name="Sprite_pj" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_f4u01")
-animation = &"Idle"
+animation = &"Walk_Left"
 autoplay = "Idle"
 offset = Vector2(0, -110)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-5.5, -17.5)
-shape = SubResource("RectangleShape2D_kk6fy")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_77wp6")
 }
 autoplay = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.5, -17.5)
+shape = SubResource("RectangleShape2D_kk6fy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(0, -10)
+texture = ExtResource("14_cy02t")
+offset = Vector2(0, -100)
+
+[node name="Footstep" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_remre")

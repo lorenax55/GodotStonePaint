@@ -44,11 +44,23 @@ func _ready():
 	$OcrePen.pressed.connect(pen_button_pressed.bind(SelectedBrush.O_PEN))
 	$MusgoPen.pressed.connect(pen_button_pressed.bind(SelectedBrush.MUSGO))
 	
+	$Restart_b.pressed.connect(restart_pressed)
+	
+	$ExitButton.pressed.connect(button_pressed.bind("save_picture"))
+	
 	# Assign the "file_selected" signal in SaveFileDialog.
 	save_dialog.file_selected.connect(save_file_selected)
 
 	# Set physics process so we can update the status label.
 	set_physics_process(true)
+
+func restart_pressed():
+	print("quiero reiniciar")
+	get_tree().reload_current_scene()
+
+func save_exit():	
+	paint_control.download_picture()
+	get_tree().change_scene_to_file("res://Escenas/Mapa.tscn")
 
 func pen_button_pressed(new_type):
 	if type == SelectedBrush.B_PEN:
@@ -85,8 +97,8 @@ func set_black_pen():
 	
 func set_ocre():
 	paint_control.brush_mode = paint_control.BrushModes.PENCIL
-	paint_control.brush_color = Color(0.4902, 0.2471, 0.1961, 0.3)
-	paint_control.brush_size = 20
+	paint_control.brush_color = Color(0.4902, 0.2471, 0.1961, 0.05)
+	paint_control.brush_size = 40
 	
 func set_caca():
 	paint_control.brush_mode = paint_control.BrushModes.PENCIL

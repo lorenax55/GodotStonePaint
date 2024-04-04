@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const BOBBING_HEIGHT = 10 # Altura máxima de bobbing
-
+var rng = RandomNumberGenerator.new()
 var current_animation = ""
 var sprite_pj : AnimatedSprite2D = null
 
@@ -45,12 +45,12 @@ func _physics_process(delta):
 			if not bobbing_up:
 				bobbing_up = true	
 				var tween = get_tree().create_tween()			
-				var target_pos = sprite_pj.position - Vector2(0,BOBBING_HEIGHT)
-				var target_pos1 = sprite_pj.position + Vector2(0,BOBBING_HEIGHT)
+				var target_pos = sprite_pj.position + Vector2(0,BOBBING_HEIGHT)
+				var target_pos1 = sprite_pj.position - Vector2(0,BOBBING_HEIGHT)
 				tween.tween_property(sprite_pj, "position", target_pos1,0.06).set_ease(Tween.EASE_IN_OUT)
 				tween.tween_property(sprite_pj, "position", target_pos,0.06).set_ease(Tween.EASE_IN_OUT)
 				tween.parallel().tween_property(self,"bobbing_up", false, 0.12)
-				tween.tween_property(sprite_pj, "position", pos,0.01)
+				tween.tween_property(sprite_pj, "position", Vector2(0,0),0.01)
 
 		else:
 			if direction.y > 0:
@@ -69,11 +69,16 @@ func _physics_process(delta):
 				
 				tween.parallel().tween_property(self,"bobbing_left", false, 0.12)
 				#tween.parallel().tween_property(sprite_pj,"rotation", 0, 0.001).set_delay(0.12)
-			
+				
+				
 		if new_animation != current_animation:
 			sprite_pj.play(new_animation)
 			current_animation = new_animation
+		if(not $Footstep.is_playing()):
+					$Footstep.pitch_scale=rng.randf_range(0.8, 1.3)
+					$Footstep.play()
 	else:
+		$Footstep.stop()
 		velocity = Vector2.ZERO
 		bobbing_up = false
 		bobbing_left = false

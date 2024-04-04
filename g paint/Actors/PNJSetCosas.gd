@@ -10,7 +10,9 @@ func _ready():
 		$InteractIcon.play("Heart")
 	if pnj_anim != null:
 		$PnjAnim.sprite_frames = pnj_anim
+		$PnjAnim.play("Idle")
 	$Area2D.set_dialog_key(dialog_key)
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

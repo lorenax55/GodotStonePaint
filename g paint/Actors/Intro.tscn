@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3n3s0b8w5vux"]
+
+[ext_resource type="FontFile" uid="uid://3be4yafc4dke" path="res://Tribal_Play.ttf" id="1_da0ig"]
+
+[node name="Intro" type="PanelContainer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_fonts/normal_font = ExtResource("1_da0ig")
+bbcode_enabled = true
+text = "TODAY IS A VERY SPECIAL DAY"
+fit_content = true

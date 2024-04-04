@@ -267,6 +267,8 @@ func _draw():
 
 func save_picture(path):
 	# Wait until the frame has finished before getting the texture.
+	var tools = get_node("../ToolsPanel")
+	tools.visible = false
 	await RenderingServer.frame_post_draw
 
 	# Get the viewport image.
@@ -276,6 +278,19 @@ func save_picture(path):
 
 	# Save the image with the passed in path we got from the save dialog.
 	cropped_image.save_png(path)
+	get_tree().change_scene_to_file("res://Escenas/Mapa.tscn")
+	
+func download_picture():
+	# Wait until the frame has finished before getting the texture.
+	await RenderingServer.frame_post_draw
+
+	# Get the viewport image.
+	var img = get_viewport().get_texture().get_image()
+	# Crop the image so we only have canvas area.
+	var cropped_image = img.get_region(Rect2(drawing_area.position, drawing_area.size))
+
+	# Save the image with the passed in path we got from the save dialog.
+	cropped_image.save_png("res://Your_rock")
 
 
 

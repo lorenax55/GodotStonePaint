@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://de2njdhrkc44u"]
+[gd_scene load_steps=9 format=3 uid="uid://de2njdhrkc44u"]
 
 [ext_resource type="Script" path="res://Actors/CraftingTable.gd" id="1_0ykex"]
-[ext_resource type="Texture2D" uid="uid://cnrnkitswy4ct" path="res://Images/Crafting-Table-icon.png" id="1_23fn1"]
-[ext_resource type="Texture2D" uid="uid://clu2g7nkhtddp" path="res://Images/858962.png" id="3_3v4t1"]
+[ext_resource type="Texture2D" uid="uid://c4fekd5s0klbo" path="res://Images/mesa.PNG" id="2_hpvo2"]
+[ext_resource type="Texture2D" uid="uid://cj8k0qj8bur7o" path="res://Images/IMG_0183.PNG" id="3_tkqpn"]
+[ext_resource type="Texture2D" uid="uid://bflylsn0e0xx2" path="res://Images/sombra.png" id="4_dg6i3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_waqdk"]
 size = Vector2(302, 257)
@@ -11,29 +12,73 @@ size = Vector2(302, 257)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_3v4t1")
+"texture": ExtResource("3_tkqpn")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_4l6w6"]
+resource_name = "new_animation"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("InteractIcon:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.1, 0.1), Vector2(0.6, 0.6), Vector2(0.4, 0.4), Vector2(0.5, 0.5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("InteractIcon:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0368876),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cmwe2"]
+_data = {
+"new_animation": SubResource("Animation_4l6w6")
+}
+
 [node name="CraftingTable" type="Area2D"]
 script = ExtResource("1_0ykex")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 1.5)
+scale = Vector2(1.56, 1.8)
 shape = SubResource("RectangleShape2D_waqdk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("1_23fn1")
+texture = ExtResource("2_hpvo2")
 
 [node name="InteractIcon" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(1, -89)
-scale = Vector2(0.15, 0.15)
+position = Vector2(1, -159)
+scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_6hm0q")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_cmwe2")
+}
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(8, -64)
+scale = Vector2(1.08, 1.72)
+texture = ExtResource("4_dg6i3")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

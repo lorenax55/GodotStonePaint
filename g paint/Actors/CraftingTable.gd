@@ -12,12 +12,12 @@ func _ready():
 
 func _on_body_entered(body):
 	if body == player:
-		icon.visible = true
+		$AnimationPlayer.play("new_animation")
 		canInteract = true
 
 func _on_body_exited(body):
 	if body == player:
-		icon.visible = false
+		$AnimationPlayer.play_backwards("new_animation")
 		canInteract = false
 
 func abrir_paint():

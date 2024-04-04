@@ -6,13 +6,15 @@ var scene_text = {}
 var selected_text = []
 var selected_face = []
 var in_progress = false
+var aux = false
 
 @onready var background = $Background
 @onready var text_label = $TextLabel
-@onready var retrato = $Background/Retrato
+@onready var retrato = $Retrato
 
 func set_dialog_route(route):
 	scene_text_file = route
+
 
 func _ready():
 	background.visible = false
@@ -20,6 +22,7 @@ func _ready():
 	SignalBus.display_dialog.connect(on_display_dialog)
 	#text_label.push_font(font,20)
 	text_label.text = ""
+
 
 
 func load_scene_text():
@@ -38,7 +41,8 @@ func show_text():
 	set_text_with_font(selected_text.pop_front())
 	var texture: Texture2D = load(selected_face.pop_front())
 	retrato.texture = texture
-	$AnimationPlayer.play("text")
+	$AnimateText.seek(0,true,true)
+	$AnimateText.play("text")
 	
 
 func next_line():
@@ -49,15 +53,20 @@ func next_line():
 
 func finish():
 	text_label.text = ""
-	background.visible = false
+	$AnimationPlayer.play("new_animation",-1,-3,true)
 	in_progress = false
 	get_tree().paused = false
 
 var haz_el_tween = false
-func on_display_dialog(text_key):
 
+func on_display_dialog(text_key):
 	if in_progress:
-		next_line()
+		if($AnimateText.is_playing()):
+			$AnimateText.seek(0.9,true,true)
+			print("he ido pal final")
+		else:	
+			print("he saltado")
+			next_line()
 	else:
 		get_tree().paused = true
 		background.visible = true

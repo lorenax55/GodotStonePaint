@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://b4c5rvbl24svl"]
+
+[ext_resource type="Texture2D" uid="uid://qvegi570mjsg" path="res://Images/Escenario/grass_ (1).PNG" id="1_2acph"]
+[ext_resource type="Texture2D" uid="uid://cjid7n1t2tf30" path="res://Images/Escenario/grass_ (2).PNG" id="2_fq46r"]
+[ext_resource type="Texture2D" uid="uid://7ehopmj6l2um" path="res://Images/Escenario/grass_ (3).PNG" id="3_2pwrm"]
+[ext_resource type="Script" path="res://Actors/grass.gd" id="4_4n3gx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e6oif"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2acph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fq46r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2pwrm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="Animation" id="Animation_u4yqw"]
+resource_name = "new_animation"
+length = 6.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:skew")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3, 6),
+"transitions": PackedFloat32Array(-2, -2, -2),
+"update": 0,
+"values": [0.0872665, -0.0872665, 0.0872665]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mbxq1"]
+_data = {
+"new_animation": SubResource("Animation_u4yqw")
+}
+
+[node name="Tree1" type="AnimatedSprite2D"]
+skew = 0.0872665
+sprite_frames = SubResource("SpriteFrames_e6oif")
+autoplay = "default"
+frame = 1
+frame_progress = 0.529914
+offset = Vector2(0, -90)
+script = ExtResource("4_4n3gx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_mbxq1")
+}
+autoplay = "new_animation"

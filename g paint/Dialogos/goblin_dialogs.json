@@ -2,10 +2,13 @@
 	"ejemplo1": [
 	"Esta es la primera linea de ejemplo",
 	"Esta es la segunda"
+
 	],
 	"ejemplo2": [
 	"Esta es la primera linea de ejemplo",
-	"Esta es la segunda"
+	"Esta es la segunda",
+	"ASDOHFYOLKADSJFLADSHJFLKJDASFLIAFOKADSUJFGPO9IJTWEU43OP'R9FIKAE'POFIKTJMEOPRÑADFJ´MPAFSDKAÑOLSDHNJFLKADSJFLASDK
+	ASDFJHLAÑDKSJFUÑLKOADSJFLASDJFASDKLFJ"
 	],
 	"ejemplo1_faces": [
 		"res://Images/Retratos/Primo.PNG",
@@ -13,7 +16,8 @@
 	],
 	"ejemplo2_faces": [
 		"res://Images/Retratos/Cowboy_0.PNG",
-		"res://Images/Retratos/Cowboy_0.PNG"
+		"res://Images/Retratos/Cowboy_0.PNG",
+		"res://Images/Retratos/Mago_0.PNG"
 	],
 	
 	"cowboy_inicio": [
@@ -33,4 +37,33 @@
 		"res://Images/Retratos/Cowboy_0.PNG",
 		"res://Images/Retratos/Cowboy_0.PNG"
 	],
+
+	"punk":[
+		"Ah, the great outdoors! No rules, no bosses—just us, the trees, and maybe a few mischievous woodland creatures. Let's make some memories, huh?",
+		"...",
+		"Anyway, have fun man, I'll be here chilling for a bit. Let me know if you want to hang later."
+	],
+	"punk_faces":[
+		"res://Images/Retratos/Punk_0.PNG",
+		"res://Images/Retratos/Punk_0.PNG",
+		"res://Images/Retratos/Punk_0.PNG",
+	],
+	"punk_love":[
+		"This is rad dude!",
+		"You have good taste, let's go somewhere else to cause a bit more chaos, eh? This forest is too calm for our punk souls."
+	],
+	"punk_love_faces":[
+		"res://Images/Retratos/Punk_0.PNG",
+		"res://Images/Retratos/Punk_0.PNG",
+	],
+	"punk_cala":[
+		"Who needs flowers and candlelit dinners when we can smash stuff and paint the town red together, right?",
+		"This light is pretty neat tho.",
+		"It makes me want write pretty things that make me feel warm inside, but not fire-that-I've-caused-warm, bees and flowers warm."
+	],
+	"punk_cala_faces":[
+		"res://Images/Retratos/Punk_0.PNG",
+		"res://Images/Retratos/Punk_0.PNG",
+		"res://Images/Retratos/Punk_0.PNG",
+	]
 }

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://comxuuy8tb3q1"]
+[gd_scene load_steps=17 format=3 uid="uid://comxuuy8tb3q1"]
 
 [ext_resource type="Texture2D" uid="uid://cq673q7a1nfsm" path="res://Images/PNjs/Pescadora_Idle_0.PNG" id="1_thuwj"]
 [ext_resource type="Script" path="res://Actors/PNJSetCosas.gd" id="1_xlufv"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://b0miw64t310pt" path="res://Actors/DialogBox.tscn" id="4_5smr2"]
 [ext_resource type="Texture2D" uid="uid://bjbrjwr2piwig" path="res://Images/heartIcon.png" id="4_k7qmf"]
 [ext_resource type="Texture2D" uid="uid://cj8k0qj8bur7o" path="res://Images/IMG_0183.PNG" id="4_yt6rq"]
+[ext_resource type="AudioStream" uid="uid://cvpjlcfayeang" path="res://Sounds/woosh.wav" id="6_5v1bh"]
+[ext_resource type="Texture2D" uid="uid://r0ct0cetsj62" path="res://Images/PNjs/sombra_pnj.png" id="8_jec64"]
+[ext_resource type="AudioStream" uid="uid://rectnurs80j" path="res://Sounds/pop.wav" id="9_esn00"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q6f1q"]
 animations = [{
@@ -114,10 +117,17 @@ script = ExtResource("2_3b6ls")
 position = Vector2(0, 23)
 shape = SubResource("CircleShape2D_el03o")
 
+[node name="pop" type="AudioStreamPlayer" parent="Area2D"]
+stream = ExtResource("9_esn00")
+
+[node name="woosh" type="AudioStreamPlayer" parent="Area2D"]
+stream = ExtResource("6_5v1bh")
+volume_db = -3.0
+pitch_scale = 0.9
+
 [node name="InteractIcon" type="AnimatedSprite2D" parent="."]
-visible = false
 position = Vector2(0, -280)
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_ohg70")
 animation = &"Heart"
 autoplay = "default"
@@ -137,6 +147,11 @@ libraries = {
 "": SubResource("AnimationLibrary_6pbtp")
 }
 autoplay = "new_animation"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(0, -120)
+texture = ExtResource("8_jec64")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

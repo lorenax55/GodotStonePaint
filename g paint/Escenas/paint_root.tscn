@@ -1,23 +1,28 @@
-[gd_scene load_steps=25 format=3 uid="uid://bhjmyer4wlwy2"]
+[gd_scene load_steps=34 format=3 uid="uid://bhjmyer4wlwy2"]
 
 [ext_resource type="Script" path="res://paint_control.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://cx21i6r2eqcs2" path="res://Images/recortable.png" id="1_4huta"]
 [ext_resource type="Script" path="res://tools_panel.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://cpot6t7lboubi" path="res://Images/fondoPiedra1.png" id="2_oxotw"]
 [ext_resource type="Texture2D" uid="uid://cdqq0m3rrlbva" path="res://paint_tools.png" id="3"]
-[ext_resource type="Script" path="res://Escenas/Button.gd" id="4_fc6ga"]
-[ext_resource type="FontFile" uid="uid://3be4yafc4dke" path="res://Tribal_Play.ttf" id="5_7gc42"]
-[ext_resource type="Texture2D" uid="uid://nhu5xr5gab57" path="res://Images/lapiz_negro.png" id="5_suupe"]
-[ext_resource type="Texture2D" uid="uid://dwkb7oxjfium1" path="res://Images/25694.png" id="5_x4a0w"]
-[ext_resource type="Texture2D" uid="uid://btuqiu4v1wqvq" path="res://Images/pluma.png" id="8_mr7n6"]
-[ext_resource type="Texture2D" uid="uid://b2ral3avihfqb" path="res://Images/arbusto.png" id="9_00gcq"]
+[ext_resource type="Texture2D" uid="uid://dc7y72e3wki32" path="res://Images/IMG_0216.PNG" id="7_82bm5"]
+[ext_resource type="Texture2D" uid="uid://dx7oi4t7pop8o" path="res://Images/IMG_0219.PNG" id="8_heqko"]
 [ext_resource type="Script" path="res://Escenas/Pegatina1.gd" id="9_nb1gg"]
+[ext_resource type="Texture2D" uid="uid://bedr3cwnj0uk7" path="res://Images/IMG_0217.PNG" id="9_oo63b"]
+[ext_resource type="Texture2D" uid="uid://cto8wjrc6y706" path="res://Images/IMG_0208.PNG" id="9_vo7kk"]
+[ext_resource type="Texture2D" uid="uid://jorrvk2r1cp5" path="res://Images/undo_b.png" id="10_45jt5"]
+[ext_resource type="Texture2D" uid="uid://6fudg5r3ogti" path="res://Images/IMG_0220.PNG" id="10_ankte"]
+[ext_resource type="Texture2D" uid="uid://dfe76yj00hyvu" path="res://Images/restart_b.png" id="11_nckn1"]
+[ext_resource type="Texture2D" uid="uid://dx36b115uafkk" path="res://Images/IMG_0209.PNG" id="11_qqgtx"]
 [ext_resource type="Script" path="res://Escenas/Share.gd" id="12_mki7x"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ghdc0"]
-load_path = "res://.godot/imported/piedra.png-0d9a123d19393e0f53018807357ab9c3.ctex"
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2tgq2"]
-texture = SubResource("CompressedTexture2D_ghdc0")
+[ext_resource type="Texture2D" uid="uid://ckdbmidag4wli" path="res://Images/IMG_0211.PNG" id="13_88qbm"]
+[ext_resource type="Texture2D" uid="uid://mlrdceght85o" path="res://Images/stikcers.png" id="13_cce12"]
+[ext_resource type="Texture2D" uid="uid://cewet3ymdqymf" path="res://Images/piedra1.PNG" id="13_nh643"]
+[ext_resource type="Texture2D" uid="uid://bw0gr1upa5ta5" path="res://Images/DONE.png" id="13_y7tve"]
+[ext_resource type="Texture2D" uid="uid://b0rhnd554fkov" path="res://Images/IMG_0212.PNG" id="14_3fums"]
+[ext_resource type="Texture2D" uid="uid://bu85k80s1g88o" path="res://Images/IMG_0213.PNG" id="15_ylwry"]
+[ext_resource type="Texture2D" uid="uid://48ij5p3tn7lx" path="res://Images/IMG_0214.PNG" id="16_oswr5"]
+[ext_resource type="Texture2D" uid="uid://b5iw4c1cb3tb7" path="res://Images/IMG_0215.PNG" id="17_qp268"]
+[ext_resource type="Texture2D" uid="uid://c8q086ej1u3wx" path="res://Images/IMG_0210.PNG" id="18_8n7m1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_npkcn"]
 bg_color = Color(0.2, 0.2, 0.2, 1)
@@ -51,7 +56,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-50, 684), Vector2(0, 684)]
+"values": [Vector2(-50, 150), Vector2(0, 150)]
 }
 
 [sub_resource type="Animation" id="Animation_k3u0d"]
@@ -67,7 +72,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-50, 762), Vector2(0, 762)]
+"values": [Vector2(-50, 450), Vector2(0, 450)]
 }
 
 [sub_resource type="Animation" id="Animation_7570p"]
@@ -83,7 +88,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-50, 609), Vector2(0, 609)]
+"values": [Vector2(-50, 350), Vector2(0, 350)]
 }
 
 [sub_resource type="Animation" id="Animation_m0rvp"]
@@ -99,7 +104,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-50, 834), Vector2(0, 834)]
+"values": [Vector2(-50, 250), Vector2(0, 250)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_op01x"]
@@ -118,7 +123,14 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("13_nh643")
+
 [node name="DrawingAreaBG" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.342
@@ -126,18 +138,20 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -316.64
 offset_right = -316.64
-theme_override_styles/panel = SubResource("StyleBoxTexture_2tgq2")
 metadata/_edit_layout_mode = 1
 metadata/_edit_use_custom_anchors = true
 
 [node name="FondoRoca" type="TextureRect" parent="DrawingAreaBG"]
+self_modulate = Color(1, 0.980392, 1, 1)
 z_index = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -340.0
+offset_right = 316.64
 grow_vertical = 0
-texture = ExtResource("1_4huta")
+texture = ExtResource("2_oxotw")
 
 [node name="PaintControl" type="Control" parent="."]
 layout_mode = 1
@@ -408,18 +422,6 @@ text = "Brush objects: 00000"
 metadata/_edit_layout_mode = 0
 metadata/_edit_use_custom_anchors = false
 
-[node name="ButtonUndo" type="Button" parent="ToolsPanel"]
-layout_mode = 0
-offset_left = 10.0
-offset_top = 415.0
-offset_right = 310.0
-offset_bottom = 495.0
-theme_override_fonts/font = ExtResource("5_7gc42")
-theme_override_font_sizes/font_size = 25
-text = "Undo last stroke"
-metadata/_edit_layout_mode = 0
-metadata/_edit_use_custom_anchors = false
-
 [node name="ButtonSave" type="Button" parent="ToolsPanel"]
 visible = false
 layout_mode = 0
@@ -443,48 +445,131 @@ metadata/_edit_layout_mode = 0
 metadata/_edit_use_custom_anchors = false
 
 [node name="CacaPen" type="TextureButton" parent="ToolsPanel"]
+z_index = 2
 layout_mode = 0
 offset_left = -50.0
-offset_top = 762.0
+offset_top = 450.0
 offset_right = 206.0
-offset_bottom = 818.0
-texture_normal = ExtResource("5_suupe")
-texture_pressed = ExtResource("5_suupe")
-texture_hover = ExtResource("5_suupe")
+offset_bottom = 506.0
+texture_normal = ExtResource("7_82bm5")
+texture_pressed = ExtResource("7_82bm5")
+texture_hover = ExtResource("7_82bm5")
 stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="ToolsPanel/CacaPen"]
+modulate = Color(0, 0, 0, 0.466667)
+z_index = -1
+layout_mode = 0
+offset_left = -10.0
+offset_top = 13.0
+offset_right = 243.0
+offset_bottom = 69.0
+texture = ExtResource("7_82bm5")
 
 [node name="OcrePen" type="TextureButton" parent="ToolsPanel"]
+z_index = 2
 layout_mode = 0
 offset_left = -50.0
-offset_top = 834.0
+offset_top = 250.0
 offset_right = 206.0
-offset_bottom = 890.0
-texture_normal = ExtResource("5_suupe")
-texture_pressed = ExtResource("5_suupe")
-texture_hover = ExtResource("5_suupe")
+offset_bottom = 306.0
+texture_normal = ExtResource("8_heqko")
+texture_pressed = ExtResource("8_heqko")
+texture_hover = ExtResource("8_heqko")
 stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="ToolsPanel/OcrePen"]
+modulate = Color(0, 0, 0, 0.466667)
+z_index = -1
+layout_mode = 0
+offset_left = -10.0
+offset_top = 13.0
+offset_right = 243.0
+offset_bottom = 69.0
+texture = ExtResource("8_heqko")
 
 [node name="BlackPen" type="TextureButton" parent="ToolsPanel"]
+z_index = 2
 layout_mode = 0
-offset_left = -50.0
-offset_top = 684.0
-offset_right = 206.0
-offset_bottom = 740.0
-texture_normal = ExtResource("5_suupe")
-texture_pressed = ExtResource("5_suupe")
-texture_hover = ExtResource("5_suupe")
+offset_top = 150.0
+offset_right = 256.0
+offset_bottom = 206.0
+texture_normal = ExtResource("9_oo63b")
+texture_pressed = ExtResource("9_oo63b")
+texture_hover = ExtResource("9_oo63b")
 stretch_mode = 0
 
+[node name="TextureRect" type="TextureRect" parent="ToolsPanel/BlackPen"]
+modulate = Color(0, 0, 0, 0.466667)
+z_index = -1
+layout_mode = 0
+offset_left = -10.0
+offset_top = 13.0
+offset_right = 243.0
+offset_bottom = 69.0
+texture = ExtResource("9_oo63b")
+
 [node name="MusgoPen" type="TextureButton" parent="ToolsPanel"]
+z_index = 2
 layout_mode = 0
 offset_left = -50.0
-offset_top = 609.0
+offset_top = 350.0
 offset_right = 206.0
-offset_bottom = 665.0
-texture_normal = ExtResource("5_suupe")
-texture_pressed = ExtResource("5_suupe")
-texture_hover = ExtResource("5_suupe")
+offset_bottom = 406.0
+texture_normal = ExtResource("10_ankte")
+texture_pressed = ExtResource("10_ankte")
+texture_hover = ExtResource("10_ankte")
 stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="ToolsPanel/MusgoPen"]
+modulate = Color(0, 0, 0, 0.466667)
+z_index = -1
+layout_mode = 0
+offset_left = -10.0
+offset_top = 13.0
+offset_right = 243.0
+offset_bottom = 69.0
+texture = ExtResource("8_heqko")
+
+[node name="ButtonUndo" type="TextureButton" parent="ToolsPanel"]
+z_index = 2
+layout_mode = 0
+offset_left = 1407.0
+offset_top = 975.0
+offset_right = 1642.0
+offset_bottom = 1062.0
+texture_normal = ExtResource("10_45jt5")
+texture_pressed = ExtResource("10_45jt5")
+texture_hover = ExtResource("10_45jt5")
+
+[node name="Restart_b" type="TextureButton" parent="ToolsPanel"]
+z_index = 1
+layout_mode = 0
+offset_left = 1659.0
+offset_top = 975.0
+offset_right = 1894.0
+offset_bottom = 1062.0
+texture_normal = ExtResource("11_nckn1")
+texture_pressed = ExtResource("11_nckn1")
+texture_hover = ExtResource("11_nckn1")
+
+[node name="ExitButton" type="Button" parent="ToolsPanel"]
+z_index = 1
+layout_mode = 0
+offset_left = 18.0
+offset_top = 904.0
+offset_right = 268.0
+offset_bottom = 1054.0
+
+[node name="TextureRect" type="TextureRect" parent="ToolsPanel/ExitButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_y7tve")
+expand_mode = 1
 
 [node name="SaveFileDialog" type="FileDialog" parent="."]
 size = Vector2i(800, 300)
@@ -493,56 +578,136 @@ access = 2
 filters = PackedStringArray("*.png")
 show_hidden_files = true
 
-[node name="ExitButton" type="Button" parent="."]
-z_index = 1
-layout_mode = 0
-offset_left = 18.0
-offset_top = 971.0
-offset_right = 118.0
-offset_bottom = 1071.0
-script = ExtResource("4_fc6ga")
-
-[node name="TextureRect" type="TextureRect" parent="ExitButton"]
-layout_mode = 0
-offset_right = 100.0
-offset_bottom = 100.0
-texture = ExtResource("5_x4a0w")
-expand_mode = 1
-
 [node name="CajonPegatinas" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 z_index = 2
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -300.0
-offset_bottom = 1080.0
+offset_left = -328.0
+offset_top = 27.0
+offset_right = -28.0
+offset_bottom = 627.0
 grow_horizontal = 0
 
-[node name="Pegatina1" type="TextureButton" parent="CajonPegatinas"]
+[node name="FondoCajon" type="TextureRect" parent="CajonPegatinas"]
 layout_mode = 0
-offset_right = 1920.0
-offset_bottom = 1920.0
-scale = Vector2(0.06, 0.06)
-texture_normal = ExtResource("8_mr7n6")
-texture_pressed = ExtResource("8_mr7n6")
-texture_hover = ExtResource("8_mr7n6")
-stretch_mode = 0
-script = ExtResource("9_nb1gg")
-my_image = ExtResource("8_mr7n6")
+offset_right = 306.0
+offset_bottom = 549.0
+texture = ExtResource("13_cce12")
 
 [node name="Pegatina2" type="TextureButton" parent="CajonPegatinas"]
 layout_mode = 0
-offset_top = 128.0
-offset_right = 1920.0
-offset_bottom = 2048.0
+offset_left = 24.0
+offset_top = 204.0
+offset_right = 1944.0
+offset_bottom = 2124.0
 scale = Vector2(0.06, 0.06)
-texture_normal = ExtResource("9_00gcq")
-texture_pressed = ExtResource("9_00gcq")
-texture_hover = ExtResource("9_00gcq")
+texture_normal = ExtResource("11_qqgtx")
+texture_pressed = ExtResource("11_qqgtx")
+texture_hover = ExtResource("11_qqgtx")
 stretch_mode = 0
 script = ExtResource("9_nb1gg")
-my_image = ExtResource("9_00gcq")
+my_image = ExtResource("11_qqgtx")
+
+[node name="Pegatina3" type="TextureButton" parent="CajonPegatinas"]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 76.0
+offset_right = 2089.0
+offset_bottom = 1996.0
+scale = Vector2(0.06, 0.06)
+texture_normal = ExtResource("13_88qbm")
+texture_pressed = ExtResource("13_88qbm")
+texture_hover = ExtResource("13_88qbm")
+stretch_mode = 0
+script = ExtResource("9_nb1gg")
+my_image = ExtResource("13_88qbm")
+
+[node name="Pegatina4" type="TextureButton" parent="CajonPegatinas"]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 204.0
+offset_right = 2089.0
+offset_bottom = 2124.0
+scale = Vector2(0.06, 0.06)
+texture_normal = ExtResource("14_3fums")
+texture_pressed = ExtResource("14_3fums")
+texture_hover = ExtResource("14_3fums")
+stretch_mode = 0
+script = ExtResource("9_nb1gg")
+my_image = ExtResource("14_3fums")
+
+[node name="Pegatina5" type="TextureButton" parent="CajonPegatinas"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 310.0
+offset_right = 1944.0
+offset_bottom = 2230.0
+scale = Vector2(0.06, 0.06)
+texture_normal = ExtResource("15_ylwry")
+texture_pressed = ExtResource("15_ylwry")
+texture_hover = ExtResource("15_ylwry")
+stretch_mode = 0
+script = ExtResource("9_nb1gg")
+my_image = ExtResource("15_ylwry")
+
+[node name="Pegatina6" type="TextureButton" parent="CajonPegatinas"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 438.0
+offset_right = 1944.0
+offset_bottom = 2358.0
+scale = Vector2(0.06, 0.06)
+texture_normal = ExtResource("16_oswr5")
+texture_pressed = ExtResource("16_oswr5")
+texture_hover = ExtResource("16_oswr5")
+stretch_mode = 0
+script = ExtResource("9_nb1gg")
+my_image = ExtResource("16_oswr5")
+
+[node name="Pegatina7" type="TextureButton" parent="CajonPegatinas"]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 310.0
+offset_right = 2089.0
+offset_bottom = 2230.0
+scale = Vector2(0.06, 0.06)
+texture_normal = ExtResource("17_qp268")
+texture_pressed = ExtResource("17_qp268")
+texture_hover = ExtResource("17_qp268")
+stretch_mode = 0
+script = ExtResource("9_nb1gg")
+my_image = ExtResource("17_qp268")
+
+[node name="Pegatina8" type="TextureButton" parent="CajonPegatinas"]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 438.0
+offset_right = 2089.0
+offset_bottom = 2358.0
+scale = Vector2(0.06, 0.06)
+texture_normal = ExtResource("18_8n7m1")
+texture_pressed = ExtResource("18_8n7m1")
+texture_hover = ExtResource("18_8n7m1")
+stretch_mode = 0
+script = ExtResource("9_nb1gg")
+my_image = ExtResource("18_8n7m1")
+
+[node name="Pegatina9" type="TextureButton" parent="CajonPegatinas"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 76.0
+offset_right = 1944.0
+offset_bottom = 1996.0
+scale = Vector2(0.06, 0.06)
+texture_normal = ExtResource("9_vo7kk")
+texture_pressed = ExtResource("9_vo7kk")
+texture_hover = ExtResource("9_vo7kk")
+stretch_mode = 0
+script = ExtResource("9_nb1gg")
+my_image = ExtResource("9_vo7kk")
 
 [node name="Pegatinas" type="Panel" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -551,10 +716,6 @@ layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 mouse_filter = 2
-
-[node name="AreaPiedra" type="Polygon2D" parent="."]
-color = Color(1, 1, 1, 0)
-polygon = PackedVector2Array(623, 423, 461, 495, 449, 725, 661, 780, 823, 844, 939, 854, 1432, 797, 1496, 487, 1456, 359, 1310, 269, 1242, 257, 1208, 228, 1123, 228, 949, 273, 849, 254, 694, 326)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -567,6 +728,7 @@ libraries = {
 }
 
 [node name="Share" type="Button" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 180.0
 offset_top = 998.0
@@ -579,5 +741,9 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 text = "SHARE"
+
+[node name="AreaPiedra" type="Polygon2D" parent="."]
+color = Color(1, 1, 1, 0)
+polygon = PackedVector2Array(581, 291, 537, 444, 592, 724, 647, 812, 758, 875, 845, 852, 992, 837, 1119, 812, 1232, 820, 1368, 769, 1376, 593, 1332, 556, 1277, 467, 1213, 439, 1158, 342, 1006, 290, 924, 169, 781, 174, 683, 137, 600, 186)
 
 [connection signal="pressed" from="Share" to="PaintControl" method="_on_share_pressed"]
