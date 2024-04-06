@@ -280,7 +280,34 @@ func save_picture(path):
 
 	# Save the image with the passed in path we got from the save dialog.
 	cropped_image.save_png(path)
+	"""
+	var buf = img.save_png_to_buffer()
+	var base64_data = encode_buffer(buf)
+	var script = "var link = document.createElement('a');"
+	script += "link.setAttribute('href', 'data:image/png;base64," + base64_data + "');"
+	script += "link.setAttribute('download', 'Your_rock.png');"
+	script += "document.body.appendChild(link);"
+	script += "link.click();"
+	JavaScriptBridge.eval(script)
+	"""
 	get_tree().change_scene_to_file("res://Escenas/Mapa.tscn")
+
+func encode_buffer(buffer):
+	var base64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+	var encoded = ""
+	for i in range(0, buffer.size(), 3):
+		var c = [buffer[i], buffer[i + 1], buffer[i + 2]]
+		var bytes = [0, 0, 0, 0]
+		bytes[0] = c[0] >> 2
+		bytes[1] = ((c[0] & 0x03) << 4) | (c[1] >> 4)
+		bytes[2] = ((c[1] & 0x0F) << 2) | (c[2] >> 6)
+		bytes[3] = c[2] & 0x3F
+		for j in range(4):
+			if i + j - buffer.size() >= 0:
+				encoded += "="
+			else:
+				encoded += base64[bytes[j]]
+	return encoded
 	
 func download_picture():
 	# Wait until the frame has finished before getting the texture.
@@ -292,7 +319,16 @@ func download_picture():
 	var cropped_image = img.get_region(Rect2(drawing_area.position, drawing_area.size))
 
 	# Save the image with the passed in path we got from the save dialog.
-	cropped_image.save_png("res://Your_rock")
+	#var buf = img.save_png_to_buffer()
+	var buf = img.save_png_to_buffer()
+	#var base64_data = encode_buffer(buf)
+	var script = "var link = document.createElement('a');"
+	script += "link.setAttribute('href', 'data:image/png;base64," + buf + "');"
+	script += "link.setAttribute('download', 'Your_rock.png');"
+	script += "document.body.appendChild(link);"
+	script += "link.click();"
+	JavaScriptBridge.eval(script)
+	#cropped_image.save_png("res://Your_rock")
 
 
 

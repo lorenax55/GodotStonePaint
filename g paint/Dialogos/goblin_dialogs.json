@@ -9,11 +9,13 @@
 	],
 
 	"punk": [
+		"Hey, it's you!",
 		"Ah, the great outdoors! No rules, no bosses—just us, the trees, and maybe a few mischievous woodland creatures. Let's make some memories, huh?",
 		"...",
 		"Anyway, have fun man, I'll be here chilling for a bit. Let me know if you want to hang later."
 	],
 	"punk_faces": [
+		"res://Images/Retratos/Punk_0.PNG",
 		"res://Images/Retratos/Punk_1.PNG",
 		"res://Images/Retratos/Punk_0.PNG",
 		"res://Images/Retratos/Punk_1.PNG"
@@ -37,7 +39,7 @@
 		"res://Images/Retratos/Punk_2.PNG"
 	],
 	"emo": [
-		"[fade start=5 length=10]........hey.....[/fade]",
+		"[fade start=5 length=10]....oh, it's you.....[/fade]",
 		"[fade start=50 length=13]...In a world of sunshine, I find solace in the shadows........[/fade]",
 		"[fade start=70 length=13]...I walk a solitary path. Your company disrupts the harmony of my solitude........[/fade]"
 	],
@@ -87,54 +89,73 @@
 		"res://Images/Retratos/Bob_1.PNG",
 	],
 	"pescadora":[
-		"Hey you! Nice to meet you!",
-		"",
-		""
+		"Ahoy there, landlubber! Ready to reel in some good times?",
+		"You see this bad boy cooking up here, I caught it myslef. But this is nothing compared to the monsters lurking in the depths of the ocean! Next time, I'll be wrestling with a kraken for dinner!",
+		"Did you know that I wrestled a bear once? It was during one of my expeditions deep into the untamed wilderness, far from the comforts of civilization. The encounter happened when I stumbled upon a bear's territory while on the hunt for a legendary fish rumored to dwell in those parts. With no other option, I had to rely on my wits and agility to outmaneuver the ferocious beast. After a grueling struggle that seemed to last an eternity, I emerged victorious, with nothing but a few scratches to show for it. That bear may have been tough, but it was no match for the tenacity of a fishergoblin on a mission!",
+		"Alright, get this fish sizzling, but don't worry, I'll be back to spice up the conversation later. Until then, keep the fire burning and the stories flowing!"
 	],
 	"pescadora_faces":[
-		"",
-		"",
-		""
+		"res://Images/Retratos/Pescadora_1.PNG",
+		"res://Images/Retratos/Pescadora_0.PNG",
+		"res://Images/Retratos/Pescadora_1.PNG",
+		"res://Images/Retratos/Pescadora_1.PNG",
 	],
 	"pescadora_love":[
-		""
+		"Awww this is so sweet! I knew you would take the bite.",
+		"Yes, yes, don't worry you can feel my biceps later. How about we ditch the crowds and reel in some adventure? Follow me, I know just the spot for a bit of mischief!"
 	],
 	"pescadora_love_faces":[
-		""
+		"res://Images/Retratos/Pescadora_0.PNG",
+		"res://Images/Retratos/Pescadora_0.PNG"
 	],
 	"pescadora_cala":[
-		"",
-		""
+		"Hey Lil Chum, this has been a delightful evening.",
+		"This has made my heart beat more than that one time I was almost devoured by sirens.",
+		"I can't wait to bring you on lots of new adventures. We should probably buy a house and adopt a few pets, you know?"
 	],
 	"pescadora_cala_faces":[
-		"",
-		""
+		"res://Images/Retratos/Pescadora_0.PNG",
+		"res://Images/Retratos/Pescadora_1.PNG",
+		"res://Images/Retratos/Pescadora_0.PNG"
 	],
 
 	"cowboy":[
-		"",
-		"",
-		""
+		"Howdy! Didn't see you there! I'm here enjoying nature's wind like the lonesome gunslinger I am.",
+		"Your cousin invited you, that's nice. 
+		[color=#808080](I wish I had been invited)[/color] ",
+		"Such a shame that I have left the guitar that I totally know how to play at home. I could have sung you some breathtaking blues.
+		([color=#808080]Today is gonna be the day...[/color])",
+		"Yeah, it was nice talking to you. If you feel like it, you can come later and spend some time with this country hottie. 
+		[color=#808080](Please, please, please, please I'm so lonely)[/color]"
 	],
 	"cowboy_faces":[
-		"",
-		"",
-		""
+		"res://Images/Retratos/Cowboy_0.PNG",
+		"res://Images/Retratos/Cowboy_1.PNG",
+		"res://Images/Retratos/Cowboy_1.PNG",
+		"res://Images/Retratos/Cowboy_0.PNG"
 	],
 	"cowboy_love":[
-		""
+		"Ohhh, cool rock! I have thousand of them at home, you know, but you look fine we can give it a shot
+		[color=#808080]omg, OMG, OMG! I can't believe I'm not going to be lonely. Someone actually wants to talk to me!1!!![/color]"
 	],
 	"cowboy_love_faces":[
-		""
+		"res://Images/Retratos/Cowboy_0.PNG"
 	],
 	"cowboy_cala":[
-		"",
-		""
+		"I'm loving every minute with you! Talking to people is super fun! And you haven't run off yet!",
+		"Please don't ever leave me and if you do I will be thankful for the way you have made me feel.
+		[color=#808080]if you leave this is going to be my next character development arch :([/color]",
+		"...So",
+		"Do you want to get married, buy a ranch and run off into the sunset together?
+		[color=#808080]Please, please, please say yes![/color]"
 	],
 	"cowboy_cala_faces":[
-		"",
-		""
+		"res://Images/Retratos/Cowboy_2.PNG",
+		"res://Images/Retratos/Cowboy_2.PNG",
+		"res://Images/Retratos/Cowboy_2.PNG",
+		"res://Images/Retratos/Cowboy_2.PNG"
 	],
+
 
 	"mago":[
 		"[img]res://Images/hola.png[/img] [img]res://Images/wisdom.png[/img] ?",
@@ -145,19 +166,20 @@
 		"res://Images/Retratos/Mago_1.PNG",
 	],
 	"mago_love":[
-		""
+		"[img]res://Images/kind.png[/img]    [img]res://Images/piss.png[/img]",
 	],
 	"mago_love_faces":[
 		"res://Images/Retratos/Mago_0.PNG",
-		"res://Images/Retratos/Mago_1.PNG",
 	],
 	"mago_cala":[
-		"",
-		""
+		"...",
+		"[img]res://Images/ponder.png[/img]",
+		"[img]res://Images/lets.png[/img], [img]res://Images/cookies.png[/img]",
 	],
 	"mago_cala_faces":[
 		"res://Images/Retratos/Mago_0.PNG",
 		"res://Images/Retratos/Mago_1.PNG",
+		"res://Images/Retratos/Mago_1.PNG"
 	],
 
 	"primo":[
@@ -188,8 +210,8 @@
 		"[shake rate=20.0 level=5 connected=1]I knew I could trust you. You are the best cousing I could have ever wished for.[/shake]"
 	],
 	"primo_cala_faces":[
-		"res://Images/Retratos/Primo_1.PNG",
-		"res://Images/Retratos/Primo_1.PNG",
-		"res://Images/Retratos/Primo_0.PNG"
+		"res://Images/Retratos/Primo_2.PNG",
+		"res://Images/Retratos/Primo_2.PNG",
+		"res://Images/Retratos/Primo_2.PNG"
 	]
 }

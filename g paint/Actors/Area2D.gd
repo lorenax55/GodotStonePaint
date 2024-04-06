@@ -42,8 +42,11 @@ func _input(event):
 	if canTalk and event.is_action_pressed("ui_accept"):
 		if icon.is_visible_in_tree():
 			anim_player.play_backwards("Interaction_anim")
-		SignalBus.emit_signal("display_dialog", dialog_key)
-		dialog.set_my_active(true)
+		if(not dialog.get_my_active()):
+			dialog.set_my_active(true)
+		dialog.on_display_dialog(dialog_key)
+		#SignalBus.emit_signal("display_dialog", dialog_key)
+		
 
 
 			

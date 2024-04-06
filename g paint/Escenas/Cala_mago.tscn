@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dbyitr2wvgcjt" path="res://Images/Escenario/cala_ (3).PNG" id="4_3r7pj"]
 [ext_resource type="Texture2D" uid="uid://dpay73vgdv7j0" path="res://Images/PNjs/cala_sprites/cala_idle_ (1).PNG" id="5_wpkhq"]
 [ext_resource type="Texture2D" uid="uid://d15r86028i327" path="res://Images/PNjs/cala_sprites/cala_idle_ (18).PNG" id="6_xq4br"]
-[ext_resource type="Texture2D" uid="uid://mxy0txu5nm68" path="res://Images/PNjs/cala_sprites/cala_idle_ (2).PNG" id="7_qcs6m"]
+[ext_resource type="Texture2D" uid="uid://bpx058i84kpst" path="res://Images/PNjs/cala_sprites/cala_idle_ (17).PNG" id="7_sbhga"]
 [ext_resource type="PackedScene" uid="uid://b0miw64t310pt" path="res://Actors/DialogBox.tscn" id="8_saept"]
 [ext_resource type="Texture2D" uid="uid://b022nlrmxhu45" path="res://Images/Escenario/pajaros_ (3).PNG" id="9_57adh"]
 [ext_resource type="Texture2D" uid="uid://cg4w3a281a3ke" path="res://Images/Escenario/pajaros_ (1).PNG" id="10_8dc4s"]
@@ -52,7 +52,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_qcs6m")
+"texture": ExtResource("7_sbhga")
 }],
 "loop": true,
 "name": &"default",

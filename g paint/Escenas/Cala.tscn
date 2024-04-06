@@ -151,7 +151,6 @@ sprite_frames = SubResource("SpriteFrames_uhjqj")
 offset = Vector2(960, 220)
 scale = Vector2(0.4, 0.4)
 transform = Transform2D(0.4, 0, 0, 0.4, 960, 220)
-need_pause = false
 
 [node name="pajaros" type="AnimatedSprite2D" parent="."]
 process_mode = 3

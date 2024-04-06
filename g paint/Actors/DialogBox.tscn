@@ -189,11 +189,6 @@ offset_bottom = 179.0
 theme_override_fonts/normal_font = ExtResource("3_hn5qy")
 theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
-text = "
-
-[font={res://Tribal_Play.ttf}]{\"+[b]bold[i]bold italic[/i][/b][i]italic[/i]+\"}[/font]"
-visible_characters = 0
-visible_ratio = 0.0
 
 [node name="Woosh" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_c15dd")

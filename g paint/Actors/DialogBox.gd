@@ -17,6 +17,10 @@ var active = false
 
 func set_my_active(val):
 	active = val
+	finished = not val
+
+func get_my_active():
+	return active
 
 func set_next_scene(val):
 	next_scene = val
@@ -67,7 +71,6 @@ func finish():
 	in_progress = false
 	if need_pause:
 		get_tree().paused = false
-
 	$AnimationPlayer.play("byebye",-1,3)
 	
 func bye():
@@ -76,11 +79,13 @@ func bye():
 		if(next_scene != ""):
 			get_tree().change_scene_to_file.bind(next_scene).call_deferred()
 		SignalBus.emit_signal("end_dialog")
+		active = false
 
 
 
 func on_display_dialog(text_key):
 	if in_progress:
+		print("esta en progress")
 		if($AnimateText.is_playing()):
 			$AnimateText.seek(0.9,true,true)
 		else:	
@@ -98,6 +103,7 @@ func on_display_dialog(text_key):
 		var img_key = text_key+"_faces"
 		selected_face = scene_text[img_key].duplicate()
 		show_text()
+		print("he llegado al animation player")
 		$AnimationPlayer.play("new_animation",-1,3)
 		$AnimateText.play("text")
 	else:
