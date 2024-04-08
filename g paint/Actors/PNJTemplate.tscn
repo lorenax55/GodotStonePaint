@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://comxuuy8tb3q1"]
+[gd_scene load_steps=18 format=3 uid="uid://comxuuy8tb3q1"]
 
 [ext_resource type="Texture2D" uid="uid://cq673q7a1nfsm" path="res://Images/PNjs/Pescadora_Idle_0.PNG" id="1_thuwj"]
 [ext_resource type="Script" path="res://Actors/PNJSetCosas.gd" id="1_xlufv"]
@@ -98,6 +98,8 @@ _data = {
 "new_animation": SubResource("Animation_eh3vu")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o8vh3"]
+
 [node name="Pnj" type="Node2D"]
 process_mode = 3
 script = ExtResource("1_xlufv")
@@ -154,6 +156,13 @@ autoplay = "new_animation"
 z_index = -1
 position = Vector2(0, -120)
 texture = ExtResource("8_jec64")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, -18)
+scale = Vector2(5.12, 4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_o8vh3")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

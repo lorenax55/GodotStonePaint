@@ -781,6 +781,7 @@ next_scene = "res://Escenas/Cala_primo.tscn"
 
 [node name="Punk" parent="." instance=ExtResource("7_v81wv")]
 position = Vector2(919, 1883)
+loveable = true
 pnj_anim = SubResource("SpriteFrames_u1kqu")
 dialog_key = "punk_love"
 next_scene = "res://Escenas/Cala_punk.tscn"
