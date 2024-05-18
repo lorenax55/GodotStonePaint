@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://bhjmyer4wlwy2"]
+[gd_scene load_steps=42 format=3 uid="uid://bhjmyer4wlwy2"]
 
 [ext_resource type="Script" path="res://paint_control.gd" id="1"]
 [ext_resource type="Script" path="res://tools_panel.gd" id="2"]
@@ -27,6 +27,10 @@
 [ext_resource type="Texture2D" uid="uid://b5iw4c1cb3tb7" path="res://Images/IMG_0215.PNG" id="17_qp268"]
 [ext_resource type="Texture2D" uid="uid://c8q086ej1u3wx" path="res://Images/IMG_0210.PNG" id="18_8n7m1"]
 [ext_resource type="AudioStream" uid="uid://jhf7pmsttkk6" path="res://Sounds/party at club bug__KHPTeWYGI58.mp3" id="27_uymfq"]
+[ext_resource type="Texture2D" uid="uid://cno03346ghabf" path="res://Images/coolText.png" id="28_nc2dj"]
+[ext_resource type="Texture2D" uid="uid://b7bwh4biufyrf" path="res://Images/boton_sure.png" id="29_3xr2a"]
+[ext_resource type="Texture2D" uid="uid://ccd3sgp30yxu7" path="res://Images/boton_sure_h.png" id="30_osqp7"]
+[ext_resource type="Script" path="res://Escenas/Done_sure.gd" id="31_22t0n"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_npkcn"]
 bg_color = Color(0.2, 0.2, 0.2, 1)
@@ -773,4 +777,25 @@ stream = ExtResource("27_uymfq")
 volume_db = -15.0
 autoplay = true
 
+[node name="CoolText" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+position = Vector2(960, 60)
+scale = Vector2(0.463235, 0.463235)
+texture = ExtResource("28_nc2dj")
+
+[node name="Done_sure" type="TextureButton" parent="."]
+visible = false
+z_index = 2
+layout_mode = 0
+offset_left = 20.0
+offset_top = 935.0
+offset_right = 267.0
+offset_bottom = 1035.0
+texture_normal = ExtResource("29_3xr2a")
+texture_pressed = ExtResource("29_3xr2a")
+texture_hover = ExtResource("30_osqp7")
+script = ExtResource("31_22t0n")
+
 [connection signal="pressed" from="Share" to="PaintControl" method="_on_share_pressed"]
+[connection signal="pressed" from="Done_sure" to="Done_sure" method="_on_pressed"]

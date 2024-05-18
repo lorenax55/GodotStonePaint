@@ -146,12 +146,14 @@
 		"Please don't ever leave me and if you do I will be thankful for the way you have made me feel.
 		[color=#808080]if you leave this is going to be my next character development arch :([/color]",
 		"...So",
-		"Do you want to get married, buy a ranch and run off into the sunset together?
-		[color=#808080]Please, please, please say yes![/color]"
+		"Do you want to get married, go to my ranch and run off into the sunset together?
+		[color=#808080]Please, please, please say yes![/color]",
+		"...okay together and my mother. Okay fine, it's not exactcly a ranch but I swar it's really nice. I'm sure you two will get a along just fine."
 	],
 	"cowboy_cala_faces":[
-		"res://Images/Retratos/Cowboy_2.PNG",
-		"res://Images/Retratos/Cowboy_2.PNG",
+		"res://Images/Retratos/Cowboy_1.PNG",
+		"res://Images/Retratos/Cowboy_0.PNG",
+		"res://Images/Retratos/Cowboy_0.PNG",
 		"res://Images/Retratos/Cowboy_2.PNG",
 		"res://Images/Retratos/Cowboy_2.PNG"
 	],
@@ -174,12 +176,14 @@
 	"mago_cala":[
 		"...",
 		"[img]res://Images/ponder.png[/img]",
+		"[img]res://Images/clean_room.png[/img], [img]res://Images/cuddle.png[/img]",
 		"[img]res://Images/lets.png[/img], [img]res://Images/cookies.png[/img]",
 	],
 	"mago_cala_faces":[
 		"res://Images/Retratos/Mago_0.PNG",
 		"res://Images/Retratos/Mago_1.PNG",
-		"res://Images/Retratos/Mago_1.PNG"
+		"res://Images/Retratos/Mago_1.PNG",
+		"res://Images/Retratos/Mago_0.PNG",
 	],
 
 	"primo":[

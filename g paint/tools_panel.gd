@@ -157,7 +157,13 @@ func button_pressed(button_name):
 		paint_control.queue_redraw()
 	elif button_name == "save_picture":
 		$done_sound.play()
-		save_dialog.popup_centered()
+		#save_dialog.popup_centered()
+		get_node("../CoolText").visible = true
+		visible = false
+		get_node("../CajonPegatinas").visible = false
+		get_node("../Done_sure").visible = true
+
+		
 	elif button_name == "undo_stroke":
 		paint_control.undo_stroke()
 
